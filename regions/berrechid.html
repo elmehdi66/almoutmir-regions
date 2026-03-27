@@ -1,0 +1,1518 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Al moutmir</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo/favicon.png">
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="../assets/css/spacing.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- CSS here -->
+
+    <style>
+        .dgm-blog-item::after {
+            background-color: #002a28 !important;
+        }
+
+        .bnc-portfolio-item-title {
+            font-size: 18px !important;
+            font-family: "mazzard-bold";
+        }
+
+        .bnc-portfolio-item-tag span {
+            font-family: "mazzard-regular";
+            font-size: 10px;
+            border: 1px solid #d7492b;
+        }
+
+        .dgm-portfolio-tab ul li a {
+            border: 1px solid #fff;
+        }
+
+        .dgm-portfolio-tab ul li a:hover,
+        .dgm-portfolio-tab ul li a.active {
+            background-color: #c0e4da;
+            border: 1px solid #c0e4da;
+        }
+
+        /* Active tab: red by default */
+        .dgm-portfolio-slider-wrap .tab-pane.active .dgm-portfolio-content::after {
+            content: '';
+            background-color: #d7492b;
+        }
+
+        /* Active tab on hover: switch to teal */
+        .dgm-portfolio-slider-wrap .tab-pane.active:hover .dgm-portfolio-content::after {
+            background-color: #c0e4da;
+        }
+
+        /* Inactive tab: teal by default */
+        .dgm-portfolio-slider-wrap .tab-pane:not(.active) .dgm-portfolio-content::after {
+            content: '';
+            background-color: #c0e4da;
+        }
+
+        /* Inactive tab on hover: switch to red */
+        .dgm-portfolio-slider-wrap .tab-pane:not(.active):hover .dgm-portfolio-content::after {
+            background-color: #d7492b;
+        }
+
+        .dgm-portfolio-title {
+            font-family: "mazzard-bold";
+            color: #c0e4da85 !important;
+        }
+
+        .dgm-portfolio-content span {
+            font-family: "mazzard-semibold";
+            color: #c0e4da80 !important;
+        }
+
+        .dgm-portfolio-item:hover .dgm-portfolio-title a {
+            color: #002a28 !important;
+        }
+
+        .dgm-portfolio-item:hover .dgm-portfolio-content span {
+            color: #002a28 !important;
+        }
+
+        .tp-section-title {
+            font-family: "mazzard-bold" !important;
+            line-height: 2 !important;
+        }
+
+        .ca-testimonial-item {
+            background-color: #002a28;
+        }
+
+        .testimonial-item2 {
+            background-color: #c0e4da !important;
+            color: #fff !important;
+        }
+
+        .testimonial-item2 .ca-testimonial-item-content p,
+        .testimonial-item2 .ca-testimonial-item-user-content h4,
+        .testimonial-item2 .ca-testimonial-item-user-content p {
+            color: #10605b !important;
+        }
+        .back-to-top-btn {
+            background: #d7492b !important;
+            color: #c0e4da !important;
+        }
+        #preloader{
+            background: #002a28;
+        }
+        #preloader span{
+            background: #d7492b !important;
+        }
+    </style>
+
+</head>
+
+<body class="tp-magic-cursor">
+
+    <!-- Begin magic cursor -->
+    <div id="magic-cursor" class="cursor-white-bg">
+        <div id="ball"></div>
+    </div>
+    <!-- End magic cursor -->
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- preloader end  -->
+
+    <div class="tp-blur-bottom"></div>
+
+    <!-- back to top start -->
+    <div class="back-to-top-wrapper">
+        <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+    <!-- back to top end -->
+
+
+    <!-- header area start -->
+    <div id="header-sticky" class="tp-header-area tp-header-ptb tp-header-blur sticky-white-bg header-transparent">
+        <div class="container container-1510">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-6 col-6">
+                    <div class="tp-header-logo">
+                        <a href="index.html">
+                            <img data-width="60" src="../assets/img/logo/logo-bg-square.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-7 d-none d-xl-block">
+                    <div class="tp-header-box text-center">
+                        <div class="tp-header-menu tp-header-dropdown dropdown-white-bg">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-6">
+                    <div class="tp-header-right d-flex align-items-center justify-content-end">
+                        <div class="tp-header-14-bar-wrap">
+                            <button class="tp-header-8-bar tp-offcanvas-open-btn">
+                                <span>Menu</span>
+                                <span>
+                                    <svg width="24" height="8" viewBox="0 0 24 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H14V1.5H0V0Z" fill="currentcolor" />
+                                        <path d="M0 6H24V7.5H0V6Z" fill="currentcolor" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header area end -->
+
+
+    <!-- tp-offcanvus-area-start -->
+    <div class="tp-offcanvas-area">
+        <div class="tp-offcanvas-wrapper offcanvas-black-bg">
+            <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
+                <div class="tp-offcanvas-logo">
+                    <a href="index.html">
+                        <img class="logo-1" data-width="120" src="../assets/img/logo/logo-black.png" alt="">
+                        <img class="logo-2" data-width="120" src="../assets/img/logo/logo-white.png" alt="">
+                    </a>
+                </div>
+                <div class="tp-offcanvas-close">
+                    <button class="tp-offcanvas-close-btn">
+                        <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="tp-offcanvas-main">
+                <div class="tp-offcanvas-content d-none d-xl-block">
+                    <h3 class="tp-offcanvas-title">Hello There!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                </div>
+                <div class="tp-offcanvas-menu d-xl-none">
+                    <nav></nav>
+                </div>
+                <div class="tp-offcanvas-gallery d-none d-xl-block">
+                    <div class="row gx-2">
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="../assets/img/offcanvas/offcanvas-1.jpg"><img
+                                        src="../assets/img/offcanvas/offcanvas-1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="../assets/img/offcanvas/offcanvas-2.jpg"><img
+                                        src="../assets/img/offcanvas/offcanvas-2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="../assets/img/offcanvas/offcanvas-3.jpg"><img
+                                        src="../assets/img/offcanvas/offcanvas-3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="../assets/img/offcanvas/offcanvas-4.jpg"><img
+                                        src="../assets/img/offcanvas/offcanvas-4.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-offcanvas-contact">
+                    <h3 class="tp-offcanvas-title sm">Information</h3>
+                    <ul>
+                        <li><a href="tel:1245654">+ 4 20 7700 1007</a></li>
+                        <li><a href="mailto:hello@acjon.com">hello@acjon.com</a></li>
+                        <li><a href="#">Avenue de Roma 158b, Lisboa</a></li>
+                    </ul>
+                </div>
+                <div class="tp-offcanvas-social">
+                    <h3 class="tp-offcanvas-title sm">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.25 1.5H4.75C2.95507 1.5 1.5 2.95507 1.5 4.75V11.25C1.5 13.0449 2.95507 14.5 4.75 14.5H11.25C13.0449 14.5 14.5 13.0449 14.5 11.25V4.75C14.5 2.95507 13.0449 1.5 11.25 1.5Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M10.6016 7.5907C10.6818 8.13166 10.5894 8.68414 10.3375 9.16955C10.0856 9.65497 9.68711 10.0486 9.19862 10.2945C8.71014 10.5404 8.15656 10.6259 7.61663 10.5391C7.0767 10.4522 6.57791 10.1972 6.19121 9.81055C5.80451 9.42385 5.54959 8.92506 5.46271 8.38513C5.37583 7.8452 5.46141 7.29163 5.70728 6.80314C5.95315 6.31465 6.34679 5.91613 6.83221 5.66425C7.31763 5.41238 7.87011 5.31998 8.41107 5.4002C8.96287 5.48202 9.47372 5.73915 9.86817 6.1336C10.2626 6.52804 10.5197 7.0389 10.6016 7.5907Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.5742 4.42578H11.5842" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.50589 12.7494C4.57662 16.336 9.16278 17.5648 12.7494 15.4941C14.2113 14.65 15.2816 13.388 15.8962 11.9461C16.7895 9.85066 16.7208 7.37526 15.4941 5.25063C14.2674 3.12599 12.1581 1.82872 9.89669 1.55462C8.34063 1.366 6.71259 1.66183 5.25063 2.50589C1.66403 4.57662 0.435172 9.16278 2.50589 12.7494Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M12.7127 15.4292C12.7127 15.4292 12.0086 10.4867 10.5011 7.87559C8.99362 5.26451 5.28935 2.57155 5.28935 2.57155M5.68449 15.6124C6.79553 12.2606 12.34 8.54524 16.3975 9.43537M12.311 2.4082C11.1953 5.72344 5.75732 9.38453 1.71875 8.58915"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 5.5715H6.33342C7.62867 5.5715 8.61917 6.56199 8.61917 7.85725C8.61917 9.15251 7.62867 10.143 6.33342 10.143H1.76192C1.30477 10.143 1 9.83823 1 9.38108V1.76192C1 1.30477 1.30477 1 1.76192 1H5.5715C6.86676 1 7.85725 1.99049 7.85725 3.28575C7.85725 4.58101 6.86676 5.5715 5.5715 5.5715H1Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
+                                    <path
+                                        d="M10.9062 7.09454H17.0016C17.0016 5.41832 15.6301 4.04688 13.9539 4.04688C12.2777 4.04688 10.9062 5.41832 10.9062 7.09454ZM10.9062 7.09454C10.9062 8.77076 12.2777 10.1422 13.9539 10.1422H15.2492"
+                                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M16.1125 1.44434H11.668" stroke="currentColor" stroke-width="1.2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.75 13H5.25C3 13 1.5 11.5 1.5 9.25V4.75C1.5 2.5 3 1 5.25 1H12.75C15 1 16.5 2.5 16.5 4.75V9.25C16.5 11.5 15 13 12.75 13Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M8.70676 5.14837L10.8006 6.40465C11.5543 6.90716 11.5543 7.66093 10.8006 8.16344L8.70676 9.41972C7.86923 9.92224 7.19922 9.50348 7.19922 8.5822V6.06964C7.19922 4.98086 7.86923 4.64585 8.70676 5.14837Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- tp-offcanvus-area-end -->
+
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <main>
+
+                <!-- hero area start -->
+                <div class="ma-hero-area ma-hero-ptb ma-hero-overlay z-index-1"
+                    data-background="../assets/img/modern-agency/hero/hero-1.jpg">
+                    <div class="ma-hero-shape" data-speed="1.1">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="70" viewBox="0 0 98 70"
+                                fill="none">
+                                <path
+                                    d="M3.82839 43.5099C6.42926 40.3317 22.6507 18.2746 30.4134 24.9691C37.8139 31.3513 24.5452 53.9838 37.9136 57.3688C49.3686 60.2694 63.7917 45.1686 70.8555 38.113C75.574 33.4 78.6929 27.6256 82.7187 22.4694C83.012 22.0937 85.4072 18.8838 84.2975 19.3471"
+                                    stroke="#F5F7F5" stroke-width="3" stroke-linecap="round" />
+                                <path
+                                    d="M74.5884 18.6844C77.6307 17.1331 88.2369 8.41917 88.3725 15.5498C88.4449 19.3586 88.246 22.0251 89.7262 25.5706"
+                                    stroke="#F5F7F5" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="container container-1530">
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <h2 style="color: #fff;">Nos actions à</h2>
+                                <div class="ma-hero-title-box tp_fade_anim" data-delay=".3">
+                                    <h2 class="ma-hero-title" style="display: flex;padding-top: 10px;">
+                                        <i style="margin-top:-20px ;">
+                                            <svg width="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 143.6">
+                                                <g id="a" />
+                                                <g id="b">
+                                                    <g id="c">
+                                                        <path
+                                                            d="M52.8,.5C24.1-.2,.5,22.9,.5,51.5s41.8,83.6,49.3,91.1c.7,.7,1.6,.7,2.4,0,7.6-6.9,48.7-46.4,50.3-88.6C103.5,26.1,80.8,1.2,52.8,.5Zm-1.3,90.7c-21.9,0-39.7-17.8-39.7-39.7S29.5,11.8,51.5,11.8s39.7,17.8,39.7,39.7-17.8,39.7-39.7,39.7Z"
+                                                            style="fill:none; stroke:#eb6334; stroke-miterlimit:10;" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        Berrechid
+
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="offset-xxl-4 offset-xl-2 col-xxl-4 col-xl-4 col-lg-12">
+                                <div class="ma-hero-content">
+                                    <div class="tp_fade_anim" data-delay=".4">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing<br> elit,sed diam
+                                            nonummy nibh euismod tincidunt
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- hero area end -->
+
+                <!-- funfact area start -->
+                <div class="bnc-funfact-ptb pt-170 pb-150">
+                    <div class="container container-1510">
+                        <div class="bnc-funfact-wrapper p-relative">
+                            <div class="bnc-funfact-text-wrap">
+                                <h4 class="bnc-funfact-text-title">Lorem ipsum dolor</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="cr-funfact-item">
+                                        <div class="cr-funfact-inner">
+                                            <i style="margin:0 !important;">
+                                                <svg data-width="120" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 110.6 78.8">
+                                                    <g id="a" />
+                                                    <g id="b">
+                                                        <g id="c">
+                                                            <path
+                                                                d="M0,0V78.8H110.6V0H0ZM44.2,55.3l3.4-1.9v8.3c-2.8-.8-5.1,2-6.9,4-.5,.6-1,1.2-1.4,1.6,0,0,0,0,0,0v-2.6h0s0,0,0,0c.4-.6,.9-1.2,1.5-1.8,1.9-2.1,4.2-4.7,3.4-7.5Zm26.4,3l4.7,1.8c1.4,.6,2.6,1.7,3.2,3.1,1.8,4.2,2.7,8.6,2.7,13h-7.6c0-1.3-.2-3.1-.6-4.4-.2-.7-.9-1.1-1.6-.9-.7,.2-1.1,.9-.9,1.6,.3,1.2,.5,2.8,.5,3.8h-4.4l3.6-8.7c.3-.8,.3-1.6-.1-2.4l-1-1.9c0,0,0-.2,0-.2l1.3-1.9c.6-.9,.7-1.9,.2-2.9Zm-3.7,6.2l1,1.9c0,0,0,.1,0,.2l-4.1,9.7h-.1v-22.8l2,1.1h0l2.5,4.9c0,0,0,.2,0,.2l-1.3,1.9c-.6,.9-.7,2-.2,2.9Zm.9-11.5c-.2-.3-.5-.5-.8-.7l-3.3-1.8v-1.7c3.1-2.4,5.2-5.6,6.2-9.6,.9,0,1.7-.3,2.4-.7,1.4,1.6,2.1,3.7,2.1,5.8,0,4.1-2.7,7.6-6.6,8.7Zm2.6-16.5c.2-1.6,.2-3.2,.1-4.9,1,.4,1.7,1.3,1.7,2.4s-.8,2.1-1.8,2.5Zm-.5-8.3s0,0,0,0c-4.5,.8-7.7-7.1-7.7-7.2-.1-.4-.5-.7-.8-.8-.4-.1-.8,0-1.1,.2-6,4.5-15.2,6.3-17.8,6.7-.9-4.5-.3-8.4,2-11.4,2.7-3.5,6.8-4.8,9.6-4.8,6.1,0,7.9,2.8,8,2.9,.3,.5,.8,.7,1.4,.6,0,0,2.7-.6,4.7,.8,1.2,.8,1.9,2.1,2.2,3.8,.6,3.3,.2,6.7-.4,9.1Zm-25.7,1.2c3.6-.7,10.7-2.4,16.2-6,1.1,2.3,3.7,6.5,7.5,7.3,.8,7.8-1.5,13.5-6.7,16.8-3.2,2-7.3,2-10.4,0-5.5-3.5-7.7-9.5-6.5-18Zm11.6,36.8c-.1-.9-1-1.4-1.5-1.6-.6-.3-1.2-.6-1.8-.8-.7-.3-1.4-.7-2.2-1v-1.4c1.8,.8,3.8,1.3,5.8,1.3s3.5-.3,5.1-1v14.7h-11v-4.1c1.1-.9,2.1-1.8,3.1-2.7l1.4-1.2c.4-.4,1.2-1,1-2Zm-5.5-7.7v-8.4c1.8,.9,3.7,1.4,5.7,1.4s3.6-.4,5.2-1.2v.9h0v7.6c-3.5,1.7-7.6,1.6-11-.3Zm1.1,7.6c.4,.2,.8,.4,1.3,.6l-1,.9c-1.2,1.1-2.2,2-3.5,3-1,.9-2.9-.2-5.1-1.7-.4-.2-.7-.5-1-.7,.3-.3,.5-.6,.8-.9,1.8-2.1,3.2-3.6,4.4-3.1,1.5,.6,2.7,1.2,4.1,1.9Zm-3.6,7.3v2.9h-8.4v-6.8c.1,.1,.3,.3,.5,.4,.5,.3,1.2,.7,1.8,1.1,1.6,1.1,3.7,2.4,5.7,2.4s.3,0,.4,0Zm-8.7-12.3c-.3,.4-.7,.8-1,1.1-.3-.4-.6-.7-1-1.1-2-2.3-3.5-4.1-2.7-5.5,.9-1.5,1.8-2.8,2.7-4.2l.9-1.4c.3,.5,.7,1,1,1.5,.8,1.2,1.6,2.4,2.5,3.8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,.8,1.3-.6,3.2-2.7,5.5Zm-3.9,1.7c.6,.7,1.1,1.3,1.6,1.9,0,0,0,0,0,0v2.7s0,0,0,0c0,0,0,0,0,0-.4-.4-.9-1-1.4-1.6-.8-.9-1.7-2-2.7-2.8,.3-.6,.8-1.2,1.3-1.7,.4,.5,.9,1.1,1.3,1.6Zm1.6,6.7v6.8h-7.1c0-1,0-2,.2-3,1.6-.4,3.3-1.4,4.6-2.3,.7-.4,1.3-.8,1.9-1.2,.2-.1,.3-.2,.4-.3Zm-3.5-2.2c.3,.3,.5,.6,.8,.9-.3,.2-.7,.4-1,.7-2.3,1.5-4.1,2.5-5.1,1.7-1.3-1.1-2.3-2-3.4-3l-1-.9c.4-.2,.9-.4,1.3-.6,1.3-.6,2.6-1.2,4.1-1.9,1.3-.5,2.7,1,4.4,3.1Zm75,9h-24.5c0-4.9-1-9.6-2.9-14.1-.9-2-2.5-3.7-4.6-4.5l-6.8-2.7c4.4-1.7,7.4-6,7.4-10.9s-1-5.5-2.9-7.7c.4-.8,.7-1.6,.7-2.6,0-1.9-1.1-3.6-2.6-4.5,.7-2.8,1.4-6.8,.6-11-.5-2.5-1.6-4.3-3.4-5.5-2.1-1.4-4.6-1.4-5.8-1.3-1.1-1.2-3.9-3.4-9.7-3.4s-8.3,1.5-11.6,5.8c-2,2.6-4,7.2-2.3,14.2-1.8,.8-3,2.6-3,4.7s2.1,4.9,4.8,5.1c.8,4.2,2.8,7.7,5.9,10.2v2.1l-4.6,2.6c-.6-1-1.3-2-1.9-2.9-.4-.6-.8-1.2-1.2-1.9-.3-.5-.9-1.4-1.9-1.4h0c-1,0-1.6,.9-1.9,1.4l-1.2,1.7c-.9,1.4-1.8,2.7-2.8,4.3-1,1.7-.7,3.3,.1,4.8-.9,.7-1.6,1.6-2.1,2.6-.8-.2-1.6-.2-2.5,.2-1.5,.6-2.8,1.3-4.2,1.9-.6,.3-1.2,.6-1.8,.8-.5,.2-1.4,.6-1.6,1.6-.1,1,.6,1.6,1,2l1.4,1.3c1.1,1,2.2,2,3.5,3.1,.3,.3,.7,.5,1,.6,0,1-.2,2.1-.2,3.1H2.5V2.5H108.1V76.3ZM41.3,35.5c-1.1-.3-1.8-1.3-1.8-2.5s.8-2.2,1.9-2.5c-.2,1.7-.2,3.4,0,5Z"
+                                                                style="fill:#010103;" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </i>
+                                            <h4 style="color:#10605b;margin-top: 5px;"><span
+                                                    data-purecounter-duration="1" data-purecounter-end="4"
+                                                    class="purecounter"></span>+</h4>
+                                            <span style="color: #10605b;">Agronomes
+                                                dédiés</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="cr-funfact-item">
+                                        <div class="cr-funfact-inner">
+                                            <i style="margin: 0 !important;">
+                                                <svg data-width="120" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 110.6 78.8">
+                                                    <g id="a" />
+                                                    <g id="b">
+                                                        <g id="c">
+                                                            <g>
+                                                                <path
+                                                                    d="M0,0V78.8H110.6V0H0ZM54.1,59.5c-2.4-2.7-4.1-4.8-3-6.5,1.1-1.8,2.1-3.2,3.1-4.8,.4-.6,.8-1.2,1.2-1.8,.4,.7,.9,1.3,1.3,1.9,1,1.5,2,3,3,4.6,1,1.6-.6,3.7-3,6.5-.4,.5-.9,1-1.2,1.4-.4-.5-.8-.9-1.2-1.4Zm54,16.7h-28.8c1.8-2.1,2.5-5,2.3-7.7l-3.6-22.2c-.4-2.5-2.1-4.5-4.5-5.3l-9-3.2c-.7-.2-1.4,.1-1.6,.8-.2,.7,.1,1.4,.8,1.6l9,3.2c1.5,.5,2.6,1.7,2.8,3.3l3.6,22.1c.2,2.2-.5,6.2-4.3,7.3h-18.2v-7.8c.1,.3,.3,.6,.8,.9,.6,.3,1.4,.8,2.1,1.3,1.9,1.3,4.2,2.7,6.4,2.7s1.9-.3,2.8-1c1.5-1.2,2.7-2.4,4-3.5l1.6-1.4c.5-.4,1.3-1.1,1.1-2.1-.1-1-1.1-1.4-1.7-1.7-.7-.3-1.4-.7-2.1-1-1.5-.7-3-1.4-4.7-2.2-3.4-1.5-6.1,1.7-8.3,4.3-.6,.7-1.1,1.4-1.7,1.9,0,0,0,0,0,0-.2,.2-.3,.4-.3,.5v-3.8s0,0,0,0c0,0,0,0,0,0,.5-.6,1.1-1.3,1.8-2.1,2.4-2.7,5.4-6.1,3.3-9.5-1.1-1.7-2-3.2-3-4.7-.5-.7-.9-1.4-1.4-2.2-.4-.6-1-1.5-2-1.5h0c-1,0-1.6,.9-2,1.5-.5,.7-.9,1.4-1.3,2-1.1,1.6-2.1,3.1-3.2,4.9-2.1,3.4,.9,6.8,3.3,9.5,.7,.8,1.3,1.5,1.8,2.2,0,0,0,0,0,0v3.8c0-.2-.2-.4-.3-.6,0,0,0,0,0,0-.5-.5-1.1-1.2-1.7-1.9-2.2-2.6-4.8-5.7-8.3-4.3-1.7,.7-3.2,1.4-4.7,2.2-.7,.3-1.3,.6-2.1,1-.6,.3-1.5,.7-1.7,1.7-.1,1,.6,1.7,1.1,2.1l1.6,1.4c1.3,1.2,2.5,2.3,4,3.5,.9,.7,1.8,1,2.8,1,2.2,0,4.4-1.5,6.4-2.7,.8-.5,1.5-1,2.2-1.3,.4-.3,.6-.6,.7-.9v7.8h-18.2c-3.7-1.1-4.4-5.2-4.3-7.2l3.6-22.2c.2-1.5,1.3-2.8,2.9-3.3l9-3.2c.7-.2,1-1,.8-1.6-.2-.7-1-1-1.6-.8l-8.9,3.2c-2.4,.8-4.2,2.8-4.6,5.3l-3.6,22.3c-.2,2.7,.5,5.5,2.3,7.6H2.5V2.5H108.1V76.3Zm-48.5-8.7c.3-.4,.7-.8,1-1.2,2.1-2.5,3.7-4.2,5.3-3.6,1.7,.7,3.1,1.4,4.7,2.1,.5,.3,1.1,.5,1.7,.8l-1.3,1.2c-1.3,1.2-2.5,2.3-4,3.5-1.3,1.1-3.3-.1-6.1-1.9-.5-.3-.9-.6-1.3-.9Zm-8.5,0c-.4,.3-.9,.6-1.3,.9-2.8,1.8-4.8,3-6.1,1.9-1.4-1.2-2.6-2.3-3.9-3.5l-1.3-1.2c.6-.3,1.2-.5,1.7-.8,1.5-.7,3-1.4,4.7-2.1,1.5-.7,3.2,1.1,5.3,3.6,.4,.4,.7,.8,1,1.2Z"
+                                                                    style="fill:#010103;" />
+                                                                <path
+                                                                    d="M36.4,26.7c2.3,1.1,6.1,1.3,8,1.4,0,0,0,0,0,0,.3,1.7,.7,3.6,1.4,4.9,1.4,2.6,4.4,4.8,7.7,5.6,.6,0,1.2,.1,1.8,.1s1.2,0,1.9-.2c3.2-.8,6.2-3,7.6-5.6,.7-1.3,1.1-3.2,1.4-4.9h0c1.9,0,5.7-.3,8-1.4,1.8-.8,2.8-2.2,2.6-3.7-.1-1.4-1.2-2.6-2.8-3.1-2-.6-5.8-.9-7.8-1.1-.1-.4-.2-1.4-.3-2-.2-1.4-.4-3.2-1-4.8-1-2.3-3.1-4.7-7.5-3.2-1.5,.5-2.7,.5-4.2,0-4.5-1.5-6.6,.9-7.6,3.3-.6,1.6-.8,3.3-1,4.7,0,.7-.2,1.6-.3,2-2,.1-5.8,.5-7.8,1.1-1.6,.5-2.7,1.6-2.8,3.1-.1,1.5,.9,2.9,2.6,3.7Zm10.9-9.6c.2-1.3,.4-2.8,.8-4.1,.9-2.1,2.1-2.6,4.4-1.8,2,.6,3.7,.6,5.7,0,2.3-.8,3.5-.3,4.4,1.8,.5,1.3,.7,2.8,.9,4.1,0,.5,.1,1,.2,1.5-2.8-.2-5.5-.3-8.3-.3s-5.5,0-8.3,.3c0-.5,.1-1,.2-1.5Zm-10,5.3c1.3-.4,4.3-.8,7.8-1,0,0,.2,0,.2,0h0c6.7-.6,13.4-.6,20.1,0h0c0,0,.2,0,.2,0,3.5,.2,6.4,.6,7.8,1,.5,.2,.9,.5,.9,.8,0,.3-.3,.8-1.2,1.2-1.7,.8-4.9,1-6.6,1.1,0-.4,0-.7,0-1,0-.7-.5-1.3-1.2-1.4-.7,0-1.3,.5-1.4,1.2-.2,2.6-.6,5.9-1.5,7.4-1,1.9-3.5,3.7-5.8,4.2-1,.1-1.8,.2-2.7,0-2.5-.6-4.9-2.3-5.9-4.3-.8-1.6-1.3-4.9-1.5-7.4,0-.7-.6-1.2-1.3-1.2s0,0,0,0c-.7,0-1.2,.7-1.2,1.4,0,.3,0,.6,0,1-1.7,0-5-.3-6.7-1.1-.9-.4-1.2-.9-1.1-1.2,0-.3,.4-.6,.9-.8Z"
+                                                                    style="fill:#010103;" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </i>
+                                            <h4 style="color:#10605b;margin-top: 5px;"><span
+                                                    data-purecounter-duration="1" data-purecounter-end="125"
+                                                    class="purecounter"></span>+</h4>
+                                            <span style="color: #10605b;">Fermiers
+                                                accompagnés</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="cr-funfact-item">
+                                        <div class="cr-funfact-inner">
+                                            <i style="margin: 0 !important;">
+                                                <svg data-width="120" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 110.6 78.8">
+                                                    <g id="a" />
+                                                    <g id="b">
+                                                        <g id="c">
+                                                            <g>
+                                                                <g>
+                                                                    <path
+                                                                        d="M75,12.9h-24.3c-3.7,0-6.9,2.5-7.8,6-.2,.7,.2,1.4,1,1.6,.7,.2,1.4-.2,1.6-1,.6-2.4,2.7-4,5.2-4h24.3c3,0,5.4,2.4,5.4,5.4v4.2c0,3-2.4,5.4-5.4,5.4h-7c-.7,0-1.3,.6-1.3,1.3s.6,1.3,1.3,1.3h7c4.4,0,8-3.6,8-8v-4.2c0-4.4-3.6-8-8-8Z"
+                                                                        style="fill:#010103;" />
+                                                                    <path
+                                                                        d="M67.1,39.2c-4,0-7.2,3.2-7.2,7.2v2.4c0,.7,.6,1.3,1.3,1.3s1.3-.6,1.3-1.3v-2.4c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5v2.4c0,.7,.6,1.3,1.3,1.3s1.3-.6,1.3-1.3v-2.4c0-4-3.2-7.2-7.2-7.2Z"
+                                                                        style="fill:#010103;" />
+                                                                    <path
+                                                                        d="M41.9,39.2c-4,0-7.2,3.2-7.2,7.2v2.4c0,.7,.6,1.3,1.3,1.3s1.3-.6,1.3-1.3v-2.4c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5v2.4c0,.7,.6,1.3,1.3,1.3s1.3-.6,1.3-1.3v-2.4c0-4-3.2-7.2-7.2-7.2Z"
+                                                                        style="fill:#010103;" />
+                                                                    <path
+                                                                        d="M32.7,27.7c4.4,0,8-3.6,8-8s-3.6-8-8-8-8,3.6-8,8,3.6,8,8,8Zm0-13.4c3,0,5.4,2.4,5.4,5.4s-2.4,5.4-5.4,5.4-5.4-2.4-5.4-5.4,2.4-5.4,5.4-5.4Z"
+                                                                        style="fill:#010103;" />
+                                                                    <path
+                                                                        d="M58.4,25.2c-.3-.1-.7-.2-1,0l-18.2,6.6h-13.2c-3.5,0-6.6,2.3-7.7,5.6,0,0,0,.1,0,.2l-1.8,12c-.1,.4-.2,.9-.2,1.3s.1,1.2,.3,1.6l1.4,3.9c.2,.5,.7,.9,1.2,.9s.3,0,.5,0c.3-.1,.6-.4,.7-.7,.1-.3,.2-.7,0-1l-1.5-3.9c0-.2-.1-.4-.1-.7s0-.4,0-.6c0,0,0-.1,0-.2l1.8-12c.7-2.2,2.8-3.7,5.1-3.7h13.4c.2,0,.3,0,.5,0l18.5-6.7c.3-.1,.6-.4,.7-.7,.1-.3,.2-.7,0-1s-.4-.6-.7-.7Z"
+                                                                        style="fill:#010103;" />
+                                                                </g>
+                                                                <path
+                                                                    d="M110.6,78.8V0H0V78.8m37.7-14.2c2,0,3.7,1.7,3.7,3.7v8H20c-.4,0-.7,0-1.1,0v-7.9c0-2,1.7-3.7,3.7-3.7h15.1Zm-12.1-2.6v-3.8c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5v3.8h-9.1Zm37.3,2.6c2,0,3.7,1.7,3.7,3.7v8h-22.5v-8c0-2,1.7-3.7,3.7-3.7h15.1Zm-12.1-2.6v-3.8c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5v3.8h-9.1Zm37.3,2.6c2,0,3.7,1.7,3.7,3.7v7.9c-.4,0-.7,0-1.1,0h-21.4v-8c0-2,1.7-3.7,3.7-3.7h15.1Zm-12.1-2.6v-3.8c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5v3.8h-9.1Zm32.2,14.4h-13.8v-8c0-3.5-2.9-6.4-6.4-6.4h-.4v-3.8c0-4-3.2-7.2-7.2-7.2s-7.2,3.2-7.2,7.2v3.8h-.4c-2,0-3.8,.9-5,2.5-1.2-1.6-3.1-2.5-5-2.5h-.4v-3.8c0-4-3.2-7.2-7.2-7.2s-7.2,3.2-7.2,7.2v3.8h-.4c-2,0-3.8,.9-5,2.5-1.2-1.6-3.1-2.5-5-2.5h-.4v-3.8c0-4-3.2-7.2-7.2-7.2s-7.2,3.2-7.2,7.2v3.8h-.4c-3.5,0-6.4,2.9-6.4,6.4v8H2.5V2.5H108.1V76.3Z"
+                                                                    style="fill:#010103;" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </i>
+                                            <h4 style="color:#10605b;margin-top: 5px;"><span
+                                                    data-purecounter-duration="1" data-purecounter-end="80"
+                                                    class="purecounter">80</span>+</h4>
+                                            <span style="color: #10605b;">Séances de
+                                                formation offertes</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- funfact area end -->
+
+                <!-- portfolio area start -->
+                <div class="bnc-portfolio-area bnc-portfolio-ptb pt-30 pb-150">
+                    <div class="container container-1510">
+                        <div class="row align-items-end">
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="bnc-portfolio-title-box pb-70">
+                                    <span class="tp-section-subtitle fs-16 st-dot tp-split-title"
+                                        style="font-family: mazzard-regular !important;">Lorem ipsum dolor</span>
+                                    <h3 class="tp-section-title fs-60 tp-split-title"
+                                        style="font-family: mazzard-bold !important;">Nos services <br>
+                                        de proximité dans la région</h3>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-4">
+                                <div class="bnc-portfolio-slider-arrow pb-90 tp_fade_anim" data-delay=".5"
+                                    data-fade-from="top" data-ease="bounce">
+                                    <button class="tp-portfolio-prev">
+                                        <span>
+                                            <svg width="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                                                <g id="a" />
+                                                <g id="b">
+                                                    <g id="c">
+                                                        <g>
+                                                            <g>
+                                                                <path
+                                                                    d="M60,30C60,13.4,46.6,0,30,0,13.4,0,0,13.4,0,30c0,16.6,13.4,30,30,30,16.6,0,30-13.4,30-30Z"
+                                                                    style="fill:#c0e4da;" />
+                                                                <polygon
+                                                                    points="15.8 29.8 15.8 29.8 15.8 29.8 15.8 29.8"
+                                                                    style="fill:#d7492b;" />
+                                                            </g>
+                                                            <path
+                                                                d="M28.3,43.3l-11.9-11.9h-.2l-.3-.7c0-.2-.1-.3-.1-.4v-.4c0-.1,0-.3,0-.4l.3-.7,.2-.3,11.9-11.9c.4-.4,.9-.6,1.4-.6s1,.2,1.4,.6c.7,.7,.7,2,0,2.8l-8.6,8.6h19.7c1.1,0,2,.9,2,2s-.9,2-2,2H22.5l8.6,8.6c.7,.7,.7,2,0,2.8-.4,.4-.9,.6-1.4,.6s-1-.2-1.4-.6Z"
+                                                                style="fill:#fff;" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="tp-portfolio-next">
+                                        <span>
+                                            <svg width="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                                                <g id="a" />
+                                                <g id="b">
+                                                    <g id="c">
+                                                        <g>
+                                                            <g>
+                                                                <path
+                                                                    d="M0,30c0,16.6,13.4,30,30,30,16.6,0,30-13.4,30-30S46.6,0,30,0C13.4,0,0,13.4,0,30Z"
+                                                                    style="fill:#c0e4da;" />
+                                                                <polygon
+                                                                    points="44.2 30.2 44.2 30.2 44.2 30.2 44.2 30.2"
+                                                                    style="fill:#d7492b;" />
+                                                            </g>
+                                                            <path
+                                                                d="M31.7,16.7l11.9,11.9h.2l.3,.7c0,.2,.1,.3,.1,.4v.4c0,.1,0,.3,0,.4l-.3,.7-.2,.3-11.9,11.9c-.4,.4-.9,.6-1.4,.6s-1-.2-1.4-.6c-.7-.7-.7-2,0-2.8l8.6-8.6H17.8c-1.1,0-2-.9-2-2s.9-2,2-2h19.7l-8.6-8.6c-.7-.7-.7-2,0-2.8,.4-.4,.9-.6,1.4-.6s1,.2,1.4,.6Z"
+                                                                style="fill:#fff;" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bnc-portfolio-slider-wrapper tp_fade_anim" data-delay=".5">
+                        <div class="tp-portfolio-active swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="../assets/img/business-consulting/portfolio/thumb.jpg" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>Services de Mécanisation</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title">
+                                                    <a class="tp-line-white" href="project-three-colum.html">12
+                                                        Équipements distribués.</a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="../assets/img/business-consulting/portfolio/thumb.jpg" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>Services de Mécanisation</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title">
+                                                    <a class="tp-line-white" href="project-details.html">12 Équipements
+                                                        distribués.</a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="../assets/img/business-consulting/portfolio/thumb.jpg" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>Services de Mécanisation</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title"><a class="tp-line-white"
+                                                        href="project-details.html">12 Équipements distribués.</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="../assets/img/business-consulting/portfolio/thumb.jpg" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>Services de Mécanisation</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title"><a class="tp-line-white"
+                                                        href="project-details.html">12 Équipements distribués.</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="../assets/img/business-consulting/portfolio/thumb.jpg" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>Services de Mécanisation</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title"><a class="tp-line-white"
+                                                        href="project-details.html">12 Équipements distribués.</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio area end -->
+
+                <!-- project area start -->
+                <div class="dgm-portfolio-ptb pt-10 pb-120" data-bg-color="#10605b">
+                    <div class="dgm-portfolio-text-wrap">
+                        <div class="swiper-container dgm-portfolio-text-active">
+                            <div class="swiper-wrapper slide-transtion">
+                                <div class="swiper-slide">
+                                    <div class="dgm-portfolio-slider-item">
+                                        <p>- NOTRE IMPACT </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-portfolio-slider-item">
+                                        <p>SUR LES CULTURES </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-portfolio-slider-item">
+                                        <p>DE LA RÉGION -</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container container-1510">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <div class="dgm-portfolio-tab mb-80">
+                                    <ul role="tablist">
+                                        <li class="nav-tab-item" role="presentation">
+                                            <a href="#all" class="active" data-bs-toggle="tab">Tous</a>
+                                        </li>
+                                        <li class="nav-tab-item" role="presentation">
+                                            <a href="#soja" data-bs-toggle="tab">Soja</a>
+                                        </li>
+                                        <li class="nav-tab-item" role="presentation">
+                                            <a href="#cereales" data-bs-toggle="tab">Céréales</a>
+                                        </li>
+                                        <li class="nav-tab-item" role="presentation">
+                                            <a href="#legumes" data-bs-toggle="tab">Légumes</a>
+                                        </li>
+                                        <li class="nav-tab-item" role="presentation">
+                                            <a href="#legumineuses" data-bs-toggle="tab">Légumineuses</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="dgm-portfolio-slider-wrap">
+                            <div class="tab-content p-relative">
+                                <div class="tab-pane active show" id="all" role="tabpanel">
+                                    <div class="swiper dgm-portfolio-active">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-1.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Soja</a></h4>
+                                                        <span>+15% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-2.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Céréales</a></h4>
+                                                        <span>+12% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Légumes</a></h4>
+                                                        <span>+9% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-4.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Légumineuses</a></h4>
+                                                        <span>+4% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="soja" role="tabpanel">
+                                    <div class="swiper dgm-portfolio-active">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-1.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Soja</a></h4>
+                                                        <span>+15% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-2.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Céréales</a>
+                                                        </h4>
+                                                        <span>+12% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Légumes</a>
+                                                        </h4>
+                                                        <span>+9% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-4.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Légumineuses</a></h4>
+                                                        <span>+4% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="cereales" role="tabpanel">
+                                    <div class="swiper dgm-portfolio-active">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-1.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Soja</a></h4>
+                                                        <span>+15% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-2.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Céréales</a>
+                                                        </h4>
+                                                        <span>+12% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Légumes</a>
+                                                        </h4>
+                                                        <span>+9% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-4.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Légumineuses</a></h4>
+                                                        <span>+4% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="legumes" role="tabpanel">
+                                    <div class="swiper dgm-portfolio-active">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-1.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Soja</a></h4>
+                                                        <span>+15% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-2.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Céréales</a>
+                                                        </h4>
+                                                        <span>+12% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Légumes</a>
+                                                        </h4>
+                                                        <span>+9% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-4.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Légumineuses</a></h4>
+                                                        <span>+4% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="legumineuses" role="tabpanel">
+                                    <div class="swiper dgm-portfolio-active">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-1.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Soja</a></h4>
+                                                        <span>+15% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-2.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Céréales</a>
+                                                        </h4>
+                                                        <span>+12% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Légumes</a>
+                                                        </h4>
+                                                        <span>+9% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="dgm-portfolio-item p-relative">
+                                                    <div class="dgm-portfolio-thumb">
+                                                        <img src="../assets/img/digital-marketing/project/project-4.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="dgm-portfolio-content">
+                                                        <h4 class="dgm-portfolio-title"><a class="tp-line-black"
+                                                                href="project-details.html">Légumineuses</a></h4>
+                                                        <span>+4% DE RENDEMENT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- project area end -->
+                <!-- testimonail area start -->
+                <div class="ca-testimonial-ptb pt-70 pb-80">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="ca-testimonial-text-box text-center mb-60">
+
+                                    <h3 class="tp-section-title tl-unbounded title-black tp-split-title">NOS
+                                        AGRICULTEURS TÉMOIGNENT</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-testimonial-slider-wrapper">
+                        <div class="ca-testimonial-slider mb-35">
+                            <div class="swiper ca-testimoni-slide">
+                                <div class="swiper-wrapper slide-transtion">
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item testimonial-item2">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-1.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item testimonial-item2">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-2.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item testimonial-item2">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-3.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item testimonial-item2">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-4.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item testimonial-item2">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-5.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item testimonial-item2">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-6.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="ca-testimonial-text-box text-center mb-60">
+
+                                        <h3 class="tp-section-title tl-unbounded title-dark tp-split-title">PAROLES
+                                            D’AGRONOMES</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ca-testimonial-slider">
+                            <div dir="rtl" class="swiper ca-testimoni-slide">
+                                <div class="swiper-wrapper slide-transtion">
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item" dir="ltr">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-1.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>BEN MANSOUR BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item" dir="ltr">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-2.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item" dir="ltr">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-3.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item" dir="ltr">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-4.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item" dir="ltr">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-5.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ca-testimonial-item" dir="ltr">
+                                            <div class="ca-testimonial-item-icon mb-30">
+                                                <span><img src="../assets/img/creative-agency/testimonial/quate.svg"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="ca-testimonial-item-content">
+                                                <p>“Working with completely transformed
+                                                    our brand. Their team took the time to
+                                                    understand our vision and delivered a
+                                                    stunning Their design."</p>
+                                            </div>
+                                            <div class="ca-testimonial-item-user d-flex">
+                                                <div class="ca-testimonial-item-user-thumb">
+                                                    <img src="../assets/img/creative-agency/testimonial/testimonial-6.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="ca-testimonial-item-user-content">
+                                                    <h4>Mr. Ahmad BEN MANSOUR</h4>
+                                                    <p>Lire la Video</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- testimonail area end -->
+                <!-- blog area start -->
+                <div class="ma-blog-ptb pt-120 pb-120 tp-fixed-title-wrap-2" data-bg-color="#F5F7F5">
+                    <div class="container container-1510">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="ma-blog-title-box tp-fixed-title-2" style="line-height: 20px;">
+                                    <span style="color: #d7492b;font-family:mazzard-regular;">Lorem ipsum dolor
+                                        sit.</span>
+                                    <h3 class="tp-section-title fs-42 tl-unbounded tp-split-title"
+                                        style="font-family: mazzard-bold;color:#002a28">Al Moutmir
+                                        events
+                                    </h3>
+                                    <span class="tp-section-subtitle fs-10 tp-split-title">Toujours au plus près du
+                                        fellah</span>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="ma-blog-item mb-25">
+                                    <div class="row">
+                                        <div class="col-xl-7">
+                                            <div class="ma-blog-content">
+                                                <h4 class="ma-blog-title"
+                                                    style="font-family: mazzard-semibold; font-size: 20px;color: #002a28;">
+                                                    <a class="tp-line-black" href="blog-details.html">Le Salon National
+                                                        Professionnel
+                                                        des Céréales et Légumuneuses</a></h4>
+                                                <div class="ma-blog-meta">
+                                                    <span style="font-family: popping-extrabold;color: #002a28;">+1 500
+                                                        Visiteurs</span>
+                                                    <span style="font-family: popping-medium; color: #d7492b;">Le 02.03
+                                                        2025</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <div class="ma-blog-thumb">
+                                                <a href="blog-details.html">
+                                                    <img class="w-100" src="../assets/img/modern-agency/blog/blog-1.png"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ma-blog-item mb-25">
+                                    <div class="row">
+                                        <div class="col-xl-7">
+                                            <div class="ma-blog-content">
+                                                <h4 class="ma-blog-title"
+                                                    style="font-family: mazzard-semibold; font-size: 20px;color: #002a28;">
+                                                    <a class="tp-line-black" href="blog-details.html">Le Salon National
+                                                        Professionnel
+                                                        des Céréales et Légumuneuses</a></h4>
+                                                <div class="ma-blog-meta">
+                                                    <span style="font-family: popping-extrabold;color: #002a28;">+1 500
+                                                        Visiteurs</span>
+                                                    <span style="font-family: popping-medium; color: #d7492b;">Le 02.03
+                                                        2025</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <div class="ma-blog-thumb">
+                                                <a href="blog-details.html">
+                                                    <img class="w-100" src="../assets/img/modern-agency/blog/blog-2.png"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ma-blog-item mb-25">
+                                    <div class="row">
+                                        <div class="col-xl-7">
+                                            <div class="ma-blog-content">
+                                                <h4 class="ma-blog-title"
+                                                    style="font-family: mazzard-semibold; font-size: 20px;color: #002a28;">
+                                                    <a class="tp-line-black" href="blog-details.html">Le Salon National
+                                                        Professionnel
+                                                        des Céréales et Légumuneuses</a></h4>
+                                                <div class="ma-blog-meta">
+                                                    <span style="font-family: popping-extrabold;color: #002a28;">+1 500
+                                                        Visiteurs</span>
+                                                    <span style="font-family: popping-medium; color: #d7492b;">Le 02.03
+                                                        2025</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <div class="ma-blog-thumb">
+                                                <a href="blog-details.html">
+                                                    <img class="w-100" src="../assets/img/modern-agency/blog/blog-3.png"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ma-blog-item mb-25">
+                                    <div class="row">
+                                        <div class="col-xl-7">
+                                            <div class="ma-blog-content">
+                                                <h4 class="ma-blog-title"
+                                                    style="font-family: mazzard-semibold; font-size: 20px;color: #002a28;">
+                                                    <a class="tp-line-black" href="blog-details.html">Le Salon National
+                                                        Professionnel
+                                                        des Céréales et Légumuneuses</a></h4>
+                                                <div class="ma-blog-meta">
+                                                    <span style="font-family: popping-extrabold;color: #002a28;">+1 500
+                                                        Visiteurs</span>
+                                                    <span style="font-family: popping-medium; color: #d7492b;">Le 02.03
+                                                        2025</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <div class="ma-blog-thumb">
+                                                <a href="blog-details.html">
+                                                    <img class="w-100" src="../assets/img/modern-agency/blog/blog-1.png"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- blog area end -->
+
+
+            </main>
+
+            
+
+       
+
+
+        </div>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="../assets/js/vendor/jquery.js"></script>
+    <script src="../assets/js/bootstrap-bundle.js"></script>
+    <script src="../assets/js/swiper-bundle.js"></script>
+    <script src="../assets/js/plugin.js"></script>
+    <script src="../assets/js/three.js"></script>
+    <script src="../assets/js/hover-effect.umd.js"></script>
+    <script src="../assets/js/magnific-popup.js"></script>
+    <script src="../assets/js/purecounter.js"></script>
+    <script src="../assets/js/imagesloaded-pkgd.js"></script>
+    <script src="../assets/js/ajax-form.js"></script>
+    <script src="../assets/js/slider-active.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <!-- JS here -->
+
+</body>
+
+</html>
