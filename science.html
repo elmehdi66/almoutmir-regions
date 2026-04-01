@@ -1,0 +1,1236 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Al moutmir</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/favicon.png">
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="./assets/css/spacing.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- CSS here -->
+
+    <style>
+        .dgm-blog-item::after {
+            background-color: #002a28 !important;
+        }
+
+        .bnc-portfolio-item-title {
+            font-size: 18px !important;
+            font-family: "mazzard-bold";
+        }
+
+        .bnc-portfolio-item-tag span {
+            font-family: "mazzard-regular";
+            font-size: 10px;
+            border: 1px solid #d7492b;
+        }
+
+        .dgm-portfolio-tab ul li a {
+            border: 1px solid #fff;
+        }
+
+        .dgm-portfolio-tab ul li a:hover,
+        .dgm-portfolio-tab ul li a.active {
+            background-color: #c0e4da;
+            border: 1px solid #c0e4da;
+        }
+
+        /* Active tab: red by default */
+        .dgm-portfolio-slider-wrap .tab-pane.active .dgm-portfolio-content::after {
+            content: '';
+            background-color: #d7492b;
+        }
+
+        /* Active tab on hover: switch to teal */
+        .dgm-portfolio-slider-wrap .tab-pane.active:hover .dgm-portfolio-content::after {
+            background-color: #c0e4da;
+        }
+
+        /* Inactive tab: teal by default */
+        .dgm-portfolio-slider-wrap .tab-pane:not(.active) .dgm-portfolio-content::after {
+            content: '';
+            background-color: #c0e4da;
+        }
+
+        /* Inactive tab on hover: switch to red */
+        .dgm-portfolio-slider-wrap .tab-pane:not(.active):hover .dgm-portfolio-content::after {
+            background-color: #d7492b;
+        }
+
+        .dgm-portfolio-title {
+            font-family: "mazzard-bold";
+            color: #c0e4da85 !important;
+        }
+
+        .dgm-portfolio-content span {
+            font-family: "mazzard-semibold";
+            color: #c0e4da80 !important;
+        }
+
+        .dgm-portfolio-item:hover .dgm-portfolio-title a {
+            color: #002a28 !important;
+        }
+
+        .dgm-portfolio-item:hover .dgm-portfolio-content span {
+            color: #002a28 !important;
+        }
+
+        .tp-section-title {
+            font-family: "mazzard-bold" !important;
+            line-height: 1 !important;
+        }
+
+        .ca-testimonial-item {
+            background-color: #002a28;
+        }
+
+        .testimonial-item2 {
+            background-color: #c0e4da !important;
+            color: #fff !important;
+        }
+
+        .testimonial-item2 .ca-testimonial-item-content p,
+        .testimonial-item2 .ca-testimonial-item-user-content h4,
+        .testimonial-item2 .ca-testimonial-item-user-content p {
+            color: #10605b !important;
+        }
+
+        .back-to-top-btn {
+            background: #d7492b !important;
+            color: #c0e4da !important;
+        }
+
+        #preloader {
+            background: #002a28;
+        }
+
+        #preloader span {
+            background: #d7492b !important;
+        }
+
+        .ds-portfolio-item-title {
+            margin: 0;
+            font-size: 15px !important;
+            font-weight: 500;
+            padding: 12px 29px;
+            text-transform: capitalize;
+            color: #002a28 !important;
+            font-family: "mazzard-regular" !important;
+            background-color: #c0e4da !important;
+            margin: 10px 0 !important;
+            border-radius: 10px !important;
+        }
+
+        .ma-hero-title {
+            font-size: 28px !important;
+            font-weight: 400 !important;
+            font-family: mazzard-bold !important;
+            line-height: 1.5;
+            margin-bottom: 33px;
+            letter-spacing: -0.03em;
+            color: #fef2d7 !important;
+        }
+
+        .ma-hero-content {
+            margin-left: 0px !important;
+
+        }
+
+        .tp-section-subtitle {
+            text-transform: none;
+            font-weight: normal !important;
+            font-family: mazzard-regular !important;
+            left: 43% !important;
+        }
+
+        .tp-section-title {
+
+            font-family: mazzard-bold !important;
+        }
+
+        .tp-section-subtitle.st-dot::before {
+            content: "";
+            height: 3px !important;
+            width: 3px !important;
+
+
+        }
+
+        .bnc-service-item-icon {
+            width: 100px !important;
+        }
+
+        .bnc-service-item-title {
+            font-size: 19px !important;
+            font-weight: bold !important;
+            font-family: mazzard-bold !important;
+            line-height: 1.3;
+        }
+
+        .bnc-service-item-text p {
+            font-family: mazzard-regular !important;
+            font-size: 14px !important;
+            text-transform: none !important;
+        }
+
+        .dgm-blog-avater img {
+            flex: 0 0 auto;
+            height: auto !important;
+            width: 100%;
+            /* margin-right: 10px; */
+            border-radius: 0 !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-number {
+            position: unset !important;
+            font-size: 50px !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-slider-wrap {
+            background-color: #c0e4da !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-right .tp-dot .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #d7492b !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-right .tp-dot .swiper-pagination-bullet {
+            background-color: transparent !important;
+            border: 1px solid #d7492b;
+        }
+
+        .tp-section-title {
+            font-family: "mazzard-bold" !important;
+            line-height: 1 !important;
+            letter-spacing: normal !important;
+        }
+
+        .tp-service-item-title{
+            color: #fff;
+            font-family: "mazzard-bold" !important;
+            font-size: 15px !important;
+            line-height: 1.3;
+            letter-spacing: normal !important;
+        }
+        .tp-service-item{
+            border: 1px solid #fff;
+            border-radius: 10px 80px 10px 80px ;
+        }
+        .tp-service-item {
+          /* padding:  8px 28px 20px 50px !important */
+        }
+        .bnc-portfolio-item-title{
+            text-transform: none !important;
+        }
+        /***************************************************
+ * Generated by SVG Artista on 3/31/2026, 8:10:52 PM
+ * MIT license (https://opensource.org/licenses/MIT)
+ * W. https://svgartista.net
+ **************************************************/
+        /***************************************************
+ * Generated by SVG Artista on 3/31/2026, 8:16:12 PM
+ * MIT license (https://opensource.org/licenses/MIT)
+ * W. https://svgartista.net
+ **************************************************/
+        /* 
+svg .svg-elem-1 {
+  stroke-dashoffset: 8px;
+  stroke-dasharray: 8px;
+  transition: stroke-dashoffset 3s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0s;
+}
+
+svg.active .svg-elem-1 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-2 {
+  stroke-dashoffset: 1543.896484375px;
+  stroke-dasharray: 1543.896484375px;
+  transition: stroke-dashoffset 3s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0.52s;
+}
+
+svg.active .svg-elem-2 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-3 {
+  stroke-dashoffset: 8px;
+  stroke-dasharray: 8px;
+  transition: stroke-dashoffset 3s cubic-bezier(0.95, 0.05, 0.795, 0.035) 1.04s;
+}
+
+svg.active .svg-elem-3 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-4 {
+  stroke-dashoffset: 8px;
+  stroke-dasharray: 8px;
+  transition: stroke-dashoffset 3s cubic-bezier(0.95, 0.05, 0.795, 0.035) 1.56s;
+}
+
+svg.active .svg-elem-4 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-5 {
+  stroke-dashoffset: 1686.6177978515625px;
+  stroke-dasharray: 1686.6177978515625px;
+  transition: stroke-dashoffset 3s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2.08s;
+}
+
+svg.active .svg-elem-5 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-6 {
+  stroke-dashoffset: 8px;
+  stroke-dasharray: 8px;
+  transition: stroke-dashoffset 3s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2.6s;
+}
+
+svg.active .svg-elem-6 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-7 {
+  stroke-dashoffset: 45.739356994628906px;
+  stroke-dasharray: 45.739356994628906px;
+  transition: stroke-dashoffset 3s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3.12s;
+}
+
+svg.active .svg-elem-7 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-8 {
+  stroke-dashoffset: 36.0999755859375px;
+  stroke-dasharray: 36.0999755859375px;
+  transition: stroke-dashoffset 3s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3.64s;
+}
+
+svg.active .svg-elem-8 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-9 {
+  stroke-dashoffset: 45.739540100097656px;
+  stroke-dasharray: 45.739540100097656px;
+  transition: stroke-dashoffset 3s cubic-bezier(0.95, 0.05, 0.795, 0.035) 4.16s;
+}
+
+svg.active .svg-elem-9 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-10 {
+  stroke-dashoffset: 36.199951171875px;
+  stroke-dasharray: 36.199951171875px;
+  transition: stroke-dashoffset 3s cubic-bezier(0.95, 0.05, 0.795, 0.035) 4.68s;
+}
+
+svg.active .svg-elem-10 {
+  stroke-dashoffset: 0;
+} */
+    </style>
+
+</head>
+
+<body class="tp-magic-cursor">
+    <a href="./index.html"
+        style="background-color: #C0E4DA; position: absolute; top: 10px; left: 50%; transform: translateX(-50%);  padding: 10px 24px; border-radius: 30px; font-weight: 600; z-index: 1000; text-decoration: none;"
+        id="back"><span>
+            <svg width="28" height="10" viewBox="0 0 28 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 8.99951L2.70855 9.00449L14.4118 1.00781" stroke="currentcolor" stroke-width="1.5" />
+            </svg>
+        </span></a>
+    <!-- Begin magic cursor -->
+    <div id="magic-cursor" class="cursor-white-bg">
+        <div id="ball"></div>
+    </div>
+    <!-- End magic cursor -->
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- preloader end  -->
+
+    <div class="tp-blur-bottom"></div>
+
+    <!-- back to top start -->
+    <div class="back-to-top-wrapper">
+        <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+    <!-- back to top end -->
+
+
+    <!-- header area start -->
+    <div id="header-sticky" class="tp-header-area tp-header-ptb tp-header-blur sticky-white-bg header-transparent">
+        <div class="container container-1510">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-6 col-6">
+                    <div class="tp-header-logo py-3 px-0">
+                        <a href="index.html">
+                            <img data-width="60" src="./assets/img/logo/logo-bg-square.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-7 d-none d-xl-block">
+                    <div class="tp-header-box text-center">
+                        <div class="tp-header-menu tp-header-dropdown dropdown-white-bg">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-6">
+                    <div class="tp-header-right d-flex align-items-center justify-content-end">
+                        <div class="tp-header-14-bar-wrap">
+                            <button class="tp-header-8-bar tp-offcanvas-open-btn"
+                                style="background-color: #002A28; border: 1px solid #002a281b;">
+                                <span>Menu</span>
+                                <span>
+                                    <svg width="24" height="8" viewBox="0 0 24 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H14V1.5H0V0Z" fill="currentcolor" />
+                                        <path d="M0 6H24V7.5H0V6Z" fill="currentcolor" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header area end -->
+
+
+    <!-- tp-offcanvus-area-start -->
+
+    <!-- tp-offcanvus-area-end -->
+
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <main>
+
+                <!-- hero area start -->
+                <div class="ma-hero-area ma-hero-ptb ma-hero-overlay z-index-1"
+                    data-background="./assets/img/page01/hero_bg.jpg">
+                    <div class="ma-hero-shape" data-speed="1.1">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="70" viewBox="0 0 98 70"
+                                fill="none">
+                                <path
+                                    d="M3.82839 43.5099C6.42926 40.3317 22.6507 18.2746 30.4134 24.9691C37.8139 31.3513 24.5452 53.9838 37.9136 57.3688C49.3686 60.2694 63.7917 45.1686 70.8555 38.113C75.574 33.4 78.6929 27.6256 82.7187 22.4694C83.012 22.0937 85.4072 18.8838 84.2975 19.3471"
+                                    stroke="#F5F7F5" stroke-width="3" stroke-linecap="round" />
+                                <path
+                                    d="M74.5884 18.6844C77.6307 17.1331 88.2369 8.41917 88.3725 15.5498C88.4449 19.3586 88.246 22.0251 89.7262 25.5706"
+                                    stroke="#F5F7F5" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="container container-1530">
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <h2 style="color: #fff;font-size: 14px;font-family: mazzard-regular;">Al Moutmir :
+                                    De la recherche appliquée
+                                    à l’impact terrain</h2>
+                                <div class="ma-hero-title-box tp_fade_anim" data-delay=".3">
+                                    <h2 class="ma-hero-title" style="display: flex;padding-top: 10px;">
+                                        Al Moutmir transforme l’excellence scientifique <br> en solutions concrètes, au
+                                        service d’une <br> agriculture performante,
+                                        durable et résiliente.
+
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-12">
+                                <div class="ma-hero-content">
+                                    <div class="tp_fade_anim" data-delay=".4">
+                                        <p
+                                            style="color: #fef2d7;font-size: 15px; font-family: popping-medium;text-transform: none !important;">
+
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- hero area end -->
+
+                <!-- about area start -->
+                <div class="bnc-about-ptb p-relative pt-100 pb-120" data-bg-color="#ECF8F8">
+                    <div class="bnc-about-shape">
+                        <img src="../assets/img/business-consulting/about/about-2-shape.png" alt="">
+                    </div>
+                    <div class="container container-1510">
+                        <div class="bnc-about-top-wrap pb-90">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="bnc-about-title-box">
+                                        <span class="tp-section-subtitle fs-16 ">• Qui sommes-nous</span>
+                                        <h3 class="tp-section-title fs-60 my-4"
+                                            style="font-family: mazzard-bold !important;">Un modèle unique au croisement
+                                            de la science et du terrain</h3>
+                                        <h3 class="tp-section-title tp-text-revel"
+                                            style="font-family: mazzard-bold !important; font-size: 25px !important;">Né
+                                            au sein du Groupe OCP et incubé par l’Université<br> Mohammed VI
+                                            Polytechnique (UM6P), Al Moutmir est un<br> modèle de
+                                            développement agricole inclusif, où la science,<br> l’innovation et
+                                            l’agriculteur convergent pour transformer durablement
+                                            les systèmes alimentaires.
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bnc-about-right text-lg-end" data-speed="1.1"
+                                        style="transform: translate(0px, 154.15551px) !important;">
+                                        <img src="assets\img\page02\about1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bnc-about-bottom-wrap pb-90">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="bnc-about-thumb-wrap tp-clip-anim mb-30">
+                                        <img class="tp-anim-img" data-animate="true" src="assets\img\page02\about2.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bnc-about-content">
+                                        <div class="bnc-about-content-text">
+                                            <p class="tp-text-perspective"
+                                                style="font-family: mazzard-regular !important; font-size: 18px !important;text-transform: unset !important;">
+                                                Véritable interface entre la recherche, <br>l’innovation et le
+                                                terrain,<br>
+                                                Al Moutmir crée une boucle d’apprentissage continue, <br>permettant
+                                                d’adapter les solutions aux réalités locales<br> et d’en
+                                                maximiser l’impact.
+                                            </p>
+                                            <div class="bnc-about-content-btn-box d-flex my-5">
+
+                                            </div>
+                                            <p class="tp-text-perspective"
+                                                style="font-family: mazzard-bold !important; font-size: 18px !important;text-transform: unset !important;">
+                                                Notre ambition : construire un écosystème agricole durable,<br>
+                                                data-driven et centré sur l’agriculteur.</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- about area end -->
+
+                <!-- about area start -->
+                <div class="dgm-about-ptb fix pt-120 pb-60">
+                    <div class="dgm-about-wrapper p-relative">
+                        <div class="container container-1510">
+                            <div class="row mb-35">
+                                <div class="col-xl-6">
+                                    <div class="dgm-about-subtitle-box tp_fade_anim d-flex justify-content-between align-items-center"
+                                        data-delay=".3">
+                                        <span class="tp-section-subtitle fs-15 st-unbounded st-border">Ce qui nous
+                                            anime</span>
+                                        <h4 class="tp-section-title tl-unbounded fs-42 ">
+                                            Notre Vision
+                                        </h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2">
+                                    <div class="dgm-about-subtitle-box tp_fade_anim d-flex" data-delay=".3">
+
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-10">
+                                    <div class="dgm-about-bottom" style="margin-left:0 !important ;">
+                                        <div class="row">
+                                            <div class="col-xl-7 col-lg-6">
+                                                <div class="dgm-about-title-box mb-80 tp_fade_anim" data-delay=".4">
+                                                    <h4 class="tp-section-title tl-unbounded  tp-text-revel"
+                                                        style="font-family: mazzard-bold !important; font-size: 32px !important;line-height: 45px !important;">
+                                                        Contribuer à la sécurité <br> alimentaire mondiale tout en
+                                                        <br>luttant contre le changement<br> climatique, en accompagnant
+                                                        les<br>
+                                                        agriculteurs et en promouvant une <br>agriculture
+                                                        durable,performante<br> et à hauts rendements, à l’échelle<br>
+                                                        internationale.
+                                                    </h4>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-xl-5 col-lg-6">
+
+                                                <div style="border: none !important;background: none !important;"
+                                                    data-speed="1.1">
+                                                    <img src="assets\img\page02\anime1.png" alt="">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- about area end -->
+                <!-- about area start -->
+                <div class="dgm-about-ptb fix  pb-120">
+                    <div class="dgm-about-wrapper p-relative">
+                        <div class="container container-1510">
+                            <div class="row mb-35">
+                                <div class="col-xl-6">
+                                    <div class="dgm-about-subtitle-box tp_fade_anim d-flex justify-content-between align-items-center"
+                                        data-delay=".3">
+                                        <span class="tp-section-subtitle fs-15 st-unbounded st-border">Ce qui nous
+                                            anime</span>
+                                        <h4 class="tp-section-title tl-unbounded fs-42 ">
+                                            Notre mission
+                                        </h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2">
+                                    <div class="dgm-about-subtitle-box tp_fade_anim d-flex" data-delay=".3">
+
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-10">
+                                    <div class="dgm-about-bottom" style="margin-left:0 !important ;">
+                                        <div class="row">
+                                            <!-- Picture column (left) -->
+                                            <div class="col-xl-5 col-lg-6">
+                                                <div style="border: none !important;background: none !important;"
+                                                    data-speed="1.1">
+                                                    <img src="assets\img\page02\anime2.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <!-- Text column (right) with offset to create gap -->
+                                            <div class="col-xl-6 offset-xl-1 col-lg-6">
+                                                <div class="dgm-about-title-box tp_fade_anim" data-delay=".4">
+                                                    <h4 class="tp-section-title tl-unbounded  tp-text-revel"
+                                                        style="font-family: mazzard-bold !important; font-size: 32px !important;line-height: 45px !important;">
+                                                        Autonomiser les agriculteurs en <br> déployant une approche
+                                                        centrée <br>sur leurs besoins, fondée
+                                                        sur des<br> solutions personnalisées et des<br>
+                                                        services de conseil innovants, afin <br>d’accélérer l’adoption à
+                                                        grande<br> échelle de pratiques
+                                                        agricoles<br> durables, résilientes et<br>régénératives.
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- about area end -->
+
+                <div class="bnc-about-ptb p-relative pt-100 pb-120" data-bg-color="#ECF8F8">
+                    <div class="container container-1510">
+                        <div class="bnc-about-top-wrap pb-90">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="bnc-about-title-box text-center col-lg-8 mx-auto">
+                                        <span class="tp-section-subtitle fs-16 ">• Notre approche</span>
+                                        <h3 class="tp-section-title fs-60 my-4"
+                                            style="font-family: mazzard-bold !important;">Un modèle d’accompagnement
+                                            data-driven,
+                                            centré sur l’agriculteur</h3>
+                                        <h3 class="tp-section-title my-4"
+                                            style="font-family: mazzard-semibold !important;color: #002a28 !important;font-size: 21px !important;">
+                                            Notre approche repose sur une boucle continue, intégrant science, terrain et
+                                            data
+                                            pour générer un impact mesurable et durable.</h3>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mt-90" style="position: relative;">
+                                    <div>
+                                        <img src="assets/img/page02/approche-img.png" width="100%" height="100%" alt="">
+                                        <!--?xml version="1.0" encoding="UTF-8"?-->
+                                        <!-- <svg style="z-index: 1; position: absolute; inset: 100px 0 0 0;" class="approach-svg"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1532.4 297.9" width="1532.4000244140625"
+                                            height="297.8999938964844">
+                                            <defs>
+                                                <style>
+                                                    .uuid-6cbf748d-44cb-46ba-8f7c-1d70419d4f86,
+                                                    .uuid-234c1f82-7dc7-453c-93c6-a832f8822466,
+                                                    .uuid-032c9408-16ee-43f0-a9b9-4ab55937fec4 {
+                                                        fill: none;
+                                                        stroke: #00584f;
+                                                        stroke-miterlimit: 10;
+                                                        stroke-width: 3px;
+                                                    }
+                                
+                                                    .uuid-234c1f82-7dc7-453c-93c6-a832f8822466 {
+                                                        stroke-dasharray: 0 0 12 4;
+                                                    }
+                                
+                                                    .uuid-032c9408-16ee-43f0-a9b9-4ab55937fec4 {
+                                                        stroke-dasharray: 0 0 12.1 4;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g id="uuid-05a3e66a-a428-4251-a03f-6a4305246e1c" data-name="Calque 1"></g>
+                                            <g id="uuid-a5e39fa5-923a-4648-aa07-c5855ccb4d3c" data-name="Calque 2">
+                                                <g id="uuid-41475107-1e9e-44b8-811f-b785629557e9" data-name="Layer 1">
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <line class="uuid-6cbf748d-44cb-46ba-8f7c-1d70419d4f86 svg-elem-1" x1="307.8" y1="15.1"
+                                                                    x2="313.8" y2="15.1"></line>
+                                                                <path class="uuid-032c9408-16ee-43f0-a9b9-4ab55937fec4 svg-elem-2"
+                                                                    d="M317.8,15.1H1397c74,0,133.9,60,133.9,133.9s-60,133.9-133.9,133.9h-42"></path>
+                                                                <line class="uuid-6cbf748d-44cb-46ba-8f7c-1d70419d4f86 svg-elem-3" x1="1353" y1="282.9"
+                                                                    x2="1347" y2="282.9"></line>
+                                                            </g>
+                                                            <g>
+                                                                <line class="uuid-6cbf748d-44cb-46ba-8f7c-1d70419d4f86 svg-elem-4" x1="1297" y1="282.9"
+                                                                    x2="1291" y2="282.9"></line>
+                                                                <path class="uuid-234c1f82-7dc7-453c-93c6-a832f8822466 svg-elem-5"
+                                                                    d="M1287,282.9H135.4C61.5,282.9,1.5,223,1.5,149S61.5,15.1,135.4,15.1h112.3"></path>
+                                                                <line class="uuid-6cbf748d-44cb-46ba-8f7c-1d70419d4f86 svg-elem-6" x1="249.7" y1="15.1"
+                                                                    x2="255.7" y2="15.1"></line>
+                                                            </g>
+                                                        </g>
+                                                        <g>
+                                                            <path class="uuid-6cbf748d-44cb-46ba-8f7c-1d70419d4f86 svg-elem-7"
+                                                                d="M279.6,29.7l15.3-12.4c1.2-1,1.2-2.9,0-3.8l-15.3-12.4"></path>
+                                                            <line class="uuid-6cbf748d-44cb-46ba-8f7c-1d70419d4f86 svg-elem-8" x1="261.7" y1="15.5"
+                                                                x2="295.8" y2="15.5"></line>
+                                                        </g>
+                                                        <g>
+                                                            <path class="uuid-6cbf748d-44cb-46ba-8f7c-1d70419d4f86 svg-elem-9"
+                                                                d="M1322,268.1l-15.3,12.4c-1.2,1-1.2,2.9,0,3.8l15.3,12.4"></path>
+                                                            <line class="uuid-6cbf748d-44cb-46ba-8f7c-1d70419d4f86 svg-elem-10" x1="1340" y1="282.4"
+                                                                x2="1305.8" y2="282.4"></line>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- service area start -->
+                <div class="tp-service-area tp-fixed-title-wrap pt-40 pb-130" data-bg-color="#00584e">
+                    <div class="container container-1510">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="tp-service-heading mb-30 tp-fixed-title">
+                                    <span class="tp-section-subtitle tp-split-title text-white"
+                                        style="color: #C0E4DA; font-family: mazzard-regular;">• Notre expertise</span>
+                                    <h3 class="tp-section-title  tp-split-title "
+                                        style="color: #fff; font-family: mazzard-bold;font-size: 40px !important;">Une
+                                        expertise intégrée <br> au service de l'griculture<br> de précision</h3>
+                                    <div class="tp-service-btn tp_fade_anim" data-delay=".5" data-fade-from="top"
+                                        data-ease="bounce">
+                                        <img data-width="120" src="./assets/img/logo/logo-bg-square.png"
+                                            style="filter: grayscale(100%); opacity: .5;margin-top: 30px;" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="tp-service-item-box">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="60" src="assets/img/page02/expertise01.svg"
+                                                        alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">Expérimentation
+                                                en ferme & laboratoires
+                                                d'innovation</a></h4>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="60" src="assets/img/page02/expertise02.svg" alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">Télédétection et
+                                                SIG pour le suivi des
+                                                cultures</a></h4>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="60" src="assets/img/page02/expertise03.svg" alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">Création de la
+                                                demande et facilitation
+                                                de l'adoption des
+                                                innovations agricoles</a></h4>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="60" src="assets/img/page02/expertise04.svg" alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">Intégration des
+                                                technologies AgTech
+                                                avec les écosystèmes
+                                                locaux</a></h4>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="60" src="assets/img/page02/expertise05.svg" alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">Plateformes digitales
+                                                de conseil aux agriculteurs
+                                                (e.g. Al Moutmir App,
+                                                Agripedia)</a></h4>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="60" src="assets/img/page02/expertise06.svg" alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">Agronomie pilotée
+                                                par la donnée et
+                                                agriculture de précision</a></h4>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="60" src="assets/img/page02/expertise07.svg" alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">Suivi et cadres
+                                                d'évaluation de
+                                                l'impact</a></h4>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="60" src="assets/img/page02/expertise08.svg" alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">Pratiques d'agriculture
+                                                durable et intelligente
+                                                face au climat</a></h4>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="60" src="assets/img/page02/expertise09.svg" alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">Renforcement des
+                                                capacités et modules
+                                                de formation centrés
+                                                sur l'agriculteur</a></h4>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="30" src="assets/img/page02/expertise10.svg" alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">R&D collaborative
+                                                et startups</a></h4>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="tp-service-item mb-30">
+                                                <div class="tp-service-item-icon">
+                                                    <img width="40" src="assets/img/page02/expertise11.svg" alt="">
+                                                </div>
+                                                <h4 class="tp-service-item-title"><a class="tp-line-lr" href="#">Modèles de fertilisation
+                                                intelligente et outils
+                                                d'aide à la décision</a></h4>
+                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- service area end -->
+                <div class="bnc-portfolio-area bnc-portfolio-ptb pt-120 pb-150" >
+                    <div class="container container-1510">
+                        <div class="row align-items-end">
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="bnc-portfolio-title-box pb-70">
+                                    <span class="tp-section-subtitle fs-16 tp-split-title"
+                                        style="font-family: mazzard-regular !important;">• Nos priorités</span>
+                                    <h3 class="tp-section-title  tp-split-title" style="font-family: mazzard-bold !important;font-size: 55px !important;">Nos priorités d’intervention</h3>
+                                    <p style="font-family: mazzard-semibold;font-size: 16px; color: #10605b !important">Pour répondre aux enjeux systémiques de l’agriculture,
+                                    Al Moutmir concentre son action sur des leviers clés,
+                                    au cœur de la performance, de la durabilité et de la résilience
+                                    des systèmes agricoles.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-4">
+                                <div class="bnc-portfolio-slider-arrow pb-90 tp_fade_anim" data-delay=".5" data-fade-from="top"
+                                    data-ease="bounce">
+                                    <button class="tp-portfolio-prev">
+                                        <span>
+                                            <svg width="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                                                <g id="a" />
+                                                <g id="b">
+                                                    <g id="c">
+                                                        <g>
+                                                            <g>
+                                                                <path
+                                                                    d="M60,30C60,13.4,46.6,0,30,0,13.4,0,0,13.4,0,30c0,16.6,13.4,30,30,30,16.6,0,30-13.4,30-30Z"
+                                                                    style="fill:#c0e4da;" />
+                                                                <polygon points="15.8 29.8 15.8 29.8 15.8 29.8 15.8 29.8"
+                                                                    style="fill:#d7492b;" />
+                                                            </g>
+                                                            <path
+                                                                d="M28.3,43.3l-11.9-11.9h-.2l-.3-.7c0-.2-.1-.3-.1-.4v-.4c0-.1,0-.3,0-.4l.3-.7,.2-.3,11.9-11.9c.4-.4,.9-.6,1.4-.6s1,.2,1.4,.6c.7,.7,.7,2,0,2.8l-8.6,8.6h19.7c1.1,0,2,.9,2,2s-.9,2-2,2H22.5l8.6,8.6c.7,.7,.7,2,0,2.8-.4,.4-.9,.6-1.4,.6s-1-.2-1.4-.6Z"
+                                                                style="fill:#fff;" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="tp-portfolio-next">
+                                        <span>
+                                            <svg width="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                                                <g id="a" />
+                                                <g id="b">
+                                                    <g id="c">
+                                                        <g>
+                                                            <g>
+                                                                <path
+                                                                    d="M0,30c0,16.6,13.4,30,30,30,16.6,0,30-13.4,30-30S46.6,0,30,0C13.4,0,0,13.4,0,30Z"
+                                                                    style="fill:#c0e4da;" />
+                                                                <polygon points="44.2 30.2 44.2 30.2 44.2 30.2 44.2 30.2"
+                                                                    style="fill:#d7492b;" />
+                                                            </g>
+                                                            <path
+                                                                d="M31.7,16.7l11.9,11.9h.2l.3,.7c0,.2,.1,.3,.1,.4v.4c0,.1,0,.3,0,.4l-.3,.7-.2,.3-11.9,11.9c-.4,.4-.9,.6-1.4,.6s-1-.2-1.4-.6c-.7-.7-.7-2,0-2.8l8.6-8.6H17.8c-1.1,0-2-.9-2-2s.9-2,2-2h19.7l-8.6-8.6c-.7-.7-.7-2,0-2.8,.4-.4,.9-.6,1.4-.6s1,.2,1.4,.6Z"
+                                                                style="fill:#fff;" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bnc-portfolio-slider-wrapper tp_fade_anim" data-delay=".5">
+                        <div class="tp-portfolio-active swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="./assets/img/page02/priorities-slide01.png" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>01 • Santé des sols</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title">
+                                                    <a class="tp-line-white" href="project-three-colum.html">Préserver et restaurer la fertilité
+                                                    des sols comme fondement
+                                                    de la productivité agricole
+                                                    durable.</a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="./assets/img/page02/priorities-slide02.png" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>02 • Nutrition des cultures</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title">
+                                                    <a class="tp-line-white" href="">Optimiser la nutrition des cultures
+                                                    grâce à des approches de
+                                                    fertilisation raisonnée, adaptées
+                                                    aux contextes locaux.</a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="./assets/img/page02/priorities-slide03.png" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>03 • Gestion de l’eau</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title"><a class="tp-line-white" href="">Améliorer l’efficience de l’usage
+                                                de l’eau face aux contraintes
+                                                croissantes de stress hydrique.</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="./assets/img/page02/priorities-slide04.png" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>04 • Agriculture durable
+                                                & changement climatique</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title"><a class="tp-line-white" href="">Déployer des pratiques agricoles
+                                                résilientes et climato-intelligentes
+                                                pour réduire l’empreinte
+                                                environnementale.</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="./assets/img/page02/priorities-slide05.png" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>05 • Mécanisation durable</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title"><a class="tp-line-white" href="">Faciliter l’accès à des solutions
+                                                de mécanisation adaptées pour
+                                                améliorer la performance
+                                                et réduire la pénibilité.</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="./assets/img/page02/priorities-slide06.png" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>06 • Productions animales</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title"><a class="tp-line-white" href="">Renforcer les systèmes d’élevage
+                                                pour améliorer la productivité,
+                                                la qualité et la durabilité des
+                                                filières animales.</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="dgm-blog-item bnc-portfolio-item p-relative mb-30">
+                                        <div class="dgm-blog-thumb">
+                                            <img src="./assets/img/page02/priorities-slide07.png" alt="">
+                                        </div>
+                                        <div class="dgm-blog-content d-flex flex-column justify-content-between">
+                                            <div class="bnc-portfolio-item-tag">
+                                                <span>07 • Renforcement des capacités</span>
+                                            </div>
+                                            <div class="dgm-blog-content-inner">
+                                                <h4 class="bnc-portfolio-item-title"><a class="tp-line-white" href="">Accompagner les agriculteurs
+                                                à travers la formation, le conseil
+                                                et le transfert de compétences.</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- testimonial area end -->
+                <div class="tp-testimonial-ptb pt-120 pb-120" style="background-color: #C0E4DA;">
+                    <div class="container container-1510">
+                        <div class="row align-items-center">
+                            <div class="col-xl-6 col-lg-5">
+                                <div class="tp-testimonial-left p-relative">
+                                    <div class="tp-testimonial-thumb p-relative fix tp-clip-anim">
+                                        <img class="w-100 tp-anim-img" data-animate="true" data-speed=".8"
+                                            src="./assets/img/page02/prio.png" alt="">
+                                        <a class="tp-testimonial-play-btn popup-video video-animetion z-index-3"
+                                            href="#">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"
+                                                    viewBox="0 0 14 20" fill="none">
+                                                    <path d="M14 10L0 20V0L14 10Z" fill="currentcolor" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-7">
+                                <div class="tp-testimonial-right p-relative">
+                                    <span class="tp-testimonial-shape-1"><img
+                                            src="assets/img/digital-agency/shape/shape-2.png" alt=""></span>
+                                    <div class="tp-testimonial-slider-wrap">
+                                        <div class="swiper tp-testimonial-active mb-50">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="tp-testimonial-slider-item">
+                                                        <div class="tp-testimonial-slider-content">
+                                                            <p style="font-size: 27px !important;font-family: mazzard-semibold !important;text-transform: none !important;">
+                                                                Nos priorités d’intervention structurent une offre intégrée de solutions, conçue pour répondre de manière concrète et
+                                                                personnalisée aux besoins des agriculteurs.
+                                                            </p>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="tp-testimonial-slider-action d-flex justify-content-between align-items-center">
+                                            <div class="tp-testimonial-slider-ratting d-flex align-items-center">
+                                                <div class="tp-hero-btn tp_fade_anim" data-delay=".7">
+                                                    <a class="tp-btn-green btn-black-bg tp-btn-anim btn-h-60" href="#">
+                                                        <div class="tp-btn-text">En Savoir Plus </div>
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="21"
+                                                                height="8" viewBox="0 0 21 8" fill="none">
+                                                                <path d="M0 6.99626L19 7L10.208 1"
+                                                                    stroke="currentColor" />
+                                                            </svg>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- testimonial area end -->
+
+            </main>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- JS here -->
+
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/bootstrap-bundle.js"></script>
+    <script src="./assets/js/swiper-bundle.js"></script>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/three.js"></script>
+    <script src="./assets/js/hover-effect.umd.js"></script>
+    <script src="./assets/js/magnific-popup.js"></script>
+    <script src="./assets/js/purecounter.js"></script>
+    <script src="./assets/js/imagesloaded-pkgd.js"></script>
+    <script src="./assets/js/ajax-form.js"></script>
+    <script src="./assets/js/slider-active.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <!-- JS here -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            const svg = document.querySelector('.approach-svg');
+            if (svg) {
+                observer.observe(svg);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
