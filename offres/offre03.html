@@ -1,0 +1,1558 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Al moutmir</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo/favicon.png">
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="../assets/css/spacing.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS here -->
+
+    <style>
+        .back-to-top-btn svg {
+            display: inline !important;
+        }
+
+        .ma-hero-title {
+            font-size: 60px !important;
+            font-family: mazzard-bold !important;
+            line-height: 1.5;
+            margin-bottom: 33px;
+            letter-spacing: normal !important;
+            color: #fef2d7 !important;
+        }
+
+        .ma-hero-content {
+            margin-left: 0px !important;
+
+        }
+
+        .dgm-blog-item::after {
+            background-color: #002a28 !important;
+        }
+
+        .bnc-portfolio-item-title {
+            font-size: 18px !important;
+            font-family: "mazzard-bold";
+        }
+
+        .bnc-portfolio-item-tag span {
+            font-family: "mazzard-regular";
+            font-size: 10px;
+            border: 1px solid #d7492b;
+        }
+
+        .dgm-portfolio-tab ul li a {
+            border: 1px solid #fff;
+        }
+
+        .dgm-portfolio-tab ul li a:hover,
+        .dgm-portfolio-tab ul li a.active {
+            background-color: #c0e4da;
+            border: 1px solid #c0e4da;
+        }
+
+        /* Active tab: red by default */
+        .dgm-portfolio-slider-wrap .tab-pane.active .dgm-portfolio-content::after {
+            content: '';
+            background-color: #d7492b;
+        }
+
+        /* Active tab on hover: switch to teal */
+        .dgm-portfolio-slider-wrap .tab-pane.active:hover .dgm-portfolio-content::after {
+            background-color: #c0e4da;
+        }
+
+        /* Inactive tab: teal by default */
+        .dgm-portfolio-slider-wrap .tab-pane:not(.active) .dgm-portfolio-content::after {
+            content: '';
+            background-color: #c0e4da;
+        }
+
+        /* Inactive tab on hover: switch to red */
+        .dgm-portfolio-slider-wrap .tab-pane:not(.active):hover .dgm-portfolio-content::after {
+            background-color: #d7492b;
+        }
+
+        .dgm-portfolio-title {
+            font-family: "mazzard-bold";
+            color: #c0e4da85 !important;
+        }
+
+        .dgm-portfolio-content span {
+            font-family: "mazzard-semibold";
+            color: #c0e4da80 !important;
+        }
+
+        .dgm-portfolio-item:hover .dgm-portfolio-title a {
+            color: #002a28 !important;
+        }
+
+        .dgm-portfolio-item:hover .dgm-portfolio-content span {
+            color: #002a28 !important;
+        }
+
+        .tp-section-title {
+            font-family: "mazzard-bold" !important;
+            line-height: 1 !important;
+        }
+
+        .ca-testimonial-item {
+            background-color: #002a28;
+        }
+
+        .testimonial-item2 {
+            background-color: #c0e4da !important;
+            color: #fff !important;
+        }
+
+        .testimonial-item2 .ca-testimonial-item-content p,
+        .testimonial-item2 .ca-testimonial-item-user-content h4,
+        .testimonial-item2 .ca-testimonial-item-user-content p {
+            color: #10605b !important;
+        }
+
+        .back-to-top-btn {
+            background: #d7492b !important;
+            color: #c0e4da !important;
+        }
+
+        #preloader {
+            background: #002a28;
+        }
+
+        #preloader span {
+            background: #d7492b !important;
+        }
+
+        .ds-portfolio-item-title {
+            margin: 0;
+            font-size: 15px !important;
+            font-weight: 500;
+            padding: 12px 29px;
+            text-transform: capitalize;
+            color: #002a28 !important;
+            font-family: "mazzard-regular" !important;
+            background-color: #c0e4da !important;
+            margin: 10px 0 !important;
+            border-radius: 10px !important;
+        }
+
+        .tp-section-title {
+            color: #002A28 !important;
+        }
+
+        .cr-blog-style .dgm-blog-title {
+            font-size: 22px !important;
+            font-family: mazzard-semibold !important;
+        }
+
+        .cr-blog-thumb {
+            height: 545px !important;
+            object-fit: cover;
+            padding-right: 50px !important;
+        }
+
+        .cr-blog-content {
+
+            padding: 10px !important;
+
+        }
+
+        .tp-btn-text {
+            font-family: mazzard-semibold !important;
+            font-size: 22px !important;
+            color: #002A28 !important;
+        }
+
+        .cr-blog-style .dgm-blog-title {
+            font-family: mazzard-regular !important;
+            text-transform: none !important;
+            font-weight: normal !important;
+        }
+
+        .bnc-service-item:hover .bnc-service-item-text {
+            opacity: 0 !important;
+            visibility: hidden !important;
+            transform: none !important;
+        }
+
+        .bnc-service-item:hover .bnc-service-item-wrap {
+            margin-bottom: 10px !important;
+        }
+
+        .bnc-service-item {
+            height: 350px !important;
+            background-color: transparent !important;
+            align-items: center !important;
+            border: 1px solid #fff;
+        }
+
+        .tp-line-black {
+            color: #fff !important;
+        }
+
+        .bnc-service-item-title {
+            text-align: center !important;
+        }
+
+        .bnc-service-item-number span::after {
+            content: "";
+            height: 1px;
+            width: 48px;
+            margin-left: 10px;
+            display: inline-block;
+            background-color: #d7492b !important;
+        }
+
+        .cr-blog-link {
+            padding-top: 20px;
+            border-top: 1px solid #d7492b !important;
+        }
+
+        .thmb .cr-blog-thumb {
+            height: 300px !important;
+        }
+
+        .bnc-step-item::after {
+
+            background-color: #d7492b !important
+        }
+
+
+        .bnc-step-item-sub span {
+            display: contents !important;
+            width: auto !important;
+            height: auto !important;
+
+            background-color: unset !important;
+        }
+
+        .bnc-step-item-sub {
+            color: #00584e !important;
+            font-family: mazzard-medium !important;
+        }
+
+        .bnc-step-item-title {
+            font-family: mazzard-medium !important;
+            font-size: 26px !important;
+            color: #00584e;
+            text-transform: none !important;
+        }
+
+        .tp-testimonial-left {
+            margin-right: 0px !important;
+        }
+
+        .bnc-service-item-icon svg {
+            width: 80px;
+        }
+
+        .nav-item span {
+            visibility: hidden;
+        }
+
+        .nav-item:hover span {
+            visibility: visible;
+        }
+
+        .nav-item {
+            border-bottom: 2px solid #D7492B !important;
+            border-top: none !important
+        }
+
+        .nav-item:hover {
+            border-bottom: none !important;
+
+        }
+    </style>
+
+</head>
+
+<body class="tp-magic-cursor">
+
+    <!-- Begin magic cursor -->
+    <div id="magic-cursor" class="cursor-white-bg">
+        <div id="ball"></div>
+    </div>
+    <!-- End magic cursor -->
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- preloader end  -->
+
+    <div class="tp-blur-bottom"></div>
+
+    <!-- back to top start -->
+    <div class="back-to-top-wrapper">
+        <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+    <!-- back to top end -->
+
+
+    <!-- header area start -->
+    <div id="header-sticky" class="tp-header-area tp-header-ptb tp-header-blur sticky-white-bg header-transparent">
+        <div class="container container-1510">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-6 col-6">
+                    <div class="tp-header-logo">
+                        <a href="../index.html">
+                            <img data-width="60" src="../assets/img/logo/logo-bg-square.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-7 d-none d-xl-block">
+                    <div class="tp-header-box text-center">
+                        <div class="tp-header-menu tp-header-dropdown dropdown-white-bg">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-6">
+                    <div class="tp-header-right d-flex align-items-center justify-content-end">
+                        <div class="tp-header-14-bar-wrap">
+                            <button class="tp-header-8-bar tp-offcanvas-open-btn">
+                                <span>Menu</span>
+                                <span>
+                                    <svg width="24" height="8" viewBox="0 0 24 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H14V1.5H0V0Z" fill="currentcolor" />
+                                        <path d="M0 6H24V7.5H0V6Z" fill="currentcolor" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header area end -->
+
+
+    <!-- tp-offcanvus-area-start -->
+    <div class="tp-offcanvas-area">
+        <div class="tp-offcanvas-wrapper offcanvas-black-bg">
+            <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
+                <div class="tp-offcanvas-logo">
+                    <a href="../index.html">
+                        <img class="logo-1" data-width="120" src="../assets/img/logo/logo-bg-square.png" alt="">
+                        <img class="logo-2" data-width="120" src="../assets/img/logo/logo-bg-square.png" alt="">
+                    </a>
+                </div>
+                <div class="tp-offcanvas-close">
+                    <button class="tp-offcanvas-close-btn">
+                        <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="tp-offcanvas-main">
+                <div class="tp-offcanvas-content d-none d-xl-block">
+                    <h3 class="tp-offcanvas-title">Hello There!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                </div>
+                <div class="tp-offcanvas-menu d-xl-none">
+                    <nav></nav>
+                </div>
+                <div class="tp-offcanvas-gallery d-none d-xl-block">
+                    <div class="row gx-2">
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="../assets/img/offcanvas/offcanvas-1.jpg"><img
+                                        src="../assets/img/offcanvas/offcanvas-1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="../assets/img/offcanvas/offcanvas-2.jpg"><img
+                                        src="../assets/img/offcanvas/offcanvas-2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="../assets/img/offcanvas/offcanvas-3.jpg"><img
+                                        src="../assets/img/offcanvas/offcanvas-3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="../assets/img/offcanvas/offcanvas-4.jpg"><img
+                                        src="../assets/img/offcanvas/offcanvas-4.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-offcanvas-contact">
+                    <h3 class="tp-offcanvas-title sm">Information</h3>
+                    <ul>
+                        <li><a href="tel:1245654">+ 4 XX XXXX XXXX</a></li>
+                        <li><a href="mailto">lorem@ipsum.com</a></li>
+                        <li><a href="#">Avenue de Roma 158b, Lisboa</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- tp-offcanvus-area-end -->
+
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <main>
+
+                <!-- hero area start -->
+                <div class="ma-hero-area ma-hero-ptb ma-hero-overlay z-index-1"
+                    data-background="./assets/images/offre03/offre03_headerbg.jpg">
+                    <div class="ma-hero-shape" data-speed="1.1">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="70" viewBox="0 0 98 70"
+                                fill="none">
+                                <path
+                                    d="M3.82839 43.5099C6.42926 40.3317 22.6507 18.2746 30.4134 24.9691C37.8139 31.3513 24.5452 53.9838 37.9136 57.3688C49.3686 60.2694 63.7917 45.1686 70.8555 38.113C75.574 33.4 78.6929 27.6256 82.7187 22.4694C83.012 22.0937 85.4072 18.8838 84.2975 19.3471"
+                                    stroke="#F5F7F5" stroke-width="3" stroke-linecap="round" />
+                                <path
+                                    d="M74.5884 18.6844C77.6307 17.1331 88.2369 8.41917 88.3725 15.5498C88.4449 19.3586 88.246 22.0251 89.7262 25.5706"
+                                    stroke="#F5F7F5" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="container container-1530">
+                        <div class="row">
+                            <div class="col-xl-12 d-flex flex-column justify-content-center align-items-center">
+                                <h2 class="ma-hero-title"
+                                    style="font-size: 30px !important;font-family: mazzard-regular !important;">EXPLOREZ
+                                    NOS OFFRES</h2>
+                                <div class="ma-hero-title-box tp_fade_anim" data-delay=".3">
+                                    <h2 class="ma-hero-title"
+                                        style="display: flex;padding-top: 10px;font-family: mazza;">Offre 03 : Offre
+                                        gestion de l’eau
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-xxl-12 col-xl-12 col-lg-12">
+                                <div class="ma-hero-content">
+                                    <div class="tp_fade_anim" data-delay=".4">
+                                        <div class="w-full flex items-start  pb-0 gap-8">
+
+                                            <!-- Nav Items Grid -->
+                                            <div class="relative flex-grow">
+                                                <!-- The Grid Container -->
+                                                <div id="nav-container" class="grid grid-cols-7 gap-1">
+
+                                                    <!-- Nav Items (Added 'nav-item' class) -->
+                                                    <a href="offre01.html">
+                                                        <div
+                                                            class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4
+                                                            opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                                                            <div class="w-[60px] h-[80px]">
+                                                                <img src="./assets/images/offre02/offre01_icon.svg"
+                                                                    class="w-[60px]" alt="">
+                                                            </div>
+                                                            <span
+                                                                class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                                style="font-family: mazzard-semibold !important; opacity: 1 !important;color: #fef2d7 !important;">Offre
+                                                                01 : Santé des
+                                                                sols et customisation
+                                                                des nutriments</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="offre02.html">
+
+                                                        <div
+                                                            class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                                                            <div class="w-[60px] h-[80px] opacity-40">
+                                                                <img src="./assets/images/offre02/offre02_icon.svg"
+                                                                    class="w-[60px]" alt="">
+                                                            </div>
+                                                            <span
+                                                                class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                                style="font-family: mazzard-semibold !important; opacity: 1 !important;color: #fef2d7 !important;">Offre
+                                                                02 : Nutrition des cultures:</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="offre03.html">
+                                                        <div class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4  hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer bg-gradient-to-t from-emerald-900/70 via-emerald-800/30 to-transparent"
+                                                            style="border-bottom: none !important;">
+                                                            <div class="w-[60px] h-[80px] opacity-80">
+                                                                <img src="./assets/images/offre03/offre03_icon.svg"
+                                                                    class="w-[60px]" alt="">
+                                                            </div>
+                                                            <span
+                                                                class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                                style="font-family: mazzard-semibold !important; opacity: 1 !important;color: #fef2d7 !important;visibility: visible !important;">Offre
+                                                                03 :
+                                                                Gestion
+                                                                de l’eau</span>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="offre04.html">
+                                                        <div
+                                                            class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                                                            <div class="w-[60px] h-[80px] opacity-80">
+                                                                <img src="./assets/images/offre01/offre04_icon.svg"
+                                                                    class="w-[60px]" alt="">
+                                                            </div>
+                                                            <span
+                                                                class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                                style="font-family: mazzard-semibold !important; opacity: 1 !important;color: #fef2d7 !important;">
+                                                                Offre
+                                                                04 : Agriculture de conservation & pratiques
+                                                                régénératives</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="offre05.html">
+                                                        <div
+                                                            class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                                                            <div class="w-[60px] h-[80px] opacity-80">
+                                                                <img src="./assets/images/offre01/offre05_icon.svg"
+                                                                    class="w-[60px]" alt="">
+                                                            </div>
+                                                            <span
+                                                                class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                                style="font-family: mazzard-semibold !important; opacity: 1 !important;color: #fef2d7 !important;">Offre
+                                                                05 : Santé animale</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="offre06.html">
+                                                        <div
+                                                            class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                                                            <div class="w-[60px] h-[80px] opacity-80">
+                                                                <img src="./assets/images/offre01/offre06_icon.svg"
+                                                                    class="w-[60px]" alt="">
+                                                            </div>
+                                                            <span
+                                                                class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                                style="font-family: mazzard-semibold !important; opacity: 1 !important;color: #fef2d7 !important;">Offre
+                                                                06 : Mécanisation durable</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="offre07.html">
+                                                        <div
+                                                            class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                                                            <div class="w-[60px] h-[80px] opacity-80">
+                                                                <img src="./assets/images/offre01/offre07_icon.svg"
+                                                                    class="w-[60px]" alt="">
+                                                            </div>
+                                                            <span
+                                                                class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                                style="font-family: mazzard-semibold !important; opacity: 1 !important;color: #fef2d7 !important;">Offre
+                                                                07 : Transfert de technologie
+                                                                & renforcement des capacités</span>
+                                                        </div>
+                                                    </a>
+                                                    <!-- THE SLIDING BAR -->
+                                                    <div id="sliding-bar"
+                                                        class="absolute top-0 h-[2px] w-[14.19%] bg-[#D7492B] transition-all duration-500 ease-in-out pointer-events-none"
+                                                        style="left: 28.6% !important;">
+                                                        <!-- Initial starting position -->
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- hero area end -->
+                <!-- testimonial area end -->
+                <div class="tp-testimonial-ptb pt-120 pb-120"
+                    style="background-image:url(assets/images/offre01/section2_bg.png) ;background-position: center;background-size: cover;">
+                    <div class="container container-1530">
+                        <div class="row align-items-center">
+
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="tp-testimonial-right p-relative">
+                                    <span class="tp-testimonial-shape-1"><img
+                                            src="assets/img/digital-agency/shape/shape-2.png" alt=""></span>
+                                    <div class="tp-testimonial-slider-wrap">
+                                        <div class=" tp-testimonial-active mb-50">
+
+                                            <div class="tp-testimonial-slider-item">
+                                                <div class="tp-testimonial-slider-content">
+                                                    <h3 class="tp-section-title fs-60 my-4"
+                                                        style="font-family: mazzard-bold !important;color: #002a28;">
+                                                        Optimiser chaque goutte pour sécuriser la production
+                                                    </h3>
+                                                    <p
+                                                        style="font-weight: 400 !important; font-size: 18px !important;font-family: mazzard-regular !important;text-transform: none !important;margin-bottom: 5px !important;">
+                                                        Face à la raréfaction des ressources hydriques,
+                                                        Al Moutmir déploie une approche intégrée visant
+                                                        à améliorer l’efficience de l’irrigation et renforcer
+                                                        la résilience des systèmes agricoles.
+
+
+                                                    </p>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="tp-testimonial-left p-relative">
+                                    <div class="tp-testimonial-thumb p-relative fix tp-clip-anim">
+                                        <img class="w-100 tp-anim-img" data-animate="true" data-speed=".8"
+                                            src="./assets/images/offre03/section_right.png" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- testimonial area end -->
+                <!-- blog area strat -->
+                <div class="cr-blog-area cr-blog-style pt-120 pb-150">
+                    <div class="container container-1510">
+                        <div class="cr-blog-top-wrap ">
+                            <div class="row align-items-start">
+                                <div class="col-xl-6">
+                                    <div class="cr-blog-title-box">
+                                        <span class="tp-section-subtitle st-spacegro fs-16 st-dot tp-split-title">
+                                            Approche</span>
+                                        <h3 class="tp-section-title  fw-700 fs-52 text-case-int mb-0 tp-split-title"
+                                            style="font-family: mazzard-bold !important;color: #002a28;">Une gestion
+                                            raisonnée<br> et intégrée de l’eau</h3>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="cr-blog-top-text mb-20 ">
+                                        <span class="mb-25 d-inline-block">
+                                            <svg width="28" height="28" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 27.2 27.2">
+                                                <defs>
+                                                    <style>
+                                                        .uuid-a8e4ebbc-9a7e-4dd0-b732-efca7885e3ba {
+                                                            fill: #eb6334;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <g id="uuid-5e5b7775-86b7-4e12-8ff2-71928bf968db"
+                                                    data-name="Calque 1" />
+                                                <g id="uuid-9b2df45f-3b92-40f8-86e7-169e8ef332db" data-name="Calque 2">
+                                                    <g id="uuid-ec015814-e06e-465f-8a79-48e1c6d4b8ea"
+                                                        data-name="Layer 1">
+                                                        <rect class="uuid-a8e4ebbc-9a7e-4dd0-b732-efca7885e3ba"
+                                                            width="27.2" height="27.2" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <p
+                                            style="font-size: 20px !important;font-family: mazzard-semibold !important;color: #002A28 !important;text-transform: none !important;">
+                                            Le programme combine plusieurs leviers complémentaires :
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="newswiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="">
+                                            <div class="cr-blog-item p-relative mb-30">
+                                                <div class="cr-blog-thumb tp-clip-anim">
+                                                    <img class="tp-anim-img" data-animate="true"
+                                                        src="assets/images/offre03/sol-1.png" alt="">
+                                                </div>
+                                                <div class="cr-blog-content">
+                                                    <div class="dgm-blog-meta">
+                                                    </div>
+                                                    <h4 class="dgm-blog-title">
+                                                        <a class="tp-line-black" style="color:#000 !important"
+                                                            href="#">Formation
+                                                            des agriculteurs<br>
+                                                            (écoles aux champs,<br> irrigation raisonnée)</a>
+                                                    </h4>
+                                                    <div class="cr-blog-link">
+                                                        <a class="tp-btn-anim tp-doubble-effect" href="#">
+                                                            <div class="tp-btn-text">01</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="">
+                                            <div class="cr-blog-item p-relative mb-30">
+                                                <div class="cr-blog-thumb tp-clip-anim">
+                                                    <img class="tp-anim-img" data-animate="true"
+                                                        src="assets/images/offre03/sol-2.png" alt="">
+                                                </div>
+                                                <div class="cr-blog-content">
+                                                    <div class="dgm-blog-meta">
+                                                    </div>
+                                                    <h4 class="dgm-blog-title">
+                                                        <a class="tp-line-black" style="color:#000 !important"
+                                                            href="">Plateformes<br>
+                                                            de démonstration comparant <br> pratiques et impacts</a>
+                                                    </h4>
+                                                    <div class="cr-blog-link">
+                                                        <a class="tp-btn-anim tp-doubble-effect" href="">
+                                                            <div class="tp-btn-text">02</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="">
+                                            <div class="cr-blog-item p-relative mb-30">
+                                                <div class="cr-blog-thumb tp-clip-anim">
+                                                    <img class="tp-anim-img" data-animate="true"
+                                                        src="assets/images/offre03/sol-3.png" alt="">
+                                                </div>
+                                                <div class="cr-blog-content">
+                                                    <div class="dgm-blog-meta">
+                                                    </div>
+                                                    <h4 class="dgm-blog-title">
+                                                        <a class="tp-line-black" style="color:#000 !important;"
+                                                            href="">Gestion intégrée<br>
+                                                            des cultures (nutrition, <br>sols, conservation)</a>
+                                                    </h4>
+                                                    <div class="cr-blog-link">
+                                                        <a class="tp-btn-anim tp-doubble-effect" href="">
+                                                            <div class="tp-btn-text">03</div>
+
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="">
+                                            <div class="cr-blog-item p-relative mb-30">
+                                                <div class="cr-blog-thumb tp-clip-anim">
+                                                    <img class="tp-anim-img" data-animate="true"
+                                                        src="assets/images/offre03/sol-4.png" alt="">
+                                                </div>
+                                                <div class="cr-blog-content">
+                                                    <div class="dgm-blog-meta">
+                                                    </div>
+                                                    <h4 class="dgm-blog-title">
+                                                        <a class="tp-line-black" style="color:#000 !important;"
+                                                            href="">Valorisation des eaux <br>non conventionnelles (eaux
+                                                            usées<br> traitées, dessalement)</a>
+                                                    </h4>
+                                                    <div class="cr-blog-link">
+                                                        <a class="tp-btn-anim tp-doubble-effect" href="">
+                                                            <div class="tp-btn-text">04</div>
+
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="">
+                                            <div class="cr-blog-item p-relative mb-30">
+                                                <div class="cr-blog-thumb tp-clip-anim">
+                                                    <img class="tp-anim-img" data-animate="true"
+                                                        src="assets/images/offre03/sol-5.png" alt="">
+                                                </div>
+                                                <div class="cr-blog-content">
+                                                    <div class="dgm-blog-meta">
+                                                    </div>
+                                                    <h4 class="dgm-blog-title">
+                                                        <a class="tp-line-black" style="color:#000 !important;"
+                                                            href="">Accompagnement<br> personnalisé pour optimiser
+                                                            <br>l’usage de l’eau</a>
+                                                    </h4>
+                                                    <div class="cr-blog-link">
+                                                        <a class="tp-btn-anim tp-doubble-effect" href="">
+                                                            <div class="tp-btn-text">05</div>
+
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- blog area end -->
+
+                <!-- service area start -->
+                <div class="bnc-service-area bnc-service-ptb pt-50 pb-50"
+                    style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(assets/images/offre03/offre03_bg.jpg); background-size: cover; background-position: center;">
+                    <div class="container container-1510">
+                        <div class="row">
+                            <div class="col-lg-12 justify-content-center">
+                                <div class="bnc-service-title-box pb-70 text-center ">
+                                    <span class="tp-section-subtitle st-dot white-style  tp-split-title"
+                                        style="color: #fff !important;">Technologie & Pilotage</span>
+                                    <h3 class="tp-section-title fs-42  tp-split-title text-center mb-10"
+                                        style="color: #fff !important;">Une irrigation de précision,<br> pilotée par la
+                                        donnée</h3>
+                                    <p
+                                        style="font-size: 20px !important;font-family: mazzard-light !important;color:#fff !important;text-transform: none !important;">
+                                        Soutenu par la solution digitale Irrisense, le programme permet :
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 tp_fade_anim" data-delay=".3">
+                                <div class="bnc-service-item mb-30">
+                                    <div class="bnc-service-item-icon">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.7 114.3">
+                                                <defs>
+                                                    <style>
+                                                        .uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8 {
+                                                            fill: #fff;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <g id="uuid-e27c9169-cec8-4e12-9995-6f05fdc4a858"
+                                                    data-name="Calque 1" />
+                                                <g id="uuid-02eddaff-6913-410d-b787-311eaaa00482" data-name="Calque 2">
+                                                    <g id="uuid-d7dbfd0f-9d7d-4917-a9f2-0b5c44283d4b"
+                                                        data-name="Layer 1">
+                                                        <g>
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M76.9,114.3H36.8c-1.1,0-1.9-.9-1.9-1.9v-14.3c0-1.1,.9-1.9,1.9-1.9s1.9,.9,1.9,1.9v12.3h36.3v-12.3c0-1.1,.9-1.9,1.9-1.9s1.9,.9,1.9,1.9v14.3c0,1.1-.9,1.9-1.9,1.9Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M36.8,94c-1.1,0-1.9-.9-1.9-1.9v-11.3c0-1.1,.9-1.9,1.9-1.9s1.9,.9,1.9,1.9v11.3c0,1.1-.9,1.9-1.9,1.9Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M76.9,94c-1.1,0-1.9-.9-1.9-1.9v-11.3c0-1.1,.9-1.9,1.9-1.9s1.9,.9,1.9,1.9v11.3c0,1.1-.9,1.9-1.9,1.9Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M76.9,76.6c-1.1,0-1.9-.9-1.9-1.9v-5c0-4.9-1.9-9.4-5.3-12.8-3.4-3.4-8-5.3-12.8-5.3-10,0-18.2,8.1-18.2,18.2v5c0,1.1-.9,1.9-1.9,1.9s-1.9-.9-1.9-1.9v-5c0-12.1,9.9-22,22-22s11.4,2.3,15.5,6.4c4.1,4.1,6.4,9.7,6.4,15.5v5c0,1.1-.9,1.9-1.9,1.9Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M64,52.8c-1.1,0-1.9-.9-1.9-1.9V21h-10.5v29.9c0,1.1-.9,1.9-1.9,1.9s-1.9-.9-1.9-1.9V19.1c0-1.1,.9-1.9,1.9-1.9h14.3c1.1,0,1.9,.9,1.9,1.9v31.8c0,1.1-.9,1.9-1.9,1.9Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M74.8,21H39c-3.8,0-7-3.1-7-7s3.1-7,7-7h35.8c3.8,0,7,3.1,7,7s-3.1,7-7,7ZM39,10.9c-1.7,0-3.1,1.4-3.1,3.1s1.4,3.1,3.1,3.1h35.8c1.7,0,3.1-1.4,3.1-3.1s-1.4-3.1-3.1-3.1H39Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M6.3,36.9c-.2,0-.5,0-.7-.1-1-.4-1.4-1.5-1-2.5,.8-1.9,1.3-2.6,2.2-3.6,.2-.3,.5-.6,.9-1.1,.6-.8,1.8-1,2.7-.3,.8,.6,1,1.8,.3,2.7-.4,.5-.7,.9-1,1.2-.7,.8-1,1.1-1.5,2.5-.3,.7-1,1.2-1.8,1.2Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M20.6,23.8c-.7,0-1.4-.4-1.7-1.1-.4-1,0-2.1,1-2.5,1.9-.8,2.3-1,3.9-1.4h.2c1-.3,2.1,.3,2.3,1.3,.3,1-.4,2.1-1.4,2.3h-.2c-1.5,.4-1.6,.5-3.4,1.2-.2,.1-.5,.2-.8,.2Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M12.2,29c-.5,0-1-.2-1.4-.6-.7-.8-.7-2,.1-2.7,1.7-1.5,2.6-2.2,4.4-3.2,.9-.5,2.1-.2,2.6,.7,.5,.9,.2,2.1-.7,2.6-1.6,.9-2.3,1.4-3.7,2.7-.4,.3-.8,.5-1.3,.5Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M20.3,16.8c-.8,0-1.5-.5-1.8-1.3-.3-1,.2-2.1,1.2-2.4,2.1-.7,2.7-.9,4.4-1.3,1-.2,2,.4,2.3,1.4,.2,1-.4,2-1.4,2.3-1.6,.4-2.1,.5-4,1.1-.2,0-.4,.1-.6,.1Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M11.9,20.5c-.6,0-1.3-.3-1.6-.9-.5-.9-.2-2.1,.7-2.6,1.6-.9,2.7-1.5,4.6-2.3,1-.4,2.1,0,2.5,1,.4,1,0,2.1-1,2.5-1.7,.7-2.7,1.2-4.1,2.1-.3,.2-.6,.3-1,.3Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M4.5,26.6c-.4,0-.9-.1-1.2-.5-.8-.7-.9-1.9-.2-2.7,1.4-1.6,2.3-2.4,4.1-3.8,.8-.6,2-.5,2.7,.4,.6,.8,.5,2-.4,2.7-1.6,1.2-2.2,1.8-3.4,3.2-.4,.4-.9,.7-1.5,.7Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M107.4,36.9c-.8,0-1.5-.4-1.8-1.2-.6-1.4-.9-1.8-1.5-2.5-.3-.3-.6-.7-1-1.2-.6-.8-.5-2,.3-2.7,.8-.6,2-.5,2.7,.3,.3,.4,.6,.8,.9,1,.9,1,1.4,1.7,2.2,3.6,.4,1,0,2.1-1,2.5-.2,0-.5,.1-.7,.1Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M93.1,23.8c-.3,0-.5,0-.8-.2-1.7-.8-1.9-.8-3.4-1.2l.3-1.9,.5-1.8c1.8,.5,2.2,.6,4.2,1.4,1,.4,1.4,1.5,1,2.5-.3,.7-1,1.1-1.7,1.1Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M101.5,29c-.5,0-.9-.2-1.3-.5-1.4-1.3-2.1-1.8-3.7-2.7-.9-.5-1.2-1.7-.7-2.6,.5-.9,1.7-1.2,2.6-.7,1.8,1,2.7,1.7,4.4,3.2,.8,.7,.8,1.9,.1,2.7-.4,.4-.9,.6-1.4,.6Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M93.4,16.8c-.2,0-.4,0-.6-.1-1.9-.7-2.3-.8-4-1.1-1-.2-1.7-1.3-1.4-2.3,.2-1,1.3-1.6,2.3-1.4,1.8,.4,2.4,.6,4.4,1.3,1,.3,1.5,1.4,1.2,2.4-.3,.8-1,1.3-1.8,1.3Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M101.8,20.5c-.3,0-.7,0-1-.3-1.5-.9-2.5-1.4-4.1-2.1-1-.4-1.4-1.5-1-2.5,.4-1,1.5-1.4,2.5-1,1.8,.8,3,1.3,4.6,2.3,.9,.5,1.2,1.7,.7,2.6-.4,.6-1,.9-1.6,.9Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M109.2,26.6c-.5,0-1.1-.2-1.5-.7-1.2-1.4-1.9-2-3.4-3.2-.8-.6-1-1.8-.4-2.7,.6-.8,1.8-1,2.7-.4,1.8,1.3,2.7,2.2,4.1,3.8,.7,.8,.6,2-.2,2.7-.4,.3-.8,.5-1.2,.5Z" />
+                                                            <g>
+                                                                <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                    d="M8.3,114.3c-1.1,0-1.9-.9-1.9-1.9v-10.1c0-1.1,.9-1.9,1.9-1.9s1.9,.9,1.9,1.9v10.1c0,1.1-.9,1.9-1.9,1.9Z" />
+                                                                <g>
+                                                                    <path
+                                                                        class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                        d="M8.2,104.2c-.3,0-.6,0-.9-.2-2.7-1.5-4.1-3.4-4.3-5.7-.4-4.1,3.6-7.4,4.1-7.8,.8-.7,2-.5,2.7,.3,.7,.8,.5,2-.3,2.7h0c-.7,.6-2.8,2.7-2.7,4.5,0,1,.9,1.9,2.4,2.7,.9,.5,1.3,1.7,.7,2.6-.3,.6-1,1-1.7,1Z" />
+                                                                    <path
+                                                                        class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                        d="M8.3,104.2c-.7,0-1.3-.4-1.7-1-.5-.9-.2-2.1,.7-2.6,1.5-.8,2.3-1.7,2.4-2.7,.2-1.8-1.9-3.9-2.7-4.5-.8-.7-.9-1.9-.3-2.7,.7-.8,1.9-.9,2.7-.3,.5,.4,4.4,3.7,4.1,7.8-.2,2.3-1.7,4.2-4.3,5.7-.3,.2-.6,.2-.9,.2Z" />
+                                                                </g>
+                                                            </g>
+                                                            <g>
+                                                                <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                    d="M22.4,114.3c-1.1,0-1.9-.9-1.9-1.9v-10.1c0-1.1,.9-1.9,1.9-1.9s1.9,.9,1.9,1.9v10.1c0,1.1-.9,1.9-1.9,1.9Z" />
+                                                                <g>
+                                                                    <path
+                                                                        class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                        d="M22.4,104.2c-.3,0-.6,0-.9-.2-2.7-1.5-4.1-3.4-4.3-5.7-.4-4.1,3.6-7.4,4.1-7.8,.8-.7,2-.5,2.7,.3,.7,.8,.5,2-.3,2.7h0c-.7,.6-2.8,2.7-2.7,4.5,0,1,.9,1.9,2.4,2.7,.9,.5,1.3,1.7,.7,2.6-.3,.6-1,1-1.7,1Z" />
+                                                                    <path
+                                                                        class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                        d="M22.4,104.2c-.7,0-1.3-.4-1.7-1-.5-.9-.2-2.1,.7-2.6,1.5-.8,2.3-1.7,2.4-2.7,.2-1.8-2.1-4-2.7-4.5-.8-.7-1-1.9-.3-2.7,.7-.8,1.9-1,2.7-.3,.5,.4,4.4,3.7,4.1,7.8-.2,2.3-1.7,4.2-4.3,5.7-.3,.2-.6,.2-.9,.2Z" />
+                                                                </g>
+                                                            </g>
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M76.7,82.7H37c-2.7,0-5-2.2-5-5s2.2-5,5-5h39.7c2.8,0,5,2.2,5,5s-2.2,5-5,5Zm-39.7-6.2c-.6,0-1.2,.5-1.2,1.2s.5,1.2,1.2,1.2h39.7c.6,0,1.2-.5,1.2-1.2s-.5-1.2-1.2-1.2H37Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M76.7,100.1H37c-2.7,0-5-2.2-5-5s2.2-5,5-5h39.7c2.8,0,5,2.2,5,5s-2.2,5-5,5Zm-39.7-6.2c-.6,0-1.2,.5-1.2,1.2s.5,1.2,1.2,1.2h39.7c.6,0,1.2-.5,1.2-1.2s-.5-1.2-1.2-1.2H37Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M56.8,114.3H1.9c-1.1,0-1.9-.9-1.9-1.9s.9-1.9,1.9-1.9H56.8c1.1,0,1.9,.9,1.9,1.9s-.9,1.9-1.9,1.9Z" />
+                                                            <g>
+                                                                <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                    d="M105.4,114.3c-1.1,0-1.9-.9-1.9-1.9v-10.1c0-1.1,.9-1.9,1.9-1.9s1.9,.9,1.9,1.9v10.1c0,1.1-.9,1.9-1.9,1.9Z" />
+                                                                <g>
+                                                                    <path
+                                                                        class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                        d="M105.4,104.2c-.7,0-1.3-.4-1.7-1-.5-.9-.2-2.1,.7-2.6,1.5-.8,2.3-1.7,2.4-2.7,.2-1.8-1.9-3.9-2.7-4.5-.8-.7-.9-1.9-.3-2.7,.7-.8,1.9-1,2.7-.3,.5,.4,4.4,3.7,4.1,7.8-.2,2.3-1.7,4.2-4.3,5.7-.3,.2-.6,.2-.9,.2Z" />
+                                                                    <path
+                                                                        class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                        d="M105.4,104.2c-.3,0-.6,0-.9-.2-2.7-1.5-4.1-3.4-4.3-5.7-.4-4.1,3.6-7.4,4.1-7.8,.8-.7,2-.5,2.7,.3,.7,.8,.5,2-.3,2.7-.7,.6-2.8,2.7-2.7,4.5,0,1,.9,1.9,2.4,2.7,.9,.5,1.3,1.7,.7,2.6-.3,.6-1,1-1.7,1Z" />
+                                                                </g>
+                                                            </g>
+                                                            <g>
+                                                                <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                    d="M91.3,114.3c-1.1,0-1.9-.9-1.9-1.9v-10.1c0-1.1,.9-1.9,1.9-1.9s1.9,.9,1.9,1.9v10.1c0,1.1-.9,1.9-1.9,1.9Z" />
+                                                                <g>
+                                                                    <path
+                                                                        class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                        d="M91.3,104.2c-.7,0-1.3-.4-1.7-1-.5-.9-.2-2.1,.7-2.6,1.5-.8,2.3-1.7,2.4-2.7,.2-1.8-1.9-3.9-2.7-4.5-.8-.7-.9-1.9-.3-2.7,.7-.8,1.8-1,2.7-.3,.5,.4,4.4,3.7,4.1,7.8-.2,2.3-1.7,4.2-4.3,5.7-.3,.2-.6,.2-.9,.2Z" />
+                                                                    <path
+                                                                        class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                        d="M91.3,104.2c-.3,0-.6,0-.9-.2-2.7-1.5-4.1-3.4-4.3-5.7-.4-4.1,3.6-7.4,4.1-7.8,.8-.7,2-.5,2.7,.3,.7,.8,.5,2-.3,2.7h0c-.7,.6-2.8,2.7-2.7,4.5,0,1,.9,1.9,2.4,2.7,.9,.5,1.3,1.7,.7,2.6-.3,.6-1,1-1.7,1Z" />
+                                                                </g>
+                                                            </g>
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M111.8,114.3H56.8c-1.1,0-1.9-.9-1.9-1.9s.9-1.9,1.9-1.9h54.9c1.1,0,1.9,.9,1.9,1.9s-.9,1.9-1.9,1.9Z" />
+                                                            <path class="uuid-199e9e4a-8c84-44f7-a120-0b515825d3d8"
+                                                                d="M64,11c-1.1,0-1.9-.9-1.9-1.9,0-2.9-2.3-5.2-5.2-5.2s-5.2,2.4-5.2,5.2-.9,1.9-1.9,1.9-1.9-.9-1.9-1.9c0-5,4.1-9.1,9-9.1s9,4.1,9,9.1-.9,1.9-1.9,1.9Z" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="bnc-service-item-content">
+                                        <div class="bnc-service-item-wrap">
+                                            <h4 class="bnc-service-item-title">
+                                                <a class="tp-line-black" href="#"
+                                                    style="font-family: mazzard-regular !important;text-transform: none !important;">Un
+                                                    pilotage précis de<br> l’irrigation à la parcelle</a>
+                                            </h4>
+                                            <div class="bnc-service-item-text">
+
+                                            </div>
+                                        </div>
+                                        <div class="bnc-service-item-btn-box z-index-1 d-flex justify-content-between align-items-center"
+                                            style="    margin-top: 40px !important ;">
+
+                                            <div class="bnc-service-item-number">
+                                                <span style="color: #fff !important;">01</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 tp_fade_anim" data-delay=".5">
+                                <div class="bnc-service-item mb-30">
+                                    <div class="bnc-service-item-icon">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177 111.2">
+                                                <defs>
+                                                    <style>
+                                                        .uuid-f234e0f2-0a6f-489f-b416-e5e1739f9dfe {
+                                                            fill: #fff;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <g id="uuid-3b7b2405-e4ca-44d7-90ac-c7c22ffa1d31"
+                                                    data-name="Calque 1" />
+                                                <g id="uuid-d6eb199c-8763-49ab-a458-f8573b167292" data-name="Calque 2">
+                                                    <g id="uuid-b3a334a0-bdf6-4a1e-be3f-dd365b6c43c6"
+                                                        data-name="Layer 1">
+                                                        <g>
+                                                            <path class="uuid-f234e0f2-0a6f-489f-b416-e5e1739f9dfe"
+                                                                d="M140.5,67.3c-9.5,0-17.2-7.7-17.2-17.2s-1-2.2-2.2-2.2-2.2,1-2.2,2.2c0,11.9,9.7,21.5,21.5,21.5s2.2-1,2.2-2.2-1-2.2-2.2-2.2Z" />
+                                                            <path class="uuid-f234e0f2-0a6f-489f-b416-e5e1739f9dfe"
+                                                                d="M58.2,48c.4,0,.9-.1,1.3-.4,9-6.4,17.7-10.4,32.6-10.4s3.4,.1,5.2,.2c1.2,0,2.2-.8,2.3-2s-.8-2.2-2-2.3c-1.8-.1-3.6-.2-5.5-.2-16.1,0-25.7,4.5-35.1,11.2-1,.7-1.2,2.1-.5,3,.4,.6,1.1,.9,1.8,.9Z" />
+                                                            <path class="uuid-f234e0f2-0a6f-489f-b416-e5e1739f9dfe"
+                                                                d="M104.2,81.8c-4.1-4.2-10.1-5.9-16-4.7L38.1,37.1c-.9-.7-2.1-.6-2.9,.2-.8,.8-.9,2-.2,2.9l40.1,50.1c-.3,1.1-.4,2.1-.4,3.1-.1,4.8,1.7,9.5,5,12.8s7.8,5.1,12.2,5.1,8.9-1.7,12.2-5c3.5-3.4,5.4-8.2,5.1-13.2-.3-4.3-2.1-8.3-5.1-11.2Zm-3,21.3h0c-2.5,2.5-5.7,3.8-9.2,3.8s-6.7-1.4-9.2-3.8c-2.5-2.5-3.8-6-3.7-9.6,0,0,0,0,0,0,0-.9,.2-1.9,.5-3,.2-.7,0-1.4-.4-2l-28.6-35.7,35.7,28.5c.5,.4,1.3,.6,1.9,.4,1.2-.3,2.5-.5,3.7-.5,3.5,0,6.8,1.3,9.2,3.8,0,0,0,0,0,0,2.3,2.2,3.6,5.1,3.8,8.4,.2,3.7-1.2,7.2-3.8,9.8Z" />
+                                                            <path class="uuid-f234e0f2-0a6f-489f-b416-e5e1739f9dfe"
+                                                                d="M121.3,6.8c-9.4-3.2-19.3-4.8-29.3-4.8s-24.5,2.4-35.8,7.2c-11,4.6-20.8,11.3-29.3,19.7-8.5,8.4-15.1,18.3-19.7,29.2C2.4,69.5,0,81.5,0,94s.2,1.1,.6,1.5,1,.6,1.5,.6h31c1.2,0,2.2-1,2.2-2.2,0-11.8,3.5-23,10.1-32.4,.7-1,.5-2.3-.5-3-1-.7-2.3-.5-3,.5-6.7,9.6-10.5,20.8-10.9,32.7H4.4c.4-14.4,4.2-27.9,10.7-39.7l7.6,4.4c1,.6,2.4,.2,3-.8,.6-1,.2-2.4-.8-3l-7.5-4.4c7.3-11.8,17.3-21.8,29.2-29.1l4.3,7.5c.6,1,1.9,1.4,3,.8,1-.6,1.4-1.9,.8-3l-4.3-7.5c11.9-6.5,25.4-10.3,39.7-10.6V15.1c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2V6.4c12.3,.3,24.2,3.1,35.1,8.3l2.5-3.6c-3.4-1.6-6.9-3.1-10.5-4.3Z" />
+                                                            <path class="uuid-f234e0f2-0a6f-489f-b416-e5e1739f9dfe"
+                                                                d="M175.8,85.6c-8.2-4.1-17.7-3.8-26,.9-1,.6-1.4,1.9-.8,3,.4,.7,1.1,1.1,1.9,1.1s.7,0,1.1-.3c7-4,15-4.2,21.9-.8,1.1,.5,2.4,.1,2.9-1,.5-1.1,.1-2.4-1-2.9Z" />
+                                                            <path class="uuid-f234e0f2-0a6f-489f-b416-e5e1739f9dfe"
+                                                                d="M167.1,104.5c-4.8-2.7-10.3-4.1-15.8-4-4.4-7.3-12.2-11.7-20.7-11.7s-5.7,.6-8.8,1.7c-1.1,.4-1.7,1.7-1.3,2.8,.4,1.1,1.7,1.7,2.8,1.3,2.5-1,4.9-1.4,7.2-1.4,6.2,0,12,3,15.8,7.9-3.4,.6-6.6,1.8-9.6,3.5-1,.6-1.4,1.9-.8,3,.4,.7,1.1,1.1,1.9,1.1s.7,0,1.1-.3c3.3-1.9,6.9-3,10.5-3.3,.5,.2,1.2,.2,1.7-.1,4.8-.1,9.7,1.1,13.8,3.5,1,.6,2.4,.2,3-.8,.6-1,.2-2.4-.8-3Z" />
+                                                            <path class="uuid-f234e0f2-0a6f-489f-b416-e5e1739f9dfe"
+                                                                d="M135.8,13c-1.3-.7-2.6-1.4-3.9-2l-2.5,3.6c1.3,.6,2.6,1.3,3.9,2l2.5-3.6Z" />
+                                                            <path class="uuid-f234e0f2-0a6f-489f-b416-e5e1739f9dfe"
+                                                                d="M140.7,80.9c8.3,0,16.1-3.3,22-9.2,5.8-5.8,8.6-12.5,8.3-19.8-.3-6.5-3-13.5-8-20.8L142.3,.9c-.4-.6-1.1-.9-1.8-.9s-1.4,.4-1.8,.9l-6.9,10.1c1.3,.6,2.6,1.3,3.9,2l4.8-7,18.8,27.5c9.6,14,9.7,25.8,.3,35.1h0c-5,5.1-11.7,7.9-18.9,7.9-7.2,0-14-2.8-19.1-7.9-9.3-9.3-9.2-21.1,.3-35.1l11.5-16.9c-1.3-.7-2.6-1.4-3.9-2l-11.2,16.4c-5,7.3-7.7,14.3-8,20.8-.3,7.4,2.4,14.1,8.2,19.8,5.9,5.9,13.8,9.2,22.1,9.2h0Z" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="bnc-service-item-content">
+                                        <div class="bnc-service-item-wrap">
+                                            <h4 class="bnc-service-item-title">
+                                                <a class="tp-line-black" href="#"
+                                                    style="font-family: mazzard-regular !important;text-transform: none !important;">Une
+                                                    optimisation fine<br> des apports en eau</a>
+                                            </h4>
+                                            <div class="bnc-service-item-text">
+
+                                            </div>
+                                        </div>
+                                        <div class="bnc-service-item-btn-box z-index-1 d-flex justify-content-between align-items-center"
+                                            style="    margin-top: 40px !important;">
+
+                                            <div class="bnc-service-item-number">
+                                                <span style="color: #fff !important;">02</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 tp_fade_anim" data-delay=".7">
+                                <div class="bnc-service-item mb-30">
+                                    <div class="bnc-service-item-icon">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.2 109.7">
+                                                <defs>
+                                                    <style>
+                                                        .uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9 {
+                                                            fill: #fff;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <g id="uuid-14e16a2a-ae6c-4ec1-a464-0fc569f2d190"
+                                                    data-name="Calque 1" />
+                                                <g id="uuid-b78fc062-d426-4dc1-989d-35fd9938f438" data-name="Calque 2">
+                                                    <g id="uuid-13c6ce10-7a12-46a3-a6b1-7c1945fa9ce2"
+                                                        data-name="Layer 1">
+                                                        <g>
+                                                            <path class="uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9"
+                                                                d="M106.2,109.7H2.1c-1.1,0-2.1-.9-2.1-2.1v-35.1c0-3.6,3-6.6,6.6-6.6H101.7c3.6,0,6.6,3,6.6,6.6v35.1c0,1.1-.9,2.1-2.1,2.1ZM4.1,105.6H104.1v-33c0-1.4-1.1-2.5-2.5-2.5H6.6c-1.4,0-2.5,1.1-2.5,2.5v33Z" />
+                                                            <path class="uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9"
+                                                                d="M73.4,75.8c-1.1,0-2.1-.9-2.1-2.1V16.8c0-1.1,.9-2.1,2.1-2.1s2.1,.9,2.1,2.1v56.9c0,1.1-.9,2.1-2.1,2.1Z" />
+                                                            <path class="uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9"
+                                                                d="M81.4,57.7c-1.4,0-2.5-.2-2.9-.3-1.1-.2-1.8-1.3-1.6-2.4,.2-1.1,1.3-1.8,2.4-1.6,.5,.1,5.1,.9,8.3-1.9,3.1-2.8,3.7-8,1.5-12.3-1-.4-2.3-.8-3.9-.7-2.3,.2-3.9,1.2-4.7,1.8-.9,.7-2.2,.6-2.9-.3-.7-.9-.6-2.2,.3-2.9,1.2-.9,3.6-2.5,7-2.7,2.9-.2,5.2,.6,6.6,1.4,.4,.2,.6,.5,.8,.8,3.6,6.1,2.7,13.7-2,18-2.9,2.6-6.5,3.2-8.9,3.2Z" />
+                                                            <path class="uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9"
+                                                                d="M66.1,48.2c-2,0-4.4-.4-6.7-1.8-5.6-3.3-8.2-11.1-6.1-18.8,.2-.7,.7-1.2,1.4-1.5,2.5-.7,5.2-.9,7.8-.4,2.5,.5,5,1.6,7,3.1,.9,.7,1.1,2,.4,2.9-.7,.9-2,1.1-2.9,.4-1.1-.8-2.9-1.9-5.3-2.4-1.8-.3-3.5-.2-4.7,0-1.1,5.6,.7,10.8,4.5,13.1,2.2,1.3,4.7,1.3,6.4,1.1,1.1-.2,2.2,.6,2.3,1.7,.2,1.1-.6,2.2-1.7,2.3-.7,.1-1.5,.2-2.4,.2Z" />
+                                                            <path class="uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9"
+                                                                d="M68.1,24.7c-.6,0-1.1-.2-1.5-.7-1.3-1.5-4.3-5.6-3.7-11.3,.6-5.6,4.3-10.4,9.9-12.6,.5-.2,1.1-.2,1.6,0,5.4,2.6,8.9,7.6,9.3,13.1,.3,4.7-1.8,8.3-3.1,10-.7,.9-2,1.1-2.9,.4-.9-.7-1.1-2-.4-2.9,.9-1.3,2.5-3.9,2.3-7.3-.2-3.7-2.6-7.2-6.1-9.2-3.6,1.7-6.1,5-6.5,8.8-.4,4.2,2,7.3,2.7,8.2,.7,.9,.7,2.2-.2,2.9-.4,.3-.9,.5-1.3,.5Z" />
+                                                            <path class="uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9"
+                                                                d="M33.3,39.8h-3c-1.1,0-2.1-.9-2.1-2.1s.9-2.1,2.1-2.1h2.4l3.2-7.6H12.2l3.5,7.6h.5c1.1,0,2.1,.9,2.1,2.1s-.9,2.1-2.1,2.1h-1.1c-1.2,0-2.3-.7-2.8-1.8l-4.4-9.5c-.4-1-.4-2.1,.2-3,.6-.9,1.6-1.4,2.6-1.4h26.5c1.1,0,2,.5,2.6,1.4,.6,.9,.7,2,.3,2.9l-4,9.5c-.5,1.2-1.6,1.9-2.9,1.9Z" />
+                                                            <path class="uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9"
+                                                                d="M23,64.4c-1.1,0-2.1-.9-2.1-2.1v-26.8c0-1.1,.9-2.1,2.1-2.1s2.1,.9,2.1,2.1v26.8c0,1.1-.9,2.1-2.1,2.1Z" />
+                                                            <path class="uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9"
+                                                                d="M31.7,18.8H15.2c-1.1,0-2.1-.9-2.1-2.1s.9-2.1,2.1-2.1H31.7c1.1,0,2.1,.9,2.1,2.1s-.9,2.1-2.1,2.1Z" />
+                                                            <path class="uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9"
+                                                                d="M36.2,89.9h-12.4c-1.7,0-3.1-1.4-3.1-3.1v-13.1c0-1.1,.9-2.1,2.1-2.1s2.1,.9,2.1,2.1v12.1h11.4c1.1,0,2.1,.9,2.1,2.1s-.9,2.1-2.1,2.1Z" />
+                                                            <path class="uuid-41252715-9efc-4f10-b20d-45cf3d4ad4c9"
+                                                                d="M66,94.1h-22c-1.7,0-3.1-1.4-3.1-3.1v-6.6c0-1.7,1.4-3.1,3.1-3.1h22c1.7,0,3.1,1.4,3.1,3.1v6.6c0,1.7-1.4,3.1-3.1,3.1Zm-20.9-4.1h19.9v-4.6h-19.9v4.6Z" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="bnc-service-item-content">
+                                        <div class="bnc-service-item-wrap">
+                                            <h4 class="bnc-service-item-title">
+                                                <a class="tp-line-black" href="#"
+                                                    style="font-family: mazzard-regular !important;text-transform: none !important;">Une
+                                                    meilleure anticipation<br> des besoins des cultures
+                                                </a>
+                                            </h4>
+                                            <div class="bnc-service-item-text">
+
+                                            </div>
+                                        </div>
+                                        <div class="bnc-service-item-btn-box z-index-1 d-flex justify-content-between align-items-center"
+                                            style="    margin-top: 40px !important;">
+
+                                            <div class="bnc-service-item-number">
+                                                <span style="color: #fff !important;">03</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bnc-step-area p-relative pt-150 pb-150" data-bg-color="#002A28">
+                    <div class="bnc-step-text-wrap tp_fade_anim" data-delay=".5" data-fade-from="top"
+                        data-ease="bounce">
+                    </div>
+                    <div class="container container-1510">
+                        <div class="row">
+                            <div class="col-lg-6">
+
+                                <div class="bnc-step-thumb z-index-1 fix tp-clip-anim">
+                                    <img class="w-100 tp-anim-img" data-animate="true" data-speed=".8"
+                                        src="assets/images/offre03/section_left.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <span class="tp-section-subtitle fs-16 tp-split-title"
+                                    style="color:#fef2d7 !important;"> • Impact</span>
+                                <h3 class="tp-section-title tp-split-title text-white"
+                                    style="font-size: 40px !important;color:#fef2d7 !important;">Des systèmes agricoles
+                                    <br>plus résilients et efficients
+                                </h3>
+
+                                <div class="bnc-step-item-sub"
+                                    style="color:#fef2d7 !important;padding-top: 20px !important;">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                            viewBox="0 0 66.8 66.8">
+                                            <defs>
+                                                <style>
+                                                    .uuid-d02e756f-9e65-4bce-86fe-78c2350a73a2 {
+                                                        fill: none;
+                                                        stroke: #fef2d7;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 2.3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g id="uuid-4ffe87aa-5b3c-4d32-9510-d025b52a16fa" data-name="Calque 1" />
+                                            <g id="uuid-5990b5ac-1517-4439-99fd-328c6b383f28" data-name="Calque 2">
+                                                <g id="uuid-1505d412-31c4-4d78-87c5-ad03a031e9e0" data-name="Layer 1">
+                                                    <g>
+                                                        <g>
+                                                            <path class="uuid-d02e756f-9e65-4bce-86fe-78c2350a73a2"
+                                                                d="M45.2,24.7c0,6.5-5.3,11.8-11.8,11.8s-11.8-5.3-11.8-11.8S31,8.2,33.4,1.1c2.4,7.1,11.8,16.5,11.8,23.6Z" />
+                                                            <path class="uuid-d02e756f-9e65-4bce-86fe-78c2350a73a2"
+                                                                d="M33.4,30.6c-3.3,0-5.9-2.6-5.9-5.9" />
+                                                        </g>
+                                                        <g>
+                                                            <path class="uuid-d02e756f-9e65-4bce-86fe-78c2350a73a2"
+                                                                d="M31.3,65.6v-3.1c0-9.5-2.1-14.6-10.4-18.7l-7.6-10.7c-.7-1.6-2.6-2.2-4.1-1.5h0c-1.6,.7-2.2,2.6-1.5,4.1l9.1,17.4" />
+                                                            <path class="uuid-d02e756f-9e65-4bce-86fe-78c2350a73a2"
+                                                                d="M7.4,26.1V15.7c0-1.7-1.4-3.1-3.1-3.1h0c-1.7,0-3.1,1.4-3.1,3.1v28c0,1.4,.5,2.7,1.3,3.8l13.2,17v1" />
+                                                        </g>
+                                                        <g>
+                                                            <path class="uuid-d02e756f-9e65-4bce-86fe-78c2350a73a2"
+                                                                d="M35.5,65.6v-3.1c0-9.5,2.1-14.6,10.4-18.7l7.6-10.7c.7-1.6,2.6-2.2,4.1-1.5h0c1.6,.7,2.2,2.6,1.5,4.1l-9.1,17.4" />
+                                                            <path class="uuid-d02e756f-9e65-4bce-86fe-78c2350a73a2"
+                                                                d="M59.4,26.1V15.7c0-1.7,1.4-3.1,3.1-3.1h0c1.7,0,3.1,1.4,3.1,3.1v28c0,1.4-.5,2.7-1.3,3.8l-13.2,17v1" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    &nbsp; Réduction des pertes en eau
+                                </div>
+                                <div class="bnc-step-item-sub"
+                                    style="color:#fef2d7 !important;padding-top: 20px !important;">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                            viewBox="0 0 64.3 79.2">
+                                            <defs>
+                                                <style>
+                                                    .uuid-42f82b14-9b6e-48db-af0a-57b3903df928 {
+                                                        fill: #fef2d7;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g id="uuid-330703be-df54-429f-9d52-7174dd8b3445" data-name="Calque 1" />
+                                            <g id="uuid-faa462ce-b28d-4702-952b-7387108481f8" data-name="Calque 2">
+                                                <g id="uuid-bbad9098-03e0-442f-9ede-86cc3f9b5c0b" data-name="Layer 1">
+                                                    <path class="uuid-42f82b14-9b6e-48db-af0a-57b3903df928"
+                                                        d="M19.9,64.6c0-.2,0-.4-.1-.5-.1-.2-.3-.3-.5-.4-.3-.1-.5-.2-.8-.1-.4,0-.9,.2-1.2,.5l-1.4,1.7c-.2,.3-.3,.6-.3,.9,0,.2,.2,.5,.3,.7,.2,.2,.4,.4,.6,.5,.2,0,.4,.1,.6,0l2.7-3.4h0Zm-1.3,4.9s0,0,0,0c-.3,.4-.3,.8-.1,1.1,0,.1,.2,.3,.3,.4,.1,.1,.3,.2,.4,.2,.4,.1,.8,0,1.1-.4l3.1-3.8s0,0,0,0c.3-.4,.3-.8,.1-1.1,0-.1-.2-.3-.3-.4-.1-.1-.3-.2-.4-.2-.4-.1-.8,0-1.1,.4l-3.1,3.8h0ZM2.2,60.6l6.2,2.7s.1,0,.1,0c0,0,0,0,.1-.1l8.5-19.3s0-.1,0-.1c0,0,0,0-.1-.1l-6.2-2.7s-.1,0-.1,0c0,0,0,0-.1,.1L2.1,60.4s0,.1,0,.1c0,0,0,0,.1,.1h0Zm23.6,14.1c0,.2,0,.3,.2,.5,.1,.2,.3,.3,.6,.5,.2,.1,.5,.2,.7,.2,.3,0,.7-.1,1-.5l.6-.7c.3-.3,.4-.6,.3-.9,0-.3-.1-.5-.3-.7-.2-.2-.4-.4-.6-.5-.2,0-.3-.1-.5-.1l-1.9,2.4h0Zm-1.8-1.1h0l2.3-2.9c.3-.3,.3-.6,.3-.9,0-.2-.2-.4-.3-.6-.2-.2-.4-.3-.6-.4-.3-.1-.5-.1-.8,0l-2.9,3.7c-.3,.4-.3,.9-.2,1.2,0,.1,.2,.3,.3,.4,.1,.1,.3,.2,.5,.3,.4,.1,.9,0,1.3-.4h.1Zm10.9,2h-.1c.1,0,.4,.2,.3,.2h0l-.2-.2h0Zm19.4-15.6s0,0,0,.1l1.2,3.1s0,0,.1,.1c0,0,.1,0,.1,0l6.3-2.5s0,0,.1-.1c0,0,0-.1,0-.1l-7.7-19.7s0,0-.1-.1c0,0-.1,0-.1,0l-6.2,2.4s0,0-.1,0c0,0,0,0,0,0,0,0,0,0,0,.1,0,0,0,0,0,.1l.5,1.4s0,0,0,0h0l5.8,15h0Zm-26-10.9s0,0,0,0c-1,.9-1.9,1.9-2.5,2.5-.5,.6-.8,.9-.9,1.1,0,.2,0,.5,0,1,0,1.4,.1,3.7,.2,5.1h0c0,.6,0,1,.3,1.1,.1,.1,.4,.1,1,0,.2,0,.5-.2,.7-.3,.3-.2,.6-.5,.8-.8,.2-.3,.4-.6,.5-.9,.2-.4,.3-.8,.4-1.2,0-.3,.1-.6,.2-.9,0-.3,0-.6,.2-.9h0c.2-.7,.3-1.1,.8-1.6,.3-.3,1-.7,1.9-.6,.5,0,1.1,.3,1.7,.8l13.8,11.1c1.7-.9,2.3-1.9,2.7-2.7,.5-1,1-1.8,2.3-2.3l-5.1-13.1c-.3,0-.7,.2-1.1,.2-.8,.1-1.8,.2-3.1,0-1.6-.1-3.8-.5-5.7-.8-1.1-.2-2.1-.3-2.8-.4-.9-.1-1.5-.2-1.9,0-.4,.1-.8,.4-1.4,1-.6,.5-1.4,1.3-2.3,2.1-.1,.1-.2,.2-.3,.3h0Zm16.7,22.4h0c-.1,.5-.4,.9-.6,1.3-.3,.4-.6,.7-1,.9-.8,.5-1.9,.6-2.9,.2h0c-.1,.5-.3,.9-.6,1.3-.3,.4-.6,.7-1,.9-.6,.4-1.3,.5-2.1,.4h0c-.2,.4-.4,.7-.7,1-.3,.3-.6,.6-1,.8-1.2,.8-2.8,1.1-4.3-.1l-1.3-1.1c-.6,.5-1.3,.6-2,.6-.6,0-1.2-.2-1.7-.4-.5-.3-1-.6-1.3-1.1,0,0-.1-.2-.2-.3-.7,.3-1.4,.3-2.1,0-.4-.1-.8-.3-1.2-.6-.4-.3-.7-.6-.9-1-.2-.3-.3-.6-.4-1-.3,0-.7,0-1-.1-.4-.1-.8-.3-1.1-.6-.3-.3-.6-.6-.8-1-.3-.5-.5-1.1-.4-1.8-.2,0-.3-.1-.5-.2-.5-.2-1-.6-1.4-1.1-.4-.5-.7-1.1-.8-1.7,0-.6,0-1.3,.3-1.9-.5-.8-.9-1.6-1.4-1.9-.3-.3-.8-.4-1.2-.5l-.6,1.4c-.3,.6-.7,1-1.3,1.2-.5,.2-1.2,.2-1.8,0l-6.2-2.7c-.6-.3-1-.7-1.2-1.3-.2-.5-.2-1.2,0-1.8l8.5-19.3c.3-.6,.7-1,1.3-1.2,.5-.2,1.2-.2,1.8,0l6.2,2.7c.6,.3,1,.7,1.2,1.3,.2,.5,.2,1.2,0,1.8l-.2,.5c1,.6,2.1,1.1,3.3,1.5,1.4,.4,3.1,.6,4.9,.7h0c.8-.8,1.7-1.6,2.3-2.2,.9-.8,1.5-1.2,2.3-1.4,.8-.2,1.6-.2,2.8,0,.8,.1,1.8,.3,2.9,.5,1.9,.3,4,.7,5.6,.8,1.1,0,1.9,0,2.6,0,.2,0,.4,0,.6-.1l-.2-.5c-.2-.6-.2-1.2,0-1.8,.2-.5,.7-1,1.3-1.2l6.3-2.5c.6-.2,1.2-.2,1.8,0,.5,.2,1,.7,1.2,1.3l7.7,19.7c.2,.6,.2,1.2,0,1.8-.2,.5-.7,1-1.3,1.2l-6.3,2.5c-.6,.2-1.2,.2-1.8,0-.5-.2-1-.7-1.2-1.3l-.9-2.2c-.6,.3-.9,.8-1.2,1.3-.5,.9-1.1,2-2.8,3.1,.8,.9,.9,2,.6,3.1-.1,.4-.4,.8-.7,1.2-.3,.3-.6,.7-1,.9-.8,.5-1.8,.7-2.7,.3h0Zm-1.2-3.5s0,0,0,0c0,0,.1,.1,.2,.2l1.3,1.1c.4,.3,.8,.3,1.2,0,.2-.1,.3-.2,.5-.4,.1-.2,.2-.3,.3-.5,.1-.4,0-.8-.3-1.1l-15.1-12.2h0c-.2-.2-.4-.3-.6-.3-.1,0-.2,0-.2,0,0,0-.1,.3-.2,.6h0c0,.3,0,.5-.1,.8,0,.3,0,.6-.2,1.1-.1,.5-.3,1-.5,1.5-.2,.4-.4,.9-.7,1.3-.4,.5-.8,.9-1.3,1.3-.5,.3-1,.6-1.6,.7-1.3,.2-2.2,0-2.8-.6-.6-.6-.8-1.4-.9-2.5h0c0-1.4-.1-3.7-.2-5.2,0-.9,0-1.4,.3-1.9,.2-.5,.6-1,1.3-1.7,.3-.3,.6-.6,1-1-1.2-.1-2.4-.3-3.5-.6-1.4-.4-2.5-.9-3.6-1.6l-6,13.6c.6,.1,1.1,.4,1.7,.8,.6,.5,1,1.1,1.5,1.8l.4-.5c.7-.9,1.7-1.3,2.7-1.3,.6,0,1.2,0,1.8,.3,.6,.2,1.1,.6,1.4,1.1,0,.1,.1,.2,.2,.3,.6-.2,1.2-.1,1.7,0,.4,.1,.8,.3,1.1,.6,.3,.3,.6,.6,.8,1,.3,.5,.4,1,.4,1.6,.2,0,.5,.1,.7,.2,.5,.2,1,.6,1.4,1,.4,.4,.7,1,.8,1.6,0,.3,0,.7,0,1,.1,0,.3,.1,.4,.2,.6,.3,1.1,.7,1.4,1.2,.4,.5,.6,1.2,.7,1.8,0,.7-.1,1.4-.6,2.1l1.3,1.1c.6,.5,1.2,.3,1.8,0,.2-.1,.4-.3,.6-.5,.2-.2,.3-.4,.4-.5,0,0,0,0,0,0h.1l-2.3-1.7c-.5-.4-.6-1-.2-1.5,.4-.5,1-.6,1.5-.2l2.5,1.9c.5,.4,.9,.3,1.3,.1,.2,0,.3-.2,.4-.4,.1-.2,.2-.3,.3-.5,.1-.4,0-.9-.3-1.2l-2.9-2.4c-.5-.4-.5-1-.2-1.5,.4-.5,1-.5,1.5-.2l2.9,2.4s0,0,0,0l1.5,1.2c.4,.3,.9,.3,1.3,0,.2,0,.3-.2,.4-.4,.1-.2,.2-.3,.3-.5,.1-.4,0-.8-.3-1.1l-4.2-3.4c-.5-.4-.5-1-.2-1.5,.4-.4,1-.5,1.5-.2l4,3.3h0ZM7.3,59.6c-.3,.5-.9,.7-1.4,.4-.5-.3-.7-.9-.4-1.4v-.2c.4-.5,1-.7,1.5-.4,.5,.3,.7,.9,.4,1.4v.2h0Zm50.9,0c-.3,.5-.9,.7-1.4,.4-.5-.3-.7-.9-.4-1.4v-.2c.4-.5,1-.7,1.5-.4,.5,.3,.7,.9,.4,1.4v.2h0ZM33.8,2.8c-.6-.4-1.1-.7-1.6-.7s-1,.4-1.6,.7c-.6,.4-1.1,.7-1.8,.9-.7,.2-1.4,.2-2,.1-.6,0-1.3,0-1.6,.2-.3,.2-.6,.8-.9,1.3-.3,.6-.6,1.2-1.1,1.7-.5,.5-1.1,.8-1.7,1.1-.6,.3-1.1,.6-1.3,.9-.2,.3-.2,1-.2,1.6,0,.7,0,1.3-.1,2-.2,.7-.5,1.2-.9,1.8-.4,.6-.7,1.1-.7,1.6s.4,1,.7,1.6c.4,.6,.7,1.1,.9,1.8,.2,.7,.2,1.4,.1,2,0,.6,0,1.3,.2,1.6,.2,.3,.8,.6,1.3,.9,.6,.3,1.2,.6,1.7,1.1s.8,1.1,1.1,1.7c.3,.6,.6,1.1,.9,1.3,.3,.2,1,.2,1.6,.2,.7,0,1.3,0,2,.1,.7,.2,1.2,.5,1.8,.9,.6,.4,1.1,.7,1.6,.7s1-.4,1.6-.7c.6-.4,1.1-.7,1.8-.9,.7-.2,1.4-.2,2-.1,.6,0,1.3,0,1.6-.2,.3-.2,.6-.8,.9-1.3,.3-.6,.6-1.2,1.1-1.7,.5-.5,1.1-.8,1.7-1.1,.6-.3,1.1-.6,1.3-.9,.2-.3,.2-1,.2-1.6,0-.7,0-1.3,.1-2,.2-.7,.5-1.2,.9-1.8,.4-.6,.7-1.1,.7-1.6s-.4-1-.7-1.6c-.4-.6-.7-1.1-.9-1.8-.2-.7-.2-1.4-.1-2,0-.6,0-1.3-.2-1.6-.2-.3-.8-.6-1.3-.9-.6-.3-1.2-.6-1.7-1.1-.5-.5-.8-1.1-1.1-1.7-.3-.6-.6-1.1-.9-1.3-.3-.2-1-.2-1.6-.2-.7,0-1.3,0-2-.1-.7-.2-1.2-.5-1.8-.9h0Zm-3.7,28.6c-.2-.1-.4-.2-.6-.4-.4-.3-.9-.5-1.2-.6-.4-.1-.9,0-1.4,0-.9,0-1.9,0-2.7-.4-.1,0-.2-.1-.3-.2l-2.7,6.8,3.3-1c.5-.2,1,0,1.2,.5l1.5,2.7,2.9-7.2h0Zm10.5-1.7c0,0-.2,.1-.3,.2-.9,.5-1.8,.5-2.7,.4-.5,0-1,0-1.4,0-.4,0-.8,.4-1.2,.6-.2,.1-.4,.3-.6,.4l2.9,7.2,1.5-2.7c.2-.5,.8-.6,1.2-.5l3.3,1-2.7-6.8h0ZM32.2,0c1.1,0,1.9,.5,2.7,1,.4,.3,.9,.5,1.2,.6,.4,.1,.9,0,1.4,0,.9,0,1.9,0,2.7,.4,.9,.5,1.3,1.3,1.7,2.2,.2,.4,.5,.9,.7,1.2,.3,.3,.7,.5,1.2,.7,.8,.4,1.7,.8,2.2,1.7,.5,.9,.5,1.8,.4,2.7,0,.5,0,1,0,1.4,0,.4,.4,.8,.6,1.2,.5,.8,1,1.7,1,2.7s-.5,1.9-1,2.7c-.3,.4-.5,.9-.6,1.2-.1,.4,0,.9,0,1.4,0,.9,0,1.9-.4,2.7-.5,.9-1.3,1.3-2.2,1.7-.4,.2-.9,.5-1.2,.7-.2,.2-.5,.7-.7,1.1l4,10c.1,.2,.1,.5,0,.7-.2,.6-.8,.9-1.3,.7l-4.6-1.5-2.2,3.9h0c-.1,.2-.3,.4-.5,.5-.5,.2-1.2,0-1.4-.6l-3.8-9.4s0,0-.1,0,0,0-.1,0l-3.8,9.4c-.2,.5-.8,.8-1.4,.6-.2,0-.4-.3-.5-.5h0l-2.2-3.9-4.6,1.5c-.6,.2-1.1-.1-1.3-.7,0-.3,0-.5,0-.7l4-10c-.2-.4-.4-.8-.7-1.1-.3-.3-.7-.5-1.2-.7-.8-.4-1.7-.8-2.2-1.7-.5-.9-.5-1.8-.4-2.7,0-.5,0-1,0-1.4,0-.4-.4-.8-.6-1.2-.5-.8-1-1.7-1-2.7s.5-1.9,1-2.7c.3-.4,.5-.9,.6-1.2,.1-.4,0-.9,0-1.4,0-.9,0-1.9,.4-2.7,.5-.9,1.3-1.3,2.2-1.7,.4-.2,.9-.5,1.2-.7,.3-.3,.5-.7,.7-1.2,.4-.8,.8-1.7,1.7-2.2,.9-.5,1.8-.5,2.7-.4,.5,0,1,0,1.4,0,.4,0,.8-.4,1.2-.6,.8-.5,1.7-1,2.7-1h0Zm5.4,10.7c-1.4-1.4-3.3-2.2-5.4-2.2s-4,.9-5.4,2.2c-1.4,1.4-2.2,3.3-2.2,5.4s.9,4,2.2,5.4c1.4,1.4,3.3,2.2,5.4,2.2s4-.9,5.4-2.2c1.4-1.4,2.2-3.3,2.2-5.4s-.9-4-2.2-5.4h0Zm-5.4-4.3c2.7,0,5.1,1.1,6.9,2.8,1.8,1.8,2.8,4.2,2.8,6.9s-1.1,5.1-2.8,6.9c-1.8,1.8-4.2,2.8-6.9,2.8s-5.1-1.1-6.9-2.8c-1.8-1.8-2.8-4.2-2.8-6.9s1.1-5.1,2.8-6.9c1.8-1.8,4.2-2.8,6.9-2.8h0Zm-4.2,11.2c-.4-.4-.5-1-.1-1.5,.4-.4,1-.5,1.5-.1l1.6,1.4,4-4.8c.4-.4,1-.5,1.5-.1,.4,.4,.5,1,.1,1.5l-4.7,5.5s0,0,0,0c-.4,.4-1,.5-1.5,.1l-2.4-2.1h0Z" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    &nbsp; Sécurisation des rendements
+                                </div>
+                                <div class="bnc-step-item-sub"
+                                    style="color:#fef2d7 !important;padding-top: 20px !important;">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                            viewBox="0 0 60.1 60.5">
+                                            <defs>
+                                                <style>
+                                                    .uuid-90216ae3-f852-4f15-8523-345978dea4fc {
+                                                        fill: #fef2d7;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g id="uuid-c0d85595-b966-44c5-931f-e544cfdcd2be" data-name="Calque 1" />
+                                            <g id="uuid-0e08fef0-7cae-4bf5-b694-96cc0a2630bb" data-name="Calque 2">
+                                                <g id="uuid-f3bd81c8-6859-40b2-83ed-f5a983b0141f" data-name="Layer 1">
+                                                    <g>
+                                                        <path class="uuid-90216ae3-f852-4f15-8523-345978dea4fc"
+                                                            d="M57.6,16.9H2.5c-1.4,0-2.5-1.1-2.5-2.5V2.5C0,1.1,1.1,0,2.5,0H57.6c1.4,0,2.5,1.1,2.5,2.5V14.3c0,1.4-1.1,2.5-2.5,2.5ZM2.5,2.3c-.1,0-.2,.1-.2,.2V14.3c0,.1,.1,.2,.2,.2H57.6c.1,0,.2-.1,.2-.2V2.5c0-.1-.1-.2-.2-.2H2.5Z" />
+                                                        <path class="uuid-90216ae3-f852-4f15-8523-345978dea4fc"
+                                                            d="M40.5,22H19.6c-.6,0-1.1-.5-1.1-1.1s.5-1.1,1.1-1.1h21c.6,0,1.1,.5,1.1,1.1s-.5,1.1-1.1,1.1Z" />
+                                                        <path class="uuid-90216ae3-f852-4f15-8523-345978dea4fc"
+                                                            d="M39.1,30.7H21c-1.4,0-2.6-1.1-2.6-2.6V15.7c0-.6,.5-1.1,1.1-1.1s1.1,.5,1.1,1.1v12.4c0,.2,.1,.3,.3,.3h18.1c.2,0,.3-.1,.3-.3V15.7c0-.6,.5-1.1,1.1-1.1s1.1,.5,1.1,1.1v12.4c0,1.4-1.1,2.6-2.6,2.6Z" />
+                                                        <path class="uuid-90216ae3-f852-4f15-8523-345978dea4fc"
+                                                            d="M32,34.4h-3.8c-.6,0-1.1-.5-1.1-1.1s.5-1.1,1.1-1.1h3.8c.6,0,1.1,.5,1.1,1.1s-.5,1.1-1.1,1.1Z" />
+                                                        <path class="uuid-90216ae3-f852-4f15-8523-345978dea4fc"
+                                                            d="M30,60.5c-1.5,0-3.1-.5-4.4-1.5-3.7-2.6-4.7-7.7-2.3-11.7l5.9-9.9c.2-.3,.6-.6,1-.6,.4,0,.8,.2,1,.6l5.8,10c2,3.5,1.4,8.1-1.5,10.8-1.6,1.5-3.5,2.3-5.4,2.3Zm.1-20.3l-4.9,8.3c-1.8,2.9-1,6.8,1.7,8.7,1,.7,2.1,1.1,3.1,1.1s2.7-.6,3.8-1.6c2.2-2,2.6-5.4,1.1-8l-4.8-8.4Z" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    &nbsp; Amélioration de la productivité hydrique
+                                </div>
+                                <div class="bnc-step-item-sub"
+                                    style="color:#fef2d7 !important;padding-top: 20px !important;">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                            viewBox="0 0 79.4 53">
+                                            <defs>
+                                                <style>
+                                                    .uuid-247df007-95a7-4b6c-9e96-6938c20e8875 {
+                                                        fill: #fef2d7;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g id="uuid-9069176f-b34f-4843-ad45-4961d026f891" data-name="Calque 1" />
+                                            <g id="uuid-72be96a5-8cb6-4131-ac01-8ce650cbdbd8" data-name="Calque 2">
+                                                <g id="uuid-3b9b6c4c-dc95-49a1-9761-c8350df05474" data-name="Layer 1">
+                                                    <g>
+                                                        <path class="uuid-247df007-95a7-4b6c-9e96-6938c20e8875"
+                                                            d="M2.1,32.4c0-2.4,0-4.7,0-7.1,0-.3,0-.8-.5-.4-.4,.2-.8,.1-1.2-.2-.3-.3-.4-.7-.3-1.1,0-.2,.2-.5,.3-.7,1.8-3.7,3.7-7.3,5.5-11,.2-.4,.5-.8,.9-1.1,3.3-1.9,6.6-3.8,9.8-5.8,.1,0,.2-.1,.3-.2,1-.8,1.9-.7,2.9,0,3.2,2,6.5,3.9,9.7,5.8,.3,.2,.6,.5,.8,.8,1.9,3.8,3.8,7.6,5.9,11.3,0,.2,.2,.3,.2,.5,.3,.9-.3,1.6-1.2,1.4-.5-.1-.5,.1-.5,.5,0,.7,0,1.4,0,2.1,0,3.1,0,6.2,0,9.3,0,.3-.1,.6,.4,.6,.7,0,1-.2,1-.7,0-2,0-4.1,0-6.1,0-.7,0-1.3,0-2,0-.7,.4-1,1.1-1.1,1.2,0,2.3,0,3.5,0,.7,0,1.1,.4,1.1,1.1,0,.9,0,1.9,0,2.8,0,1.5,0,3.1,0,4.6,0,.2,0,.3,.2,.3,.3,0,.6,0,.9,0,.3,0,.3-.3,.3-.5,0-.6,0-1.1,0-1.7,0-3.5,0-7.1,0-10.6,0-.3,0-.7,0-1,0-.8,.4-1.1,1.2-1.1,1.1,0,2.1,0,3.2,0,.8,0,1.2,.5,1.2,1.2,0,0,0,0,0,0,0,4.3,0,8.5,.1,12.8,0,.3-.1,.7,.4,.7,.9,0,1.1,0,1.1-.7,.1-3.6,.1-7.3,0-10.9,0-2.3,0-4.5,0-6.8,0-.2,0-.4,0-.7,.1-.5,.5-.8,1-.8,1.2,0,2.3,0,3.5,0,.8,0,1.2,.4,1.2,1.2,0,1.8,0,3.5,0,5.3,0,.3-.1,.5-.4,.5-.3,0-.6,0-.9,0-.4,0-.4-.3-.4-.7,0-1.2,0-2.4,0-3.6,0-.5-.2-.6-.6-.6-.2,0-.5,0-.7,0-.6,0-.7,0-.7,.6,0,1.6,0,3.3,0,4.9,0,3.9,0,7.8,0,11.7,0,.4,0,.7,.6,.8,.6,0,.8,.5,.8,1,0,.5-.4,.9-.9,.9-4,.2-7.7,1.5-11.3,3.3-2.8,1.3-5.4,2.9-7.9,4.6-.4,.2-.4,.4,0,.7,1.7,1.2,3.5,2.4,5.1,3.9,.3,.2,.4,.1,.6,0,1.9-2.4,4.2-4.4,6.5-6.3,2.2-1.9,4.7-3.5,7.3-4.8,.5-.2,1.1,0,1.3,.5,.3,.5,.1,1.2-.4,1.4-.9,.5-1.7,.9-2.6,1.4-2.3,1.3-4.3,3-6.3,4.8-1.6,1.4-3,2.9-4.3,4.5-.9,1.1-2,1.2-3.2,.2-1.1-.9-2.2-1.8-3.4-2.6-3.8-2.6-7.9-4.6-12.3-5.9-2.6-.7-5.1-1.3-7.8-1.6-1.2-.1-2.4-.2-3.6-.2-2.9,0-5.9,0-8.8,0-.3,0-.6,0-.8,0-.6,0-1-.3-1-.8,0-.6,.2-1.2,.7-1.3,.3,0,.5-.1,.8,0,.4,.1,.5,0,.5-.5,0-2.4,0-4.8,0-7.2Zm2-2h0c0,3,0,6,0,9,0,.5,.1,.6,.6,.6,1.5,0,3,0,4.4,0q.7,0,.7-.7c0-4.1,0-8.2,0-12.3,0-1,.4-1.5,1.4-1.5,4.4,0,8.9,0,13.3,0,.5,0,1,0,1.4,.2,.6,.1,.8,.5,.9,1,0,.5,0,1,0,1.6,0,3.5,0,7.1,0,10.6,0,.5,.1,.6,.6,.4,1.6-.5,3.2-.9,4.7-1.4,.4-.1,.5-.3,.5-.7,0-5.4,0-10.7,0-16.1,0-.3,0-.5-.2-.8-1.2-2.4-2.5-4.9-3.7-7.3-.1-.2-.3-.4-.5-.6-3.2-1.9-6.3-3.8-9.5-5.7-.3-.1-.5-.1-.7,0-.7,.4-1.4,.8-2.1,1.3-2.5,1.6-5.1,2.8-7.5,4.4-.2,.1-.4,.2-.5,.4-1.1,2.2-2.3,4.4-3.5,6.7-.3,.6-.5,1.2-.5,1.9,0,2.9,0,5.9,0,8.8Zm39.7,8.2c-4.2,0-17.3,2.8-18.8,4.1,2.1,.6,4.1,1.6,6,2.6,.3,.2,.6,.2,.9,0,2.1-1.5,4.2-2.8,6.5-4.1,1.7-1,3.5-1.7,5.5-2.5Zm-20.4-10.7H13.5c1.6,1.7,3.2,3.2,4.7,4.9,.2,.2,.3,.1,.5,0,1.3-1.4,2.6-2.7,4-4,.3-.3,.6-.5,.9-.8Zm1.4,1.9c-.4,.3-.8,.7-1.2,1-1.1,.9-2.1,2.1-3.2,3.1-.6,.6-.6,.6,0,1.1,1.3,1.3,2.6,2.6,3.9,3.9,.2,.2,.3,.4,.5,.4v-9.6Zm-10.9,10.5c0,0,.1,0,.2,0,2.2,.1,4.3,.6,6.3,1.1,.9,.2,1.6,.2,2.4-.3,.3-.2,.4-.3,.1-.6-1.5-1.5-3-3-4.5-4.5-.2-.2-.3-.2-.5,0-.4,.5-.9,1-1.4,1.5-.9,.9-1.7,1.8-2.7,2.6Zm-1.9-10.5v9.3c0,0,.1,0,.1,0,1.5-1.4,2.9-2.8,4.4-4.2,.3-.2,.2-.4,0-.6-1.5-1.5-3-3-4.5-4.5Zm33.3,.3h0c0,1.7,0,3.4,0,5.2,0,1.3,0,1.3,1.3,1.3,.3,0,.4-.1,.4-.5,0-3.6,0-7.3,0-10.9,0-1.2,0-1.2-1.2-1.3-.4,0-.6,.1-.6,.6,0,1.9,0,3.8,0,5.7Zm-7.3,3.4c0,.8,0,1.5,0,2.3,0,1.3,0,1.3,1.3,1.2,.5,0,.5-.2,.5-.6,0-1.8,0-3.6,0-5.4,0-1.3,0-1.1-1.2-1.1,0,0,0,0-.1,0-.3,0-.5,.2-.5,.6,0,1,0,2,0,3.1Z" />
+                                                        <path class="uuid-247df007-95a7-4b6c-9e96-6938c20e8875"
+                                                            d="M59.6,27.3c0-1.1,.1-2.1,.1-3.2,.1-2.5,.4-4.9,1.5-7.2,.8-1.7,1.8-3.3,3.2-4.6,1.7-1.6,4-1.2,5.3,0,2.4,2.2,3.6,5,4.2,8.1,.4,2.1,.6,4.2,.6,6.3,0,.3,0,.7,.2,.8,.2,0,.4-.3,.6-.4,.7-.6,1.4-1.3,2.1-1.9,.2-.1,.3-.2,.5-.3,.7-.4,1.4,0,1.5,.9,0,1.2,0,2.4-.1,3.6-.2,3.1-.9,6-1.8,9-.8,2.7-2.2,5.1-4.3,7.2-.8,.8-1.7,1.3-2.7,1.7-.4,.2-.5,.4-.5,.8,0,1,.1,2.1,0,3.1-.1,.7-.4,1.1-1.2,1.2-1.4,.2-2.8,0-4.2,0-.7,0-1-.5-1.1-1.1-.2-.9-.1-1.8,0-2.8,0-.6-.2-.8-.7-1-2.6-.9-4.3-2.8-5.6-5-1.3-2.1-1.9-4.4-2.3-6.9-.3-2-.4-4.1-.3-6.1,0-1.1,.1-2.2,.2-3.3,0-.9,.9-1.6,1.9-.9,1,.7,2,1.4,3.1,2.2Zm-3,.5c0,1.6,0,3.1,0,4.7,0,2.4,.5,4.8,1.5,7,1.4,3.3,3.6,5.6,7.3,6.2,.7,.1,.8,0,.8-.7,0-1.1-.2-2.3-.5-3.4-1-3.8-2.8-7.1-5.1-10.2-1.1-1.5-2.4-2.7-4-3.6Zm20.7,.7h-.1c-1.3,1.1-2.6,2.2-3.6,3.6-2.1,2.8-3.6,5.9-4.8,9.1-.5,1.3-.8,2.6-.7,4,0,.3,0,.5,.4,.4,1-.3,1.9-.6,2.7-1.2,1.4-1.1,2.5-2.5,3.3-4.1,1.3-2.9,2.1-5.8,2.6-8.9,.1-.9,.2-1.9,.2-2.8Zm-13.3-2.4h0c.6,0,1.1,0,1.7,0,.4,0,.6-.2,.5-.6,0-.6-.1-1.2-.1-1.8,0-.3-.1-.4-.4-.4-1.1,0-2.2,0-3.3,0-.3,0-.6,.2-.6,.6,0,.5,0,1.1-.1,1.6,0,.4,.2,.6,.6,.6,.6,0,1.1,0,1.7,0Zm6.2-2.8h0c-.5,0-1,0-1.6,0-.3,0-.5,.1-.5,.5,0,.6,0,1.2,0,1.8,0,.4,.1,.5,.5,.6,1.1,.2,2.3,0,3.4,0,.3,0,.3-.2,.3-.4,0-.6,0-1.1,0-1.7,0-.5-.2-.6-.6-.6-.5,0-1,0-1.5,0Zm-.5,7.8c.4,0,.6,0,.9,0,.4,0,.9,0,1.1-.2,.5-.6,1-1.2,.9-2.1,0-.3-.2-.5-.5-.5-1.1,0-2.3,0-3.4,0-.3,0-.5,.2-.4,.5,0,.5,0,1,0,1.6,0,.4,.1,.6,.5,.7,.4,0,.8,0,1.1,0Zm-3.5-1.4c0-.3,0-.6,0-.8,0-.3,0-.5-.5-.5-1.1,0-2.3-.2-3.4-.2-.4,0-.6,.2-.5,.6,.2,.8,.8,1.4,1.3,2.1,0,0,.1,0,.2,0,.8,0,1.6,.2,2.4,.1,.3,0,.5-.2,.5-.6,0-.3,0-.6,0-.8Zm-1.6-11.2c-.4,0-.9,0-1.5,0-.3,0-.5,.1-.5,.4-.1,.6-.3,1.1-.3,1.7,0,.3,0,.5,.4,.5,.7,0,1.5,0,2.2,0,1.7,0,1.4-.1,1.3-1.4-.1-1.5,.2-1.4-1.4-1.4,0,0,0,0-.2,0Zm5.2,0c-.4,0-.8,0-1.1,0-.3,0-.5,.1-.5,.5,0,.6,0,1.1,0,1.7,0,.3,.1,.4,.4,.5,1,.1,1.9,0,2.9,0,.4,0,.5-.2,.4-.5,0-.5-.2-1-.3-1.5-.1-.7-.3-.7-1-.8-.3,0-.6,0-.9,0Zm-2.9,31.7c1,0,1.1,0,1.3-1.2,0-.2,0-.4,0-.6,0-.3-.1-.5-.5-.4-.4,0-.8,0-1.1,0-.4,0-.8-.3-1,0-.2,.3,0,.7,0,1.1,0,.9,.2,1,1.1,1,.1,0,.2,0,.3,0Zm1.3-13.4c.6-1.1,1.2-2.2,1.9-3.2,.2-.2,0-.3-.2-.3-.4,0-.8,0-1.2,0-.3,0-.4,.2-.4,.5,0,1,0,2,0,3Zm-2.2-22.9c-.8,.7-1.5,1.3-2,2.2-.1,.2,0,.3,.2,.3,.5,0,1,0,1.5,0,.2,0,.3-.1,.3-.3,0-.7,0-1.3,0-2.1Zm2.1,.1c0,.7,0,1.3,0,1.9,0,.3,.1,.4,.4,.4,.5,0,.9,0,1.4,0,.3,0,.4,0,.2-.4-.5-.7-1.1-1.4-1.9-2Zm-2,22.4c0-1,0-1.8,0-2.7,0-.2,0-.4-.3-.5-.4,0-.8,0-1.2,0-.3,0-.3,0-.2,.3,.6,.9,1.1,1.8,1.6,2.9Z" />
+                                                        <path class="uuid-247df007-95a7-4b6c-9e96-6938c20e8875"
+                                                            d="M60.1,2.3c-.7-.2-1.3-.1-1.8-.1-.7,0-1.1-.3-1.1-.9,0-.7,.4-1.1,1.1-1.2,1.6,0,3.1-.1,4.7-.1,.9,0,1.4,.4,1.4,1.4,0,1.6,0,3.2-.1,4.8,0,.5-.4,1-.9,1-.5,0-.8-.3-1-.7-.1-.3-.2-.5-.1-.8,0-.7-.1-1.4-.1-2.2-.3,.1-.5,.3-.6,.5-2.8,3-5.9,5.7-9.4,7.9-2.7,1.8-5.5,3.4-8.7,4.3-1.5,.4-3,.8-4.5,1.2-.5,.1-.9,.1-1.3-.4-.5-.7-.2-1.4,.7-1.6,1.2-.3,2.4-.6,3.6-1,4.6-1.5,8.8-3.8,12.6-6.8,1.4-1.1,2.8-2.3,4.2-3.6,.5-.5,1-1.1,1.5-1.7Z" />
+                                                        <path class="uuid-247df007-95a7-4b6c-9e96-6938c20e8875"
+                                                            d="M4.9,45c5.5,0,10.4,.7,15,2.6,1.7,.7,3.2,1.5,4.7,2.5,.2,.1,.4,.3,.5,.4,.5,.5,.6,.8,.2,1.3-.4,.5-.9,.7-1.5,.3-.9-.5-1.8-1-2.7-1.5-3.3-1.7-6.7-2.7-10.3-3.2-2.2-.3-4.4-.5-6.5-.3-.9,0-1.9,0-2.8,.3-.5,.1-.9,0-1.3-.4-.3-.4-.3-.8-.1-1.2,.1-.3,.4-.5,.8-.5,1.5-.1,3-.3,4-.2Z" />
+                                                        <path class="uuid-247df007-95a7-4b6c-9e96-6938c20e8875"
+                                                            d="M57.9,14.8c0-.9,0-1.9,0-3,0-.6,.4-.8,.9-.9,1-.1,2-.2,3.1,0,.5,0,.7,.2,.7,.7,0,0,0,.1,0,.2,0,1,0,1-1,1.1-.4,0-.9,0-1.3,0-.4,0-.4,.2-.4,.5,0,1.5-.1,3-.3,4.5,0,.6-.2,.7-.8,.7-.7,0-.8-.2-.8-.7,0-.9,0-1.8,0-3Z" />
+                                                        <path class="uuid-247df007-95a7-4b6c-9e96-6938c20e8875"
+                                                            d="M18.4,21.1c-1,0-2,0-3,0-.9,0-1.2-.3-1.2-1.2,0-1.8,0-3.5,0-5.3,0-.8,.4-1.2,1.2-1.2,2,0,4.1,0,6.1,0,.5,0,.8,.3,.9,.7,0,.2,0,.4,0,.6,0,1.7,0,3.5,0,5.2,0,.8-.4,1.2-1.1,1.2-1,0-2.1,0-3.1,0Zm0-5.5c-.5,0-1.1,0-1.6,0-.3,0-.5,0-.5,.4,0,.8,0,1.6,0,2.3,0,.4,.2,.6,.5,.6,1,0,1.9,0,2.9,0,.7,0,.8-.3,.8-1,0-.7,0-1.3,0-2,0-.3-.1-.4-.4-.4-.5,0-1.1,0-1.6,0Z" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    &nbsp; Renforcement de la durabilité des systèmes agricoles
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row py-5 ">
+                            <div class="col-xl-12">
+                                <h3 class="fs-4 text-center"
+                                    style="font-family: mazzard-semibold;margin-bottom: 20px !important;text-transform: none !important; color: #fef2d7 !important;">
+                                    Une gestion optimisée de l’eau constitue un pilier essentiel <br>d’une agriculture
+                                    durable, intégrée aux autres leviers de
+                                    performance.
+                                </h3>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- step area end -->
+
+                <div style="width:100%; background:#ffffff; padding:40px 20px; box-sizing:border-box;">
+
+                    <!-- TITLE -->
+                    <div style="display:flex; align-items:center; justify-content:center; margin-bottom:50px;">
+                        <div style="flex:1; height:2px; background-color:#6f8f86; max-width:300px;"></div>
+
+                        <div style="
+                  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  font-size:42px;
+                  font-weight:600;
+                  color:#1f5c4f;
+                  margin:0 30px;
+                  white-space:nowrap;
+                  letter-spacing:0.5px;
+                ">
+                            Explorez Nos Offres sur mesure
+                        </div>
+
+                        <div style="flex:1; height:2px; background-color:#6f8f86; max-width:300px;"></div>
+                    </div>
+
+
+                    <!-- YOUR ORIGINAL CODE (CLASSES UNTOUCHED) -->
+                    <div class="col-xxl-12 col-xl-12 col-lg-12">
+                        <div class="ma-hero-content">
+                            <div class="">
+
+                                <div class="w-full flex items-start pb-0 gap-8" style="display:flex; gap:30px;">
+
+                                    <div class="relative flex-grow" style="position:relative; width:100%;">
+
+                                        <!-- GRID -->
+                                        <div id="nav-container" class="grid grid-cols-7 gap-1"
+                                            style="display:grid; grid-template-columns:repeat(7,1fr); gap:5px; position:relative;">
+
+                                            <!-- ITEM 1 -->
+                                            <a href="offre01.html">
+                                                <div class="nav-item2 group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4  opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer"
+                                                    style="border-top:1px solid #1f5c4f80; padding:16px; text-align:center;">
+
+                                                    <div class="w-[60px] h-[80px] opacity-80"
+                                                        style="width:60px; height:80px; margin:0 auto;">
+                                                        <img src="./assets/images/offre02/offre01_icon.svg"
+                                                            style="width:60px; filter: invert(29%) sepia(23%) saturate(500%) hue-rotate(120deg) brightness(70%);">
+                                                    </div>
+
+                                                    <span
+                                                        class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                        style="font-family: mazzard-semibold; color:#1f5c4f;">
+                                                        Offre 01 : Santé des sols et customisation des nutriments
+                                                    </span>
+                                                </div>
+                                            </a>
+
+                                            <!-- ITEM 2 -->
+                                            <a href="offre02.html">
+                                                <div class="nav-item2 group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4   opacity-40  hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer"
+                                                    style="border-top:1px solid #1f5c4f80; padding:16px; text-align:center; opacity:0.4;">
+
+                                                    <div class="w-[60px] h-[80px] opacity-80"
+                                                        style="width:60px; height:80px; margin:0 auto;">
+                                                        <img src="./assets/images/offre02/offre02_icon.svg"
+                                                            style="width:60px; filter: invert(29%) sepia(23%) saturate(500%) hue-rotate(120deg) brightness(70%);">
+                                                    </div>
+
+                                                    <span
+                                                        class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                        style="font-family: mazzard-semibold; color:#1f5c4f;">
+                                                        Offre 02 : Nutrition des cultures:
+                                                    </span>
+                                                </div>
+                                            </a>
+
+                                            <!-- ITEM 3 -->
+                                            <a href="offre03.html">
+                                                <div class="nav-item2 group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4  opacity-100 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer"
+                                                    style="border-top:1px solid #1f5c4f80; padding:16px; text-align:center; opacity:0.4;">
+
+                                                    <div class="w-[60px] h-[80px] "
+                                                        style="width:60px; height:80px; margin:0 auto;">
+                                                        <img src="./assets/images/offre03/offre03_icon.svg"
+                                                            style="width:60px; filter: invert(29%) sepia(23%) saturate(500%) hue-rotate(120deg) brightness(70%);">
+                                                    </div>
+
+                                                    <span
+                                                        class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                        style="font-family: mazzard-semibold; color:#1f5c4f;">
+                                                        Offre 03 : Offre gestion de l’eau
+                                                    </span>
+                                                </div>
+
+                                            </a>
+                                            <!-- ITEM 4 -->
+                                            <a href="offre04.html">
+                                                <div class="nav-item2 group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer"
+                                                    style="border-top:1px solid #1f5c4f80; padding:16px; text-align:center; opacity:0.4;">
+
+                                                    <div class="w-[60px] h-[80px] opacity-80"
+                                                        style="width:60px; height:80px; margin:0 auto;">
+                                                        <img src="./assets/images/offre01/offre04_icon.svg"
+                                                            style="width:60px; filter: invert(29%) sepia(23%) saturate(500%) hue-rotate(120deg) brightness(70%);">
+                                                    </div>
+
+                                                    <span
+                                                        class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                        style="font-family: mazzard-semibold; color:#1f5c4f;">
+                                                        Offre
+                                                        04 : Agriculture de conservation & pratiques
+                                                        régénératives
+                                                    </span>
+                                                </div>
+                                            </a>
+
+                                            <!-- ITEM 5 -->
+                                            <a href="offre05.html">
+                                                <div class="nav-item2 group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer"
+                                                    style="border-top:1px solid #1f5c4f80; padding:16px; text-align:center; opacity:0.4;">
+
+                                                    <div class="w-[60px] h-[80px] opacity-80"
+                                                        style="width:60px; height:80px; margin:0 auto;">
+                                                        <img src="./assets/images/offre01/offre05_icon.svg"
+                                                            style="width:60px; filter: invert(29%) sepia(23%) saturate(500%) hue-rotate(120deg) brightness(70%);">
+                                                    </div>
+
+                                                    <span
+                                                        class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                        style="font-family: mazzard-semibold; color:#1f5c4f;">
+                                                        Offre 05 : Santé animale
+                                                    </span>
+                                                </div>
+                                            </a>
+
+                                            <!-- ITEM 6 -->
+                                            <a href="offre06.html">
+                                                <div class="nav-item2 group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer"
+                                                    style="border-top:1px solid #1f5c4f80; padding:16px; text-align:center; opacity:0.4;">
+
+                                                    <div class="w-[60px] h-[80px] opacity-80"
+                                                        style="width:60px; height:80px; margin:0 auto;">
+                                                        <img src="./assets/images/offre01/offre05_icon.svg"
+                                                            style="width:60px; filter: invert(29%) sepia(23%) saturate(500%) hue-rotate(120deg) brightness(70%);">
+                                                    </div>
+
+                                                    <span
+                                                        class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                        style="font-family: mazzard-semibold; color:#1f5c4f;">
+                                                        Offre
+                                                        06 : Mécanisation durable
+                                                    </span>
+                                                </div>
+                                            </a>
+
+                                            <!-- ITEM 7 -->
+                                            <a href="offre07.html">
+                                                <div class="nav-item2 group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-80 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer"
+                                                    style="border-top:1px solid #1f5c4f80; padding:16px; text-align:center; opacity:0.4;">
+
+                                                    <div class="w-[60px] h-[80px] opacity-80"
+                                                        style="width:60px; height:80px; margin:0 auto;">
+                                                        <img src="./assets/images/offre01/offre05_icon.svg"
+                                                            style="width:60px; filter: invert(29%) sepia(23%) saturate(500%) hue-rotate(120deg) brightness(70%);">
+                                                    </div>
+
+                                                    <span
+                                                        class="text-[10px] leading-tight uppercase font-medium h-[48px] flex items-center justify-center text-center"
+                                                        style="font-family: mazzard-semibold; color:#1f5c4f;">
+                                                        Offre 07 : Transfert de technologie
+                                                        & renforcement des capacités
+                                                    </span>
+                                                </div>
+                                            </a>
+
+                                            <!-- SLIDING BAR -->
+                                            <div id="sliding-bar2"
+                                                class="absolute top-0 h-[2px] w-[14.19%] bg-[#D7492B] transition-all duration-500 ease-in-out pointer-events-none"
+                                                style="position:absolute; top:0; left:28.59%; height:2px; width:14.19%; background:#D7492B; transition:all .5s ease;">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- JS here -->
+
+    <script>
+
+        const items = document.querySelectorAll('.nav-item');
+        const bar = document.getElementById('sliding-bar');
+
+        items.forEach((item, index) => {
+            item.addEventListener('mouseenter', () => {
+                // Move the bar to the item's position (20% increments for 5 items)
+                bar.style.left = (index * 14.3) + '%';
+            });
+            item.addEventListener('mouseleave', () => {
+                // Move the bar to the item's position (20% increments for 5 items)
+                bar.style.left = (index / 14.5) + 28.6 + '%';
+            });
+        });
+    </script>
+    <script>
+        const items2 = document.querySelectorAll('.nav-item2');
+        const bar2 = document.getElementById('sliding-bar2');
+
+        items2.forEach((item, index) => {
+            item.addEventListener('mouseenter', () => {
+                // Move the bar to the item's position (20% increments for 5 items)
+                bar2.style.left = (index * 14.3) + '%';
+            });
+            item.addEventListener('mouseleave', () => {
+                // Move the bar to the item's position (20% increments for 5 items)
+                bar2.style.left = (index / 14.5) + 28.6 + '%';
+            });
+        });
+    </script>
+    <script src="../assets/js/vendor/jquery.js"></script>
+    <script src="../assets/js/bootstrap-bundle.js"></script>
+    <script src="../assets/js/swiper-bundle.js"></script>
+    <script src="../assets/js/plugin.js"></script>
+    <script src="../assets/js/three.js"></script>
+    <script src="../assets/js/hover-effect.umd.js"></script>
+    <script src="../assets/js/magnific-popup.js"></script>
+    <script src="../assets/js/purecounter.js"></script>
+    <script src="../assets/js/imagesloaded-pkgd.js"></script>
+    <script src="../assets/js/ajax-form.js"></script>
+    <script src="../assets/js/slider-active.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <!-- JS here -->
+    <script>
+        new Swiper('.newswiper', {
+            autoplay: {
+                delay: 2000, // 3 seconds
+                disableOnInteraction: false, // keeps autoplay after user swipes
+                pauseOnMouseEnter: false, // pauses autoplay on mouse hover
+            },
+            loop: true,
+            slidesPerView: 3,
+            slidesToScroll: 1,
+            spaceBetween: 30,
+        });
+    </script>
+</body>
+
+</html>

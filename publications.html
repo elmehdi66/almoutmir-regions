@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Moutmir — Un Impact Concret</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="./assets/css/spacing.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <style>
+        .bg-custom-green {
+            background-color: #0f5c4c;
+        }
+
+        .back-to-top-btn svg {
+            display: inline !important;
+        }
+
+        .ma-hero-area {
+            min-height: 70vh;
+            /* or a pixel value that matches the design */
+        }
+
+        .dgm-blog-item::after {
+            background-color: #002a28 !important;
+        }
+
+        .bnc-portfolio-item-title {
+            font-size: 18px !important;
+            font-family: "mazzard-bold";
+        }
+
+        .bnc-portfolio-item-tag span {
+            font-family: "mazzard-regular";
+            font-size: 10px;
+            border: 1px solid #d7492b;
+        }
+
+        .dgm-portfolio-tab ul li a {
+            border: 1px solid #fff;
+        }
+
+        .dgm-portfolio-tab ul li a:hover,
+        .dgm-portfolio-tab ul li a.active {
+            background-color: #c0e4da;
+            border: 1px solid #c0e4da;
+        }
+
+        /* Active tab: red by default */
+        .dgm-portfolio-slider-wrap .tab-pane.active .dgm-portfolio-content::after {
+            content: '';
+            background-color: #d7492b;
+        }
+
+        /* Active tab on hover: switch to teal */
+        .dgm-portfolio-slider-wrap .tab-pane.active:hover .dgm-portfolio-content::after {
+            background-color: #c0e4da;
+        }
+
+        /* Inactive tab: teal by default */
+        .dgm-portfolio-slider-wrap .tab-pane:not(.active) .dgm-portfolio-content::after {
+            content: '';
+            background-color: #c0e4da;
+        }
+
+        /* Inactive tab on hover: switch to red */
+        .dgm-portfolio-slider-wrap .tab-pane:not(.active):hover .dgm-portfolio-content::after {
+            background-color: #d7492b;
+        }
+
+        .dgm-portfolio-title {
+            font-family: "mazzard-bold";
+            color: #c0e4da85 !important;
+        }
+
+        .dgm-portfolio-content span {
+            font-family: "mazzard-semibold";
+            color: #c0e4da80 !important;
+        }
+
+        .dgm-portfolio-item:hover .dgm-portfolio-title a {
+            color: #002a28 !important;
+        }
+
+        .dgm-portfolio-item:hover .dgm-portfolio-content span {
+            color: #002a28 !important;
+        }
+
+        .tp-section-title {
+            font-family: "mazzard-bold" !important;
+            line-height: 1 !important;
+        }
+
+        .ca-testimonial-item {
+            background-color: #002a28;
+        }
+
+        .testimonial-item2 {
+            background-color: #c0e4da !important;
+            color: #fff !important;
+        }
+
+        .testimonial-item2 .ca-testimonial-item-content p,
+        .testimonial-item2 .ca-testimonial-item-user-content h4,
+        .testimonial-item2 .ca-testimonial-item-user-content p {
+            color: #10605b !important;
+        }
+
+        .back-to-top-btn {
+            background: #d7492b !important;
+            color: #c0e4da !important;
+        }
+
+        #preloader {
+            background: #002a28;
+        }
+
+        #preloader span {
+            background: #d7492b !important;
+        }
+
+        .ds-portfolio-item-title {
+            margin: 0;
+            font-size: 15px !important;
+            font-weight: 500;
+            padding: 12px 29px;
+            text-transform: capitalize;
+            color: #002a28 !important;
+            font-family: "mazzard-regular" !important;
+            background-color: #c0e4da !important;
+            margin: 10px 0 !important;
+            border-radius: 10px !important;
+        }
+
+        .ma-hero-title {
+            font-size: 28px !important;
+            font-weight: 400 !important;
+            font-family: mazzard-bold !important;
+            line-height: 1.5;
+            margin-bottom: 33px;
+            letter-spacing: 0px;
+            color: #fef2d7 !important;
+        }
+
+        .ma-hero-content {
+            margin-left: 0px !important;
+
+        }
+
+        .tp-section-subtitle {
+            text-transform: none;
+            font-weight: normal !important;
+            font-family: mazzard-regular !important;
+            left: 43% !important;
+        }
+
+        .tp-section-title {
+
+            font-family: mazzard-bold !important;
+        }
+
+        .tp-section-subtitle.st-dot::before {
+            content: "";
+            height: 3px !important;
+            width: 3px !important;
+
+
+        }
+
+        .bnc-service-item-icon {
+            width: 100px !important;
+        }
+
+        .bnc-service-item-title {
+            font-size: 19px !important;
+            font-weight: bold !important;
+            font-family: mazzard-bold !important;
+            line-height: 1.3;
+        }
+
+        .bnc-service-item-text p {
+            font-family: mazzard-regular !important;
+            font-size: 14px !important;
+            text-transform: none !important;
+        }
+
+        .dgm-blog-avater img {
+            flex: 0 0 auto;
+            height: auto !important;
+            width: 100%;
+            /* margin-right: 10px; */
+            border-radius: 0 !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-number {
+            position: unset !important;
+            font-size: 50px !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-slider-wrap {
+            background-color: #c0e4da !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-right .tp-dot .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #d7492b !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-right .tp-dot .swiper-pagination-bullet {
+            background-color: transparent !important;
+            border: 1px solid #d7492b;
+        }
+
+        .tp-section-title {
+            font-family: "mazzard-bold" !important;
+            line-height: 1 !important;
+            letter-spacing: normal !important;
+        }
+
+        .tp-service-item-title {
+            color: #fff;
+            font-family: "mazzard-bold" !important;
+            font-size: 15px !important;
+            line-height: 1.3;
+            letter-spacing: normal !important;
+        }
+
+        .tp-service-item {
+            border: 1px solid #fff;
+            border-radius: 10px 80px 10px 80px;
+        }
+
+        .tp-service-item {
+            /* padding:  8px 28px 20px 50px !important */
+        }
+
+        .bnc-portfolio-item-title {
+            text-transform: none !important;
+        }
+        .card{
+            background-color: transparent !important;
+        }
+        .card img {
+            opacity: .6;
+        }
+@media screen and (min-width : 968px) {
+          
+        .card:hover img{
+            opacity: 1 !important;
+        }
+    
+}
+    </style>
+</head>
+
+<body>
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- preloader end  -->
+
+    <!-- Begin magic cursor -->
+    <div id="magic-cursor" class="cursor-white-bg">
+        <div id="ball"></div>
+    </div>
+    <!-- End magic cursor -->
+
+
+
+    <div class="tp-blur-bottom"></div>
+
+    <!-- back to top start -->
+    <div class="back-to-top-wrapper">
+        <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+    <!-- back to top end -->
+
+
+    <!-- header area start -->
+    <div id="header-sticky" class="tp-header-area tp-header-ptb tp-header-blur sticky-white-bg header-transparent">
+        <div class="container container-1510">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-6 col-6">
+                    <div class="tp-header-logo py-3 px-0">
+                        <a href="index.html">
+                            <img loading="lazy" data-width="60" src="./assets/img/logo/logo-bg-square.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-7 d-none d-xl-block">
+                    <div class="tp-header-box text-center">
+                        <div class="tp-header-menu tp-header-dropdown dropdown-white-bg">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-6">
+                    <div class="tp-header-right d-flex align-items-center justify-content-end">
+                        <div class="tp-header-14-bar-wrap">
+                            <button class="tp-header-8-bar tp-offcanvas-open-btn flex items-center gap-1 py-3 px-4"
+                                style="background-color: #002A28; border: 1px solid #002a281b;">
+                                <span>Menu</span>
+                                <span>
+                                    <svg width="24" height="8" viewBox="0 0 24 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H14V1.5H0V0Z" fill="currentcolor" />
+                                        <path d="M0 6H24V7.5H0V6Z" fill="currentcolor" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header area end -->
+    <!-- hero area start -->
+    <div class="ma-hero-area ma-hero-ptb ma-hero-overlay z-index-1"
+        style="background-image: url(./pics/publications/publications_hero.jpg);background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="ma-hero-shape" data-speed="1.1">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="98" height="70" viewBox="0 0 98 70" fill="none">
+                    <path
+                        d="M3.82839 43.5099C6.42926 40.3317 22.6507 18.2746 30.4134 24.9691C37.8139 31.3513 24.5452 53.9838 37.9136 57.3688C49.3686 60.2694 63.7917 45.1686 70.8555 38.113C75.574 33.4 78.6929 27.6256 82.7187 22.4694C83.012 22.0937 85.4072 18.8838 84.2975 19.3471"
+                        stroke="#F5F7F5" stroke-width="3" stroke-linecap="round" />
+                    <path
+                        d="M74.5884 18.6844C77.6307 17.1331 88.2369 8.41917 88.3725 15.5498C88.4449 19.3586 88.246 22.0251 89.7262 25.5706"
+                        stroke="#F5F7F5" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </span>
+        </div>
+        <div class="container container-1530">
+            <div class="row">
+                <div class="col-xl-7">
+                    <h2 style="color: #fff;font-size: 14px;font-family: mazzard-regular;">Publications scientifiques &
+                        Etudes de cas</h2>
+                    <div class="ma-hero-title-box tp_fade_anim" data-delay=".3">
+                        <h2 class="ma-hero-title" style="display: flex;padding-top: 10px;">
+                            LE SAVOIR PREND DE LA VALEUR<br>
+                            LORSQU’IL EST PARTAGÉ
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-12">
+                    <div class="ma-hero-content">
+                        <div class="tp_fade_anim" data-delay=".4">
+                            <p
+                                style="color: #fef2d7;font-size: 15px; font-family: popping-medium;text-transform: none !important;">
+
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- hero area end -->
+    <section class="bg-[#f5f5f5] py-16">
+            <!-- Header -->
+            <div class="section-header text-center mb-14">
+            
+                <h2 class="text-4xl md:text-5xl font-bold uppercase leading-tight text-[#00584e]">
+                    AMÉLIORATION DE LA MARGE<br />
+                    BÉNÉFICIAIRE
+                </h2>
+            </div>
+        <div class="max-w-7xl mx-auto relative">
+
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- TITLE BLOCK -->
+                <div class="grid-img">
+                    <img src="./pics/publications/publications01.png" alt="">
+                </div>
+
+                <!-- CEREALS -->
+                <div class="grid-img">
+                    <img src="./pics/publications/publications02.png" alt="">
+                </div>
+
+                <!-- OLIVES -->
+                <div class="grid-img">
+                    <img src="./pics/publications/publications03.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="relative pt-120 pb-150 text-white">
+
+        <!-- Background -->
+        <div class="absolute inset-0">
+            <img src="./pics/publications/background_image.jpg" class="w-full h-full object-cover object-center" alt="background">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto">
+
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- CARD 1 -->
+                <div class="card mycard relative">
+                    <img src="./pics/publications/sec2-1.png" class="w-full h-full object-cover" alt="">
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card  relative">
+                    <img src="./pics/publications/sec2-2.png" class="w-full h-full object-cover" alt="">
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card mycard relative">
+
+                    <img src="./pics/publications/sec2-3.png" class="w-full h-full object-cover" alt="">
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#ECF8F8] py-20">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="swiper cases">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./pics/publications/case01.png"  alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./pics/publications/case02.png"  alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./pics/publications/case03.png"  alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./pics/publications/case04.png"  alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="bg-[#002A28] pt-120 pb-150">
+    <div class="max-w-7xl mx-auto">
+
+        <div class="swiper slides">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./pics/publications/slide01.png"  alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./pics/publications/slide02.png"  alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./pics/publications/slide03.png"  alt="">
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color: #a8d5c8;" class="pt-120 pb-150">
+    <div
+        style="display: grid; grid-template-columns: auto 1fr 1fr; gap: 3rem; align-items: center; max-width: 1100px; margin: 0 auto;">
+
+        <!-- Col 1: Logo placeholder -->
+        <div
+            style="background: white; border-radius: 12px; width: 130px; height: 130px; display: flex; align-items: center; justify-content: center;">
+            <img src="./assets/img/logo/logo-bg-square.png" alt="Logo" style="max-width: 100px;" />
+        </div>
+
+        <!-- Col 2: Contactez-nous -->
+        <div>
+            <h2 style="font-size: 20px;font-family: mazzard-bold; font-weight: 800; text-transform: uppercase; margin: 0 0 6px;">CONTACTEZ-NOUS
+            </h2>
+            <div style="border-bottom: 1.5px solid #111; margin-bottom: 14px;"></div>
+
+            <p style="font-family:mazzard-semibold;font-size: 15px; font-weight: 700; margin: 0;">Site Web</p>
+            <p style="font-family:mazzard-regular;font-size: 12px; margin: 0 0 2px; color: #111;">www.almoutmir.ma</p>
+            <div style="border-bottom: 1px solid #111; margin: 10px 0 14px;"></div>
+
+            <p style="font-family:mazzard-semibold;font-size: 15px; font-weight: 700; margin: 0;">Email</p>
+            <p style="font-family:mazzard-regular;font-size: 12px; margin: 0 0 2px; color: #111;">almoutmir@ocpgroup.ma</p>
+            <div style="border-bottom: 1px solid #111; margin-top: 10px;"></div>
+        </div>
+
+      <!-- Col 3: Suivez-nous -->
+<div>
+    <h2 style="font-size: 20px; font-family: mazzard-bold; font-weight: 800; text-transform: uppercase; margin: 0 0 6px;">
+        SUIVEZ-NOUS
+    </h2>
+
+    <div style="border-bottom: 1.5px solid #111; margin-bottom: 14px;"></div>
+
+    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; font-size: 14px;">
+
+        <!-- Facebook -->
+        <li style="display: flex; align-items: center; gap: 10px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#1877F2">
+                <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5A3.5 3.5 0 0 1 14.2 6H17v3h-2a1 1 0 0 0-1 1V12h3l-.5 3H14v7A10 10 0 0 0 22 12z"/>
+            </svg>
+            <a href="#" style="text-decoration: none; color: #111;">
+                facebook.com/AlMoutmir
+            </a>
+        </li>
+
+        <!-- Instagram -->
+        <li style="display: flex; align-items: center; gap: 10px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E1306C">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm6.5-1.5a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5z"/>
+            </svg>
+            <a href="#" style="text-decoration: none; color: #111;">
+                instagram.com/al_moutmir
+            </a>
+        </li>
+
+        <!-- X (Twitter) -->
+        <li style="display: flex; align-items: center; gap: 10px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#111">
+                <path d="M18 2h3l-7 8 8 12h-6l-5-7-6 7H2l8-9L2 2h6l5 6 5-6z"/>
+            </svg>
+            <a href="#" style="text-decoration: none; color: #111;">
+                x.com/al_moutmir
+            </a>
+        </li>
+
+        <!-- LinkedIn -->
+        <li style="display: flex; align-items: center; gap: 10px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A66C2">
+                <path d="M4 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm1 6H2v13h3V9zm6 0H8v13h3v-7c0-2 3-2 3 0v7h3v-8c0-5-6-5-6-2V9z"/>
+            </svg>
+            <a href="#" style="text-decoration: none; color: #111;">
+                linkedin.com/company/al-moutmir
+            </a>
+        </li>
+
+        <!-- YouTube -->
+        <li style="display: flex; align-items: center; gap: 10px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF0000">
+                <path d="M10 15l5-3-5-3v6zm12-3c0-2.2-.2-3.7-.6-4.6a2.8 2.8 0 0 0-1.8-1.8C18.7 5.2 12 5.2 12 5.2s-6.7 0-7.6.4a2.8 2.8 0 0 0-1.8 1.8C2.2 8.3 2 9.8 2 12s.2 3.7.6 4.6a2.8 2.8 0 0 0 1.8 1.8c.9.4 7.6.4 7.6.4s6.7 0 7.6-.4a2.8 2.8 0 0 0 1.8-1.8c.4-.9.6-2.4.6-4.6z"/>
+            </svg>
+            <a href="#" style="text-decoration: none; color: #111;">
+                youtube.com/@almoutmir
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+    </div>
+</section>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray(".grid-img").forEach((el, i) => {
+            const col = i % 3;
+
+            let x = 0;
+            let y = 40; // subtle vertical motion
+
+            if (col === 0) x = -80;     // left column
+            else if (col === 2) x = 80; // right column
+            else y = 60;                // center column (comes from bottom)
+
+            gsap.from(el, {
+                x: x,
+                y: y,
+                opacity: 0,
+                scale: 0.95,
+                duration: 1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+
+        // Section headers — fade up
+        gsap.utils.toArray(".section-header").forEach(el => {
+            gsap.from(el, {
+                y: 40,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" }
+            });
+        });
+
+        // Bénéficiaire cards — stagger slide up
+        gsap.from(".card", {
+            y: 60,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.15,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".card", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Productivité title
+        gsap.from(".section-title", {
+            x: -50,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: { trigger: ".section-title", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Stat cards — slide in from right with stagger
+        gsap.from(".stat-card", {
+            x: 60,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".stat-card", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Qualité images — stagger scale in
+        gsap.from(".qualite-img", {
+            scale: 0.85,
+            opacity: 0,
+            duration: 0.7,
+            stagger: 0.12,
+            ease: "power2.out",
+            scrollTrigger: { trigger: ".qualite-img", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Impact images — slide from opposite sides
+        const impactImgs = gsap.utils.toArray(".impact-img");
+        impactImgs.forEach((el, i) => {
+            gsap.from(el, {
+                x: i % 2 === 0 ? -70 : 70,
+                opacity: 0,
+                duration: 0.9,
+                ease: "power3.out",
+                scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" }
+            });
+        });
+
+        // Impact cards (green section) — stagger fade up
+        gsap.from(".impact-card", {
+            y: 50,
+            opacity: 0,
+            duration: 0.7,
+            stagger: 0.15,
+            ease: "power2.out",
+            scrollTrigger: { trigger: ".impact-card", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Plots section — left block slides in from left, right from right
+        gsap.from(".plots-left", {
+            x: -70,
+            opacity: 0,
+            duration: 0.9,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".plots-left", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        gsap.from(".plots-right", {
+            x: 70,
+            opacity: 0,
+            duration: 0.9,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".plots-right", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Plot cards — stagger scale
+        gsap.from(".plots-card", {
+            scale: 0.9,
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.15,
+            ease: "back.out(1.5)",
+            scrollTrigger: { trigger: ".plots-card", start: "top 90%", toggleActions: "play none none reverse" }
+        });
+
+        // Partenariat — left image slides in, right items stagger from right
+        gsap.from(".partenariat-left", {
+            x: -60,
+            opacity: 0,
+            duration: 0.9,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".partenariat-left", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        gsap.from(".partenariat-right", {
+            x: 60,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".partenariat-right", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+    </script>
+    <script src="./assets/js/vendor/jquery.js" defer></script>
+    <script src="./assets/js/bootstrap-bundle.js" defer></script>
+    <script src="../assets/js/swiper-bundle.js"></script>
+
+    <script src="./assets/js/hover-effect.umd.js" defer></script>
+    <script src="./assets/js/magnific-popup.js" defer></script>
+    <script src="./assets/js/purecounter.js" defer></script>
+    <script src="./assets/js/imagesloaded-pkgd.js" defer></script>
+    <script src="./assets/js/ajax-form.js" defer></script>
+    <script src="./assets/js/slider-active.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+    <script>
+
+       document.addEventListener("DOMContentLoaded", () => {
+            new Swiper('.cases', {
+                loop: true,
+                slidesPerView: 1.55,
+                slidesPerGroup: 1,
+                centeredSlides: true,
+
+                spaceBetween: 30,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+            });
+             new Swiper('.slides', {
+               loop: true,
+               slidesPerView: 1.75,
+               slidesPerGroup: 1,
+               spaceBetween: 30,
+                centeredSlides: true,
+               autoplay: {
+                   delay: 2000,
+                   disableOnInteraction: false,
+               },
+           });
+        });
+    </script>
+</body>
+
+</html>

@@ -54,20 +54,24 @@
     ///testimonial-slider
 	let tp_testimonial_2 = new Swiper('.bnc-testimonial-active', {
 		spaceBetween: 10,
-		slidesPerView: 3,
+		slidesPerView: 4,
 		loop: true,
 		speed: 500,
-		centeredSlides: true,
+		centeredSlides: false,
+		 navigation: {
+            prevEl: '.bnc-portfolio-prev',
+            nextEl: '.bnc-portfolio-next',
+        },
 		pagination: {
 			el: ".bnc-testimonial-dot",
 			clickable: true,
 		},
 		breakpoints: {
 			'1400':{
-				slidesPerView: 3,
+				slidesPerView: 4,
 			},
 			'1200':{
-				slidesPerView:3,
+				slidesPerView:4,
 			},
 			'768':{
 				slidesPerView:2,
@@ -663,37 +667,37 @@
 		}
     });
 
-	///ca-testimoni-slide
 	var swiper = new Swiper(".ca-testimoni-slide", {
 		loop: true,
-		freemode: true,
+		freeMode: true,
 		slidesPerView: 3.5,
 		spaceBetween: 30,
 		centeredSlides: true,
-		allowTouchMove: false,
-		speed: 5000,
+		allowTouchMove: true,
+		speed: 10000,
 		autoplay: {
 			delay: 1,
-			disableOnInteraction: true,
+			disableOnInteraction: false,
 		},
 		breakpoints: {
-			'1400':{
-				slidesPerView: 3.5,
-			},
-			'1200':{
-				slidesPerView: 3,
-			},
-			'768':{
-				slidesPerView: 2,
-			},
-			'576': {
-				slidesPerView: 1,
-			},
-			'0': {
-				slidesPerView: 1,
-			},
+			'1400': { slidesPerView: 3.5 },
+			'1200': { slidesPerView: 3 },
+			'768': { slidesPerView: 2 },
+			'576': { slidesPerView: 1 },
+			'0': { slidesPerView: 1 },
 		}
 	});
+
+	// Manual hover pause/resume
+	const swiperContainer = document.querySelector(".ca-testimoni-slide");
+	if (swiperContainer) {
+		swiperContainer.addEventListener("mouseenter", () => {
+			swiper.autoplay.stop();
+		});
+		swiperContainer.addEventListener("mouseleave", () => {
+			swiper.autoplay.start();
+		});
+	}
 
 	///tp-project-showcase-slide-active
 	let t7_showcase_slide_active = new Swiper(".tp-project-showcase-slide-active", {

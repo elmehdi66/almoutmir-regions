@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Al Moutmir Platform Design</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden;
+            /* ✅ RADIAL GRADIENT BACKGROUND */
+            background: radial-gradient(circle at center,
+                    #00574D 0%,
+                    #003C34 40%,
+                    #000C0A 100%);
+        }
+
+        /* Canvas as background */
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body class="text-white">
+
+    <!-- ========================= -->
+    <!-- UI LAYER -->
+    <!-- ========================= -->
+    <div class="relative min-h-screen w-full  flex flex-col justify-end text-white font-sans overflow-hidden z-10">
+
+        <!-- Main Grid Content -->
+        <div class="flex-grow grid grid-cols-3 items-center px-12 absolute left-0 right-0 top-1/2 -translate-y-1/2">
+
+            <!-- Left Label: FROM THE LAB -->
+            <div class="flex items-center gap-4">
+                <div class="h-px w-12 bg-[#D7492B]"></div>
+                <div class="typewriter-container">
+                    <h1 class="typewriter-text lab">Du laboratoire</h1>
+                </div>
+            </div>
+
+            <!-- Center Logo -->
+            <div class="flex flex-col items-center justify-center">
+                <a href="#hi"><img src="./logo.png" class="w-[150px] opacity-1" alt="Logo"></a>
+            </div>
+
+            <!-- Right Label: TO THE FIELD -->
+            <div class="flex items-center justify-end">
+                <div class="flex items-center justify-between gap-4 w-[74%]">
+                    <div class="typewriter-container">
+                        <h1 class="typewriter-text field">Au champ</h1>
+                    </div>
+                    <div class="h-px w-12 bg-[#D7492B]"></div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            :root {
+                --text-color: #6dbcaa;
+                --cursor-color: #D7492B;
+                /* Width needs to be enough to hold the text + letter spacing */
+                --reveal-width: 340px;
+            }
+
+            .typewriter-container {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .typewriter-text {
+                font-family: 'Fira Code', monospace;
+                font-weight: 800;
+                font-size: 1.4vw;
+                text-transform: uppercase;
+                letter-spacing: 0.3em;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 0;
+                color: var(--text-color);
+                display: block;
+
+                /* Gradient shimmer effect */
+                background: linear-gradient(to right, #01564D, #569c95, #01564D);
+                background-size: 200% auto;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                /* Combined Animations */
+                animation:
+                    type 2s steps(12, end) forwards,
+                    shimmer-reveal 2.5s linear infinite;
+            }
+
+            /* Target specific items if you want different delay/timing */
+            .typewriter-text.field {
+                animation-delay: 2s, 0s;
+                /* Delays the typing of the second one slightly */
+            }
+
+
+            @keyframes type {
+                from {
+                    width: 0;
+                    border-right: 3px solid var(--cursor-color);
+                }
+
+                to {
+                    width: var(--reveal-width);
+                    border-right: 3px solid transparent;
+                    /* Cursor disappears at the end */
+                }
+            }
+
+            @keyframes shimmer-reveal {
+                0% {
+                    background-position: 0% center;
+                }
+
+                100% {
+                    background-position: 200% center;
+                }
+            }
+
+            /* Optional: Add a separate blink if you want the cursor to stay */
+            .typewriter-text {
+                border-right: 3px solid transparent;
+            }
+        </style>
+
+        <!-- Bottom Navigation Section -->
+        <div class="w-full flex items-start px-12 pb-0 gap-8">
+
+            <!-- Explore Label -->
+            <div class="flex items-start gap-6 mb-6">
+                <div
+                    class="text-[20px] border-t border-[#D7492B] pt-[15px] leading-tight font-bold text-[#D7492B] uppercase tracking-tighter">
+                    Explorez<br>Notre Impact
+                </div>
+                <div class="text-[#D7492B] text-[60px] leading-[60px] font-light">»</div>
+            </div>
+
+            <!-- Nav Items Grid -->
+            <div class="relative flex-grow">
+                <!-- The Grid Container -->
+                <div id="nav-container" class="grid grid-cols-6 gap-1">
+
+                    <!-- Nav Items (Added 'nav-item' class) -->
+                    <a href="./page01.html"
+                        class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-40 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                        <div class="w-[60px] h-[80px] opacity-80">
+                            <img src="./ic1.svg" class="w-[60px]" alt="">
+                        </div>
+                        <span class="text-[12px] leading-tight uppercase font-medium">Le double défi<br>de
+                            l'agriculture</span>
+                    </a>
+                    <a href="./publications.html"
+                        class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-40 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                        <div class="w-[60px] h-[80px] opacity-80">
+                            <img src="./ic1.svg" class="w-[60px]" alt="">
+                        </div>
+                        <span class="text-[12px] leading-tight uppercase font-medium">Publications scientifiques<br> & Etudes de cas</span>
+                    </a>
+
+                    <a href="./science.html"
+                        class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-40 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                        <div class="w-[60px] h-[80px] opacity-80">
+                            <img src="./ic2.svg" class="w-[60px]" alt="">
+                        </div>
+                        <span class="text-[12px] leading-tight uppercase font-medium">Al Moutmir:<br> De la science à
+                            l’impact</span>
+                    </a>
+
+                    <a href="./offres/offre01.html">
+                        <div
+                            class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-40 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                            <div class="w-[60px] h-[80px] opacity-80">
+                                <img src="./ic3.svg" class="w-[60px]" alt="">
+                            </div>
+                            <span class="text-[12px] leading-tight uppercase font-medium">Une offre<br>sur mesure</span>
+                        </div>
+
+                    </a>
+                    <a href="./impact.html"
+                        class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-40 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                        <div class="w-[60px] h-[80px] opacity-80">
+                            <img src="./ic4.svg" class="w-[60px]" alt="">
+                        </div>
+                        <span class="text-[12px] leading-tight uppercase font-medium">Impact<br>Concret</span>
+                    </a>
+
+                    <a href="./swiper.html"
+                        class="nav-item group border-t border-white/50 p-4 flex flex-col items-center text-center gap-4 opacity-40 hover:bg-emerald-900/40 hover:opacity-100 transition-all cursor-pointer">
+                        <div class="w-[60px] h-[80px] opacity-80">
+                            <img src="./ic5.svg" class="w-[60px]" alt="">
+                        </div>
+                        <span class="text-[12px] leading-tight uppercase font-medium">Al Moutmir<br>en Action</span>
+                    </a>
+
+                    <!-- THE SLIDING BAR -->
+                    <div id="sliding-bar"
+                        class="absolute top-0 h-[2px] w-1/6 bg-[#D7492B] transition-all duration-500 ease-in-out pointer-events-none"
+                        style="left: 0%;"> <!-- Initial starting position -->
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+                const items = document.querySelectorAll('.nav-item');
+                const bar = document.getElementById('sliding-bar');
+
+                items.forEach((item, index) => {
+                    item.addEventListener('mouseenter', () => {
+                        // Move the bar to the item's position (16.67% increments for 6 items)
+                        bar.style.left = (index * 16.67) + '%';
+                    });
+                });
+            </script>
+        </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- THREE JS BACKGROUND -->
+    <!-- ========================= -->
+    <script>
+        const scene = new THREE.Scene();
+
+        const camera = new THREE.PerspectiveCamera(
+            80,
+            window.innerWidth / window.innerHeight,
+            0.1,
+            1000
+        );
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.2;
+        document.body.appendChild(renderer.domElement);
+
+        // LIGHTS
+        const light1 = new THREE.SpotLight(0xffffff, 10000);
+        light1.position.set(20, 40, 40);
+        scene.add(light1);
+
+        const light2 = new THREE.PointLight(0x00ffff, 5000);
+        light2.position.set(-20, -20, -20);
+        scene.add(light2);
+
+        // SPHERE
+        const radius = 26;
+        const geometry = new THREE.SphereGeometry(radius, 128, 128);
+
+        const uniforms = { uTime: { value: 0 } };
+
+        const material = new THREE.MeshPhysicalMaterial({
+            transmission: 1,
+            roughness: 0.08,
+            transparent: true,
+            opacity: 0,
+            side: THREE.DoubleSide
+        });
+
+        material.onBeforeCompile = (shader) => {
+            shader.uniforms.uTime = uniforms.uTime;
+
+            shader.vertexShader = `
+        uniform float uTime;
+        ${shader.vertexShader}
+    `.replace(
+                '#include <begin_vertex>',
+                `
+        float disp = sin(normal.x * 6.0 + uTime) * cos(normal.y * 6.0 + uTime) * 1.5;
+        vec3 transformed = position + (normal * disp);
+        `
+            );
+        };
+
+        const sphere = new THREE.Mesh(geometry, material);
+        scene.add(sphere);
+
+        // 1. Create a Circular Texture Programmatically
+        const createCircleTexture = () => {
+            const size = 128; // Increased resolution for smoother edges
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const context = canvas.getContext('2d');
+
+            // Drawing a slightly smaller circle (size * 0.45 instead of 0.5) 
+            // to prevent edge clipping/half-circles
+            const centerX = size / 2;
+            const centerY = size / 2;
+            const radius = size * 0.45;
+
+            context.beginPath();
+            context.arc(centerX, centerY, radius, 0, Math.PI * 2);
+            context.fillStyle = '#ffffff';
+            context.fill();
+
+            const texture = new THREE.CanvasTexture(canvas);
+
+            // Ensure the texture is centered and doesn't repeat
+            texture.needsUpdate = true;
+            return texture;
+        };
+        // 2. PARTICLES setup
+        const count = 5000;
+        const geo = new THREE.BufferGeometry();
+        const positions = new Float32Array(count * 3);
+        const base = new Float32Array(count * 3);
+
+        // Offset from the sphere (radius is 26)
+        const minDistance = radius - 1;
+        const maxDistance = radius + 4;
+
+        for (let i = 0; i < count; i++) {
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos(2 * Math.random() - 1);
+
+            // Slight spread for a volumetric digital look
+            const dist = minDistance + (Math.random() * (maxDistance - minDistance));
+
+            const x = dist * Math.sin(phi) * Math.cos(theta);
+            const y = dist * Math.sin(phi) * Math.sin(theta);
+            const z = dist * Math.cos(phi);
+
+            base[i * 3] = x;
+            base[i * 3 + 1] = y;
+            base[i * 3 + 2] = z;
+        }
+
+        geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+        // 3. Apply the Material (Removed map and alphaTest)
+        const mat = new THREE.PointsMaterial({
+            color: 0xffffff,
+            size: 0.4,      // Squares look "sharper," so a smaller size often looks classier
+            transparent: true,
+            blending: THREE.AdditiveBlending,
+            depthWrite: false,
+            opacity: 0.4,
+            sizeAttenuation: true
+        });
+
+        const particles = new THREE.Points(geo, mat);
+        scene.add(particles);
+
+        camera.position.z = 60;
+
+        // DISPLACEMENT
+        const getDisp = (nx, ny, nz, t) =>
+            Math.sin(nx * 6 + t) * Math.cos(ny * 6 + t) * 1.5;
+
+        // ANIMATE
+        function animate(time) {
+            const t = time * 0.001;
+            uniforms.uTime.value = t;
+
+            sphere.rotation.y = t * 0.15;
+            particles.rotation.y = t * 0.15;
+
+            const arr = geo.attributes.position.array;
+
+            for (let i = 0; i < count; i++) {
+                const i3 = i * 3;
+
+                const bx = base[i3];
+                const by = base[i3 + 1];
+                const bz = base[i3 + 2];
+
+                const mag = Math.sqrt(bx * bx + by * by + bz * bz);
+
+                const nx = bx / mag;
+                const ny = by / mag;
+                const nz = bz / mag;
+
+                const d = getDisp(nx, ny, nz, t);
+
+                arr[i3] = bx + nx * d;
+                arr[i3 + 1] = by + ny * d;
+                arr[i3 + 2] = bz + nz * d;
+            }
+
+            geo.attributes.position.needsUpdate = true;
+
+            renderer.render(scene, camera);
+            requestAnimationFrame(animate);
+        }
+
+        animate(0);
+
+        // RESIZE
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+
+</body>
+
+</html>

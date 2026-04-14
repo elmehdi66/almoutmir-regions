@@ -211,6 +211,66 @@
             background-color: transparent !important;
             border: 1px solid #d7492b;
         }
+          .ma-hero-area {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Video container */
+    .ma-hero-video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Behind content but above any background color if needed */
+        overflow: hidden;
+    }
+
+    /* Video element – cover the whole area */
+    .ma-hero-video-background video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        object-fit: cover; /* Ensures the video covers the area without distortion */
+    }
+
+    /* Ensure the existing overlay (ma-hero-overlay) still works.
+       If .ma-hero-overlay uses a pseudo-element or background color,
+       adjust its z-index so it appears above the video but below content.
+       Example (adjust according to your existing CSS): */
+    .ma-hero-overlay::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Example dark overlay – adjust color/opacity to match original */
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    /* Make sure content appears above overlay */
+    .ma-hero-area .container,
+    .ma-hero-shape {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Adjust z-index for video container if needed */
+    .ma-hero-video-background {
+        z-index: 0;
+    }
+    .ma-hero-overlay::before {
+        z-index: 1;
+    }
+
     </style>
 
 </head>
@@ -304,8 +364,16 @@
             <main>
 
                 <!-- hero area start -->
-                <div class="ma-hero-area ma-hero-ptb ma-hero-overlay z-index-1"
-                    data-background="./assets/img/page01/hero_bg.jpg">
+                <div class="ma-hero-area ma-hero-ptb ma-hero-overlay z-index-1">
+                    <!-- Background Video -->
+                    <div class="ma-hero-video-background">
+                        <video autoplay muted loop  poster="./assets/img/page01/hero_bg.jpg">
+                            <source src="./assets/videos/double defi.mp4" type="video/mp4">
+                            <!-- Add fallback video formats if needed -->
+                            <source src="./assets/videos/double defi.mp4" type="video/webm">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
                     <div class="ma-hero-shape" data-speed="1.1">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="98" height="70" viewBox="0 0 98 70"

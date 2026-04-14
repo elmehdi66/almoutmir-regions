@@ -101,9 +101,76 @@
 		}
 	});
 
-	// 08. magnificPopup video view //
-	$(".popup-video").magnificPopup({
-		type: "iframe",
+	$(".tp-testimonial-play-btn").on('click', function (e) {
+		e.preventDefault();
+		var videoUrl = $(this).attr('href');
+		if (!videoUrl || videoUrl === '#') return;
+
+		var isYouTube = videoUrl.indexOf('youtube.com') !== -1 || videoUrl.indexOf('youtu.be') !== -1;
+		var isVimeo = videoUrl.indexOf('vimeo.com') !== -1;
+
+		if (isYouTube || isVimeo) {
+			$.magnificPopup.open({
+				items: {
+					src: videoUrl,
+					type: 'iframe'
+				},
+				iframe: {
+					patterns: {
+						youtube: {
+							index: 'youtube.com/',
+							id: 'v=',
+							src: 'https://www.youtube.com/embed/%id%?autoplay=1&controls=0'
+						},
+						vimeo: {
+							index: 'vimeo.com/',
+							id: '/',
+							src: 'https://player.vimeo.com/video/%id%?autoplay=1&controls=0'
+						}
+					}
+				},
+				// Ensure default close button is visible (it is by default)
+				showCloseBtn: true
+			});
+		} else {
+			// Local MP4 – inline video with centering and a custom close button
+			var videoHtml = `
+            <div class="mfp-video-center">
+                <button class="mfp-custom-close" title="Close (Esc)">✕</button>
+                <video autoplay playsinline class="mfp-video-element">
+                    <source src="${videoUrl}" type="video/mp4">
+                </video>
+            </div>
+        `;
+
+			$.magnificPopup.open({
+				items: {
+					src: videoHtml,
+					type: 'inline'
+				},
+				closeOnContentClick: false,
+				closeOnBgClick: true,
+				enableEscapeKey: true,
+				removalDelay: 300,
+				callbacks: {
+					afterClose: function () {
+						var video = $('.mfp-video-element');
+						if (video.length) {
+							video[0].pause();
+							video[0].src = '';
+						}
+					}
+				}
+			});
+
+			// Attach click handler for the custom close button after popup opens
+			setTimeout(function () {
+				$('.mfp-custom-close').on('click', function (e) {
+					e.preventDefault();
+					$.magnificPopup.close();
+				});
+			}, 10);
+		}
 	});
 
 	// 09. Counter Js //

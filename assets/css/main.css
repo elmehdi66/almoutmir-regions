@@ -2871,6 +2871,7 @@ input[type=color] {
   letter-spacing: -0.04em;
   color: var(--tp-common-black);
   font-family: var(--tp-ff-bricolage);
+ 
 }
 @media only screen and (min-width: 1600px) and (max-width: 1700px), only screen and (min-width: 1400px) and (max-width: 1599px) {
   .tp-section-title {
@@ -10459,6 +10460,7 @@ body.tp-magic-cursor #magic-cursor {
   left: 26%;
   bottom: 90px;
   position: absolute;
+  display:none;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .ma-hero-shape {
@@ -13817,12 +13819,12 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 .lw-banner-wrapper {
-  height: 900px;
+  height: 1100px;
   padding: 0px 40px;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .lw-banner-wrapper {
-    height: 700px;
+    height: 1000px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {

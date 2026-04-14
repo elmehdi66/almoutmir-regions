@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Moutmir — Un Impact Concret</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="./assets/css/spacing.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <style>
+        .bg-custom-green {
+            background-color: #0f5c4c;
+        }
+    
+          .back-to-top-btn svg {
+            display: inline !important;
+        }
+    .ma-hero-area {
+  min-height: 70vh; /* or a pixel value that matches the design */
+}
+        .dgm-blog-item::after {
+            background-color: #002a28 !important;
+        }
+
+        .bnc-portfolio-item-title {
+            font-size: 18px !important;
+            font-family: "mazzard-bold";
+        }
+
+        .bnc-portfolio-item-tag span {
+            font-family: "mazzard-regular";
+            font-size: 10px;
+            border: 1px solid #d7492b;
+        }
+
+        .dgm-portfolio-tab ul li a {
+            border: 1px solid #fff;
+        }
+
+        .dgm-portfolio-tab ul li a:hover,
+        .dgm-portfolio-tab ul li a.active {
+            background-color: #c0e4da;
+            border: 1px solid #c0e4da;
+        }
+
+        /* Active tab: red by default */
+        .dgm-portfolio-slider-wrap .tab-pane.active .dgm-portfolio-content::after {
+            content: '';
+            background-color: #d7492b;
+        }
+
+        /* Active tab on hover: switch to teal */
+        .dgm-portfolio-slider-wrap .tab-pane.active:hover .dgm-portfolio-content::after {
+            background-color: #c0e4da;
+        }
+
+        /* Inactive tab: teal by default */
+        .dgm-portfolio-slider-wrap .tab-pane:not(.active) .dgm-portfolio-content::after {
+            content: '';
+            background-color: #c0e4da;
+        }
+
+        /* Inactive tab on hover: switch to red */
+        .dgm-portfolio-slider-wrap .tab-pane:not(.active):hover .dgm-portfolio-content::after {
+            background-color: #d7492b;
+        }
+
+        .dgm-portfolio-title {
+            font-family: "mazzard-bold";
+            color: #c0e4da85 !important;
+        }
+
+        .dgm-portfolio-content span {
+            font-family: "mazzard-semibold";
+            color: #c0e4da80 !important;
+        }
+
+        .dgm-portfolio-item:hover .dgm-portfolio-title a {
+            color: #002a28 !important;
+        }
+
+        .dgm-portfolio-item:hover .dgm-portfolio-content span {
+            color: #002a28 !important;
+        }
+
+        .tp-section-title {
+            font-family: "mazzard-bold" !important;
+            line-height: 1 !important;
+        }
+
+        .ca-testimonial-item {
+            background-color: #002a28;
+        }
+
+        .testimonial-item2 {
+            background-color: #c0e4da !important;
+            color: #fff !important;
+        }
+
+        .testimonial-item2 .ca-testimonial-item-content p,
+        .testimonial-item2 .ca-testimonial-item-user-content h4,
+        .testimonial-item2 .ca-testimonial-item-user-content p {
+            color: #10605b !important;
+        }
+
+        .back-to-top-btn {
+            background: #d7492b !important;
+            color: #c0e4da !important;
+        }
+
+        #preloader {
+            background: #002a28;
+        }
+
+        #preloader span {
+            background: #d7492b !important;
+        }
+
+        .ds-portfolio-item-title {
+            margin: 0;
+            font-size: 15px !important;
+            font-weight: 500;
+            padding: 12px 29px;
+            text-transform: capitalize;
+            color: #002a28 !important;
+            font-family: "mazzard-regular" !important;
+            background-color: #c0e4da !important;
+            margin: 10px 0 !important;
+            border-radius: 10px !important;
+        }
+
+        .ma-hero-title {
+            font-size: 28px !important;
+            font-weight: 400 !important;
+            font-family: mazzard-bold !important;
+            line-height: 1.5;
+            margin-bottom: 33px;
+            letter-spacing: 0px;
+            color: #fef2d7 !important;
+        }
+
+        .ma-hero-content {
+            margin-left: 0px !important;
+
+        }
+
+        .tp-section-subtitle {
+            text-transform: none;
+            font-weight: normal !important;
+            font-family: mazzard-regular !important;
+            left: 43% !important;
+        }
+
+        .tp-section-title {
+
+            font-family: mazzard-bold !important;
+        }
+
+        .tp-section-subtitle.st-dot::before {
+            content: "";
+            height: 3px !important;
+            width: 3px !important;
+
+
+        }
+
+        .bnc-service-item-icon {
+            width: 100px !important;
+        }
+
+        .bnc-service-item-title {
+            font-size: 19px !important;
+            font-weight: bold !important;
+            font-family: mazzard-bold !important;
+            line-height: 1.3;
+        }
+
+        .bnc-service-item-text p {
+            font-family: mazzard-regular !important;
+            font-size: 14px !important;
+            text-transform: none !important;
+        }
+
+        .dgm-blog-avater img {
+            flex: 0 0 auto;
+            height: auto !important;
+            width: 100%;
+            /* margin-right: 10px; */
+            border-radius: 0 !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-number {
+            position: unset !important;
+            font-size: 50px !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-slider-wrap {
+            background-color: #c0e4da !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-right .tp-dot .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #d7492b !important;
+        }
+
+        .dgm-testimonial-style .tp-testimonial-right .tp-dot .swiper-pagination-bullet {
+            background-color: transparent !important;
+            border: 1px solid #d7492b;
+        }
+
+        .tp-section-title {
+            font-family: "mazzard-bold" !important;
+            line-height: 1 !important;
+            letter-spacing: normal !important;
+        }
+
+        .tp-service-item-title{
+            color: #fff;
+            font-family: "mazzard-bold" !important;
+            font-size: 15px !important;
+            line-height: 1.3;
+            letter-spacing: normal !important;
+        }
+        .tp-service-item{
+            border: 1px solid #fff;
+            border-radius: 10px 80px 10px 80px ;
+        }
+        .tp-service-item {
+          /* padding:  8px 28px 20px 50px !important */
+        }
+        .bnc-portfolio-item-title{
+            text-transform: none !important;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- preloader end  -->
+
+    <!-- Begin magic cursor -->
+    <div id="magic-cursor" class="cursor-white-bg">
+        <div id="ball"></div>
+    </div>
+    <!-- End magic cursor -->
+
+   
+
+    <div class="tp-blur-bottom"></div>
+
+    <!-- back to top start -->
+    <div class="back-to-top-wrapper">
+        <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+    <!-- back to top end -->
+
+
+    <!-- header area start -->
+    <div id="header-sticky" class="tp-header-area tp-header-ptb tp-header-blur sticky-white-bg header-transparent">
+        <div class="container container-1510">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-6 col-6">
+                    <div class="tp-header-logo py-3 px-0">
+                        <a href="index.html">
+                            <img loading="lazy" data-width="60" src="./assets/img/logo/logo-bg-square.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-7 d-none d-xl-block">
+                    <div class="tp-header-box text-center">
+                        <div class="tp-header-menu tp-header-dropdown dropdown-white-bg">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-6">
+                    <div class="tp-header-right d-flex align-items-center justify-content-end">
+                        <div class="tp-header-14-bar-wrap">
+                            <button class="tp-header-8-bar tp-offcanvas-open-btn flex items-center gap-1 py-3 px-4"
+                                style="background-color: #002A28; border: 1px solid #002a281b;">
+                                <span>Menu</span>
+                                <span>
+                                    <svg width="24" height="8" viewBox="0 0 24 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H14V1.5H0V0Z" fill="currentcolor" />
+                                        <path d="M0 6H24V7.5H0V6Z" fill="currentcolor" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header area end -->
+     <!-- hero area start -->
+                <div class="ma-hero-area ma-hero-ptb h-[90vh] z-index-1"
+                    style="background-image: url('./pics/hero-bg.jpg');">
+                    <div class="ma-hero-shape" data-speed="1.1">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="70" viewBox="0 0 98 70"
+                                fill="none">
+                                <path
+                                    d="M3.82839 43.5099C6.42926 40.3317 22.6507 18.2746 30.4134 24.9691C37.8139 31.3513 24.5452 53.9838 37.9136 57.3688C49.3686 60.2694 63.7917 45.1686 70.8555 38.113C75.574 33.4 78.6929 27.6256 82.7187 22.4694C83.012 22.0937 85.4072 18.8838 84.2975 19.3471"
+                                    stroke="#F5F7F5" stroke-width="3" stroke-linecap="round" />
+                                <path
+                                    d="M74.5884 18.6844C77.6307 17.1331 88.2369 8.41917 88.3725 15.5498C88.4449 19.3586 88.246 22.0251 89.7262 25.5706"
+                                    stroke="#F5F7F5" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="container container-1530">
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <h2 style="color: #FEF2D7;font-size: 44px;font-family: mazzard-bold;">UN IMPACT CONCRET </h2>
+                                <div class="ma-hero-title-box tp_fade_anim" data-delay=".3">
+                                    <h2 class="ma-hero-title" style="display: flex;padding-top: 10px;">
+                                        UN IMPACT AGRONOMIQUE PROUVÉ  L'adoption des fertilisants customisés dans le cadre du Programme Intégré des Cultures (ICP) a permis de générer des impacts mesurables.
+
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-12">
+                                <div class="ma-hero-content">
+                                    <div class="tp_fade_anim" data-delay=".4">
+                                        <p
+                                            style="color: #fef2d7;font-size: 15px; font-family: popping-medium;text-transform: none !important;">
+
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- hero area end -->
+    <section class="bg-[#f5f5f5] py-16">
+        <div class="max-w-7xl mx-auto relative">
+
+            <!-- Decorative elements -->
+            <div class="deco absolute left-2 top-40 w-4 h-4 bg-[#f15a24]"></div>
+            <div class="deco absolute left-1/2 bottom-10 w-2 h-2 bg-[#f15a24]"></div>
+            <div class="deco absolute right-10 top-10 w-2 h-2 bg-[#f15a24]"></div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- TITLE BLOCK -->
+                <div class="grid-img">
+                   <img src="./pics/amelioration.jpg" alt="">
+                </div>
+
+                <!-- CEREALS -->
+                <div class="grid-img">
+                   <img src="./pics/cereales.jpg" alt="">
+                </div>
+
+                <!-- OLIVES -->
+                <div class="grid-img">
+                   <img src="./pics/oliviers.jpg" alt="">
+                </div>
+
+                <!-- VEGETABLES -->
+                <div class="grid-img flex flex-col md:flex-row h-full">
+                 <img src="./pics/legumes.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="relative pt-20 text-white">
+
+        <!-- Background -->
+        <div class="absolute inset-0">
+            <img src="./pics/marge-benef-bg.jpg" class="w-full h-full object-cover object-center"
+                alt="background">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto">
+
+            <!-- Header -->
+            <div class="section-header text-center mb-14">
+
+                <h2 class="text-4xl md:text-5xl font-bold uppercase leading-tight text-[#fff]">
+                    AMÉLIORATION DE LA MARGE<br />
+                    BÉNÉFICIAIRE
+                </h2>
+            </div>
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- CARD 1 -->
+                <div class="card relative">
+                     <img src="./pics/benef-1.jpg"
+                            class="w-full h-full object-cover" alt="Céréales">
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card relative">
+                     <img src="./pics/benef-2.jpg"
+                            class="w-full h-full object-cover" alt="Oliviers">
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card relative">
+
+                    <img src="./pics/benef-3.jpg"
+                        class="w-full h-full object-cover" alt="Légumes">
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#ECF8F8] py-20">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+
+                <!-- LEFT TITLE -->
+                <div class="section-title">
+                    <h2 class="text-[#0f5c4c] text-4xl md:text-5xl font-bold leading-tight">
+                        Productivité<br />
+                        de l'eau
+                    </h2>
+                </div>
+
+                <!-- CARD 1 -->
+                <div class="stat-card relative border border-[#0f5c4c] p-8 flex items-center justify-between">
+
+                    <!-- Decorative squares -->
+                    <div class="absolute bottom-0 left-0 w-4 h-4 bg-[#f15a24]"></div>
+                    <div class="absolute top-0 right-0 w-3 h-3 bg-[#f15a24]"></div>
+
+                    <!-- Icon -->
+                    <div class="text-[#0f5c4c]">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M12 2C8 7 6 10 6 14a6 6 0 0012 0c0-4-2-7-6-12z" />
+                            <circle cx="10" cy="13" r="1" />
+                        </svg>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="text-[#0f5c4c] text-right">
+                        <p class="text-3xl font-bold">10 % À 22 %</p>
+                        <p class="mt-2 text-sm font-semibold uppercase">
+                            OLIVIERS
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="stat-card relative border border-[#0f5c4c] p-8 flex items-center justify-between">
+
+                    <!-- Decorative squares -->
+                    <div class="absolute bottom-0 left-0 w-4 h-4 bg-[#f15a24]"></div>
+                    <div class="absolute top-0 right-0 w-3 h-3 bg-[#f15a24]"></div>
+
+                    <!-- Icon -->
+                    <div class="text-[#0f5c4c]">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M6 12c2-4 10-4 12 0M8 16c2-2 6-2 8 0M10 20h4" />
+                        </svg>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="text-[#0f5c4c] text-right">
+                        <p class="text-3xl font-bold">7 % À 26 %</p>
+                        <p class="mt-2 text-sm font-semibold uppercase">
+                            LÉGUMES
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section style="background-image: url(./pics/qualite-bg.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;" class="bg-cover bg-center py-16 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="section-header text-white text-4xl md:text-5xl font-bold  leading-tight mb-12">Amélioration de la qualité</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="qualite-img">
+                    <img src="./pics/qualite-1.png" class="w-full h-full object-cover" alt="">
+                </div>
+                <div class="qualite-img">
+                    <img src="./pics/qualite-2.png" class="w-full h-full object-cover" alt="">
+                </div>
+                <div class="qualite-img">
+                    <img src="./pics/qualite-3.png" class="w-full h-full object-cover" alt="">
+                </div>
+                <div class="qualite-img">
+                    <img src="./pics/qualite-4.png" class="w-full h-full object-cover" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-blue-50/30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="section-header text-custom-green text-4xl md:text-5xl font-bold  leading-tight text-center mb-12 max-w-7xl mx-auto text-[#00584E]">
+                Impact mesurable pour les agriculteurs <br> et l'environnement
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="impact-img h-full flex items-center justify-start">
+                    <img src="./pics/impact-1.jpg" class="object-cover h-[95%]" alt="Agriculteur olives">
+                </div>
+
+                <div class="impact-img h-full flex items-center justify-end">
+                    <img src="./pics/impact-2.jpg" class="object-cover h-[95%]" alt="Agriculteur gains">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-custom-green py-16 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-6">
+            <div class="impact-card flex-1 rounded-lg overflow-hidden shadow-lg">
+               <img src="./pics/impact-3.jpg" alt="Agriculteur olives">
+            </div>
+
+            <div class="impact-card flex-1 rounded-lg overflow-hidden shadow-lg">
+               <img src="./pics/impact-4.jpg" alt="Agriculteur gains">
+            </div>
+
+            <div class="impact-card flex-1 rounded-lg overflow-hidden shadow-lg">
+               <img src="./pics/impact-5.jpg" alt="Agriculteur environnement">
+            </div>
+        </div>
+    </section>
+    <section class="relative w-full min-h-[500px] flex items-center py-12 px-4 overflow-hidden">
+        <img src="./pics/plots-bg.webp" alt="Field Background"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <div
+            class="relative max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-start gap-8 items-start ">
+            <div class="plots-left max-w-7l">
+                <h3 class="text-[#004d40] text-xl font-bold mb-1">Plateforme de démonstration</h3>
+                <h2 class="text-[#004d40] text-5xl font-extrabold mb-6">pour Féverole</h2>
+
+                <div class="flex flex-wrap gap-4">
+                    <div class="plots-card bg-[#a3d5c3]/90 backdrop-blur-sm p-4 rounded-xl flex items-center gap-6 min-w-[240px] border-2 border-[#d4a373]">
+                        <div>
+                            <p class="text-[#004d40] text-xs uppercase font-medium">Pas d'engrais de base appliqué</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-[#004d40] text-[10px] uppercase">Rendement</p>
+                            <p class="text-[#004d40] text-3xl font-black">40t/ha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plots-right mt-8 md:mt-0 md:mr-32">
+                <p class="text-[#004d40] text-5xl font-black">+43% de Gains</p>
+                <p class="text-[#004d40] text-lg font-medium mb-6">en rendement et en profit</p>
+                <div
+                    class="plots-card bg-[#a3d5c3]/90 backdrop-blur-sm p-4 rounded-xl flex items-center gap-6 min-w-[280px] border-2 border-[#d4a373]">
+                    <div>
+                        <p class="text-[#004d40] text-xs uppercase font-medium leading-tight">Formule d'engrais
+                            customisée</p>
+                        <p class="text-[#004d40] text-sm font-bold">( 13-22-18 + SO₃ )</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-[#004d40] text-[10px] uppercase">Rendement</p>
+                        <p class="text-[#004d40] text-3xl font-black">57t/ha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#b2dfdb] py-16 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 items-stretch">
+
+            <div class="partenariat-left relative flex-1 rounded-2xl overflow-hidden shadow-lg group">
+                <img src="./pics/partenariat.jpg" alt="Agriculteur olives">
+            </div>
+
+            <div class="flex-1 flex flex-col gap-4">
+                <div class="partenariat-right shadow-sm flex items-center gap-6">
+                     <img class="rounded-2xl" src="./pics/reduction.jpg" alt="">
+                </div>
+                <div class="partenariat-right shadow-sm flex items-center gap-6">
+                   <img class="rounded-2xl" src="./pics/customise.jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Section 1 — grid images: alternating slide from left / right
+        gsap.utils.toArray(".grid-img").forEach((el, i) => {
+            gsap.from(el, {
+                x: i % 2 === 0 ? -60 : 60,
+                opacity: 0,
+                duration: 0.9,
+                ease: "power3.out",
+                scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" }
+            });
+        });
+
+        // Decorative dots — pop in with scale
+        gsap.from(".deco", {
+            scale: 0,
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.15,
+            ease: "back.out(2)",
+            scrollTrigger: { trigger: ".deco", start: "top 90%", toggleActions: "play none none reverse" }
+        });
+
+        // Section headers — fade up
+        gsap.utils.toArray(".section-header").forEach(el => {
+            gsap.from(el, {
+                y: 40,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" }
+            });
+        });
+
+        // Bénéficiaire cards — stagger slide up
+        gsap.from(".card", {
+            y: 60,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.15,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".card", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Productivité title
+        gsap.from(".section-title", {
+            x: -50,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: { trigger: ".section-title", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Stat cards — slide in from right with stagger
+        gsap.from(".stat-card", {
+            x: 60,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".stat-card", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Qualité images — stagger scale in
+        gsap.from(".qualite-img", {
+            scale: 0.85,
+            opacity: 0,
+            duration: 0.7,
+            stagger: 0.12,
+            ease: "power2.out",
+            scrollTrigger: { trigger: ".qualite-img", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Impact images — slide from opposite sides
+        const impactImgs = gsap.utils.toArray(".impact-img");
+        impactImgs.forEach((el, i) => {
+            gsap.from(el, {
+                x: i % 2 === 0 ? -70 : 70,
+                opacity: 0,
+                duration: 0.9,
+                ease: "power3.out",
+                scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" }
+            });
+        });
+
+        // Impact cards (green section) — stagger fade up
+        gsap.from(".impact-card", {
+            y: 50,
+            opacity: 0,
+            duration: 0.7,
+            stagger: 0.15,
+            ease: "power2.out",
+            scrollTrigger: { trigger: ".impact-card", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Plots section — left block slides in from left, right from right
+        gsap.from(".plots-left", {
+            x: -70,
+            opacity: 0,
+            duration: 0.9,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".plots-left", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        gsap.from(".plots-right", {
+            x: 70,
+            opacity: 0,
+            duration: 0.9,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".plots-right", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        // Plot cards — stagger scale
+        gsap.from(".plots-card", {
+            scale: 0.9,
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.15,
+            ease: "back.out(1.5)",
+            scrollTrigger: { trigger: ".plots-card", start: "top 90%", toggleActions: "play none none reverse" }
+        });
+
+        // Partenariat — left image slides in, right items stagger from right
+        gsap.from(".partenariat-left", {
+            x: -60,
+            opacity: 0,
+            duration: 0.9,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".partenariat-left", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+
+        gsap.from(".partenariat-right", {
+            x: 60,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".partenariat-right", start: "top 85%", toggleActions: "play none none reverse" }
+        });
+    </script>
+<script src="./assets/js/vendor/jquery.js" defer></script>
+    <script src="./assets/js/bootstrap-bundle.js" defer></script>
+   
+    <script src="./assets/js/hover-effect.umd.js" defer></script>
+    <script src="./assets/js/magnific-popup.js" defer></script>
+    <script src="./assets/js/purecounter.js" defer></script>
+    <script src="./assets/js/imagesloaded-pkgd.js" defer></script>
+    <script src="./assets/js/ajax-form.js" defer></script>
+    <script src="./assets/js/slider-active.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+</body>
+
+</html>
